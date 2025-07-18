@@ -1,0 +1,17 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.ZigBeeDeviceConfigHandlerTest",
+    "method" : "test",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeDeviceConfigHandlerTest#test" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeDeviceConfigHandler#<init>(com.zsmartsystems.zigbee.ZigBeeNode)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeDeviceConfigHandler#updateAttribute(int,boolean,int,int,int,java.lang.Object)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeDeviceConfigHandler#updateConfiguration(org.openhab.core.config.core.Configuration,java.util.Map)" : 1
+  },
+  "selectedChanges" : [ ]
+}

@@ -1,0 +1,5 @@
+private ZigBeeChannelConverterFactory mockZigBeeChannelConverterFactory(ZigBeeBaseChannelConverter zigBeeChannelConverter) {
+    ZigBeeChannelConverterFactory zigBeeChannelConverterFactory = mock(ZigBeeChannelConverterFactory.class);
+    when(zigBeeChannelConverterFactory.createConverter(any(Channel.class), any(ZigBeeCoordinatorHandler.class), any(IeeeAddress.class), any(int.class))).thenReturn(zigBeeChannelConverter);
+    return zigBeeChannelConverterFactory;
+}

@@ -1,0 +1,10 @@
+/**
+ * Converts an integer value into a {@link QuantityType}. The temperature as an integer is assumed to be multiplied
+ * by 100 as per the ZigBee standard format.
+ *
+ * @param value the integer value to convert
+ * @return the {@link QuantityType}
+ */
+protected QuantityType valueToTemperature(int value) {
+    return new QuantityType<>(BigDecimal.valueOf(value, 2), SIUnits.CELSIUS);
+}

@@ -1,0 +1,19 @@
+@Override
+public boolean initializeConverter(ZigBeeThingHandler thing) {
+    super.initializeConverter(thing);
+    cluster = (ZclTemperatureMeasurementCluster) endpoint.getInputCluster(ZclTemperatureMeasurementCluster.CLUSTER_ID);
+    if (cluster != null) {
+        attribute = cluster.getAttribute(ZclTemperatureMeasurementCluster.ATTR_MEASUREDVALUE);
+        // Add a listener
+        cluster.addAttributeListener(this);
+    } else {
+        clusterClient = (ZclTemperatureMeasurementCluster) endpoint.getOutputCluster(ZclTemperatureMeasurementCluster.CLUSTER_ID);
+        attributeClient = clusterClient.getLocalAttribute(ZclTemperatureMeasurementCluster.ATTR_MEASUREDVALUE);
+        attributeClient.setImplemented(true);
+    }
+    if (cluster == null && clusterClient == null) {
+        logger.error("{}: Error opening device temperature measurement cluster", endpoint.getIeeeAddress());
+        return false;
+    }
+    return true;
+}

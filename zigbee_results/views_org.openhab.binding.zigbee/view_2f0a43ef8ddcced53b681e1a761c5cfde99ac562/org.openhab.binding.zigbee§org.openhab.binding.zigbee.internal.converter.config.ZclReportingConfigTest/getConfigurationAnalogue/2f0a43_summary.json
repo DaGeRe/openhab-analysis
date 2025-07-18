@@ -1,0 +1,18 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.config.ZclReportingConfigTest",
+    "method" : "getConfigurationAnalogue",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclReportingConfigTest#getConfigurationAnalogue" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclReportingConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclReportingConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclReportingConfig#setAnalogue(java.math.BigDecimal,java.math.BigDecimal,java.math.BigDecimal)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclReportingConfig#<init>(org.openhab.core.thing.Channel)" : 1
+  },
+  "selectedChanges" : [ ]
+}

@@ -1,0 +1,5 @@
+private static List<ConfigDescriptionParameter> createConfigDescriptionParameters() {
+    List<ConfigDescriptionParameter> configDescriptionParameters = new ArrayList<>();
+    configDescriptionParameters.add(ConfigDescriptionParameterBuilder.create(ZigBeeBindingConstants.CONFIGURATION_INITIALIZE_DEVICE, ConfigDescriptionParameter.Type.BOOLEAN).withLabel(PARAM_ZIGBEE_INITIALIZE_DEVICE_LABEL).withDefault(Boolean.FALSE.toString()).withAdvanced(Boolean.TRUE).withRequired(Boolean.FALSE).build());
+    return configDescriptionParameters;
+}

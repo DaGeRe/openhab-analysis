@@ -1,0 +1,28 @@
+@Override
+public void attributeUpdated(ZclAttribute attribute, Object val) {
+    logger.debug("{}: ZigBee attribute reports {}  on endpoint {}", endpoint.getIeeeAddress(), attribute, endpoint.getEndpointId());
+    if (attribute.getClusterType() == ZclClusterType.COLOR_CONTROL) {
+        switch(attribute.getId()) {
+            case ZclColorControlCluster.ATTR_COLORTEMPERATURE:
+                Integer temperatureInMired = (Integer) val;
+                PercentType percent = miredToPercent(temperatureInMired);
+                if (percent != null) {
+                    updateChannelState(percent);
+                }
+                break;
+            case ZclColorControlCluster.ATTR_COLORMODE:
+                Integer colorMode = (Integer) val;
+                ColorModeEnum colorModeEnum = ColorModeEnum.getByValue(colorMode);
+                if (colorModeEnum == ColorModeEnum.COLOR_TEMPERATURE) {
+                    break;
+                }
+            // else fall through
+            case ZclColorControlCluster.ATTR_CURRENTHUE:
+            case ZclColorControlCluster.ATTR_CURRENTSATURATION:
+            case ZclColorControlCluster.ATTR_CURRENTX:
+            case ZclColorControlCluster.ATTR_CURRENTY:
+                updateChannelState(UnDefType.UNDEF);
+                break;
+        }
+    }
+}

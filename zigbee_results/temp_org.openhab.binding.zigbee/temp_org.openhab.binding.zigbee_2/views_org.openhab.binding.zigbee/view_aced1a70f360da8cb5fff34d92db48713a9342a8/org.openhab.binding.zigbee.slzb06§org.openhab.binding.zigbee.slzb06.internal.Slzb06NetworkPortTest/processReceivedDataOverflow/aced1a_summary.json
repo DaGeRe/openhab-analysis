@@ -1,0 +1,17 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest",
+    "method" : "processReceivedDataOverflow",
+    "module" : "org.openhab.binding.zigbee.slzb06",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#read(int)" : 511,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#<init>(java.lang.String,int)" : 1,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#processReceivedData(byte[],int)" : 2,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedDataOverflow" : 1
+  },
+  "selectedChanges" : [ ]
+}

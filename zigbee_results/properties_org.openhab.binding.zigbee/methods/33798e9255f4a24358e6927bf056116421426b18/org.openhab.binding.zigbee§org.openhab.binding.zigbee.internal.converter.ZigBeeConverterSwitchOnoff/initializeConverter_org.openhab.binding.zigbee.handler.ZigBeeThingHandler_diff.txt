@@ -1,0 +1,29 @@
+@Override
+public boolean initializeConverter(ZigBeeThingHandler thing) {
+    super.initializeConverter(thing);
+    updateScheduler = Executors.newSingleThreadScheduledExecutor();
+    clusterOnOffClient = (ZclOnOffCluster) endpoint.getOutputCluster(ZclOnOffCluster.CLUSTER_ID);
+    clusterOnOffServer = (ZclOnOffCluster) endpoint.getInputCluster(ZclOnOffCluster.CLUSTER_ID);
+    if (clusterOnOffClient == null && clusterOnOffServer == null) {
+        logger.error("{}: Error opening device on/off controls", endpoint.getIeeeAddress());
+        return false;
+    }
+    if (clusterOnOffServer != null) {
+        configOnOff = new ZclOnOffSwitchConfig();
+        configOnOff.initialize(clusterOnOffServer);
+        configReporting = new ZclReportingConfig(channel);
+        configOptions = new ArrayList<>();
+        configOptions.addAll(configOnOff.getConfiguration());
+        configOptions.addAll(configReporting.getConfiguration());
+    }
+    if (clusterOnOffClient != null) {
+        // Add the command listener
+        clusterOnOffClient.addCommandListener(this);
+    }
+    if (clusterOnOffServer != null) {
+        // Add the listener
+        clusterOnOffServer.addAttributeListener(this);
+        attributeServer = clusterOnOffServer.getAttribute(ZclOnOffCluster.ATTR_ONOFF);
+    }
+    return true;
+}

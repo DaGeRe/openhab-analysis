@@ -1,0 +1,6 @@
+@Test
+public void testConvertPercentToMired() {
+    ZigBeeConverterColorTemperature converter = getConverter();
+    assertEquals(153, convertPercentToMired(converter, PercentType.ZERO));
+    assertEquals(500, convertPercentToMired(converter, PercentType.HUNDRED));
+}

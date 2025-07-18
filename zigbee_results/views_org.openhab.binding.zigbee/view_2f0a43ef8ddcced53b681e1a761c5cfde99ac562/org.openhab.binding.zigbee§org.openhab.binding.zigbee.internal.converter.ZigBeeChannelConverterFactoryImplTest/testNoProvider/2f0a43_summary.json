@@ -1,0 +1,18 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest",
+    "method" : "testNoProvider",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest$TestZigBeeChannelConverterProvider#<init>(org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest,java.util.Map)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImpl#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImpl#getChannels(org.openhab.core.thing.ThingUID,com.zsmartsystems.zigbee.ZigBeeEndpoint)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest#setup" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest#testNoProvider" : 1
+  },
+  "selectedChanges" : [ ]
+}

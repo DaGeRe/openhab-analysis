@@ -1,0 +1,31 @@
+private synchronized void readDiscoveryProperties() throws IOException {                               private synchronized void readDiscoveryProperties() throws IOException {                            
+if (!discoveryProperties.isEmpty()) {                                                                  if (!discoveryProperties.isEmpty()) {                                                               
+return;                                                                                                return;                                                                                             
+}                                                                                                      }                                                                                                   
+InputStream input = getClass().getResourceAsStream(DISCOVERY_PROPERTIES_FILE);                         InputStream input = getClass().getResourceAsStream(DISCOVERY_PROPERTIES_FILE);                      
+if (input == null) {                                                                                   if (input == null) {                                                                                
+return;                                                                                                return;                                                                                             
+}                                                                                                      }                                                                                                   
+BufferedReader reader = new BufferedReader(new InputStreamReader(input));                              BufferedReader reader = new BufferedReader(new InputStreamReader(input));                           
+while (reader.ready()) {                                                                               while (reader.ready()) {                                                                            
+String line = reader.readLine();                                                                       String line = reader.readLine();                                                                    
+String[] elements = line.split(",");                                                                   String[] elements = line.split(",");                                                                
+if (elements.length &lt; 2) {                                                                          if (elements.length &lt; 2) {                                                                       
+continue;                                                                                              continue;                                                                                           
+}                                                                                                      }                                                                                                   
+List&lt;RequiredProperty&gt; newProperties = new ArrayList&lt;&gt;();                                  List&lt;RequiredProperty&gt; newProperties = new ArrayList&lt;&gt;();                               
+for (String element : elements) {                                                                      for (String element : elements) {                                                                   
+String[] discoveryElement = element.split("=");                                                        String[] discoveryElement = element.split("=");                                                     
+if (discoveryElement.length != 2) {                                                                    if (discoveryElement.length != 2) {                                                                 
+continue;                                                                                              continue;                                                                                           
+}                                                                                                      }                                                                                                   
+newProperties.add(new RequiredProperty(discoveryElement[0].trim(), unescape(discoveryElement[1].trim | newProperties.add(new RequiredProperty(discoveryElement[0].trim(), unescape(discoveryElement[1]).tri
+}                                                                                                      }                                                                                                   
+if (newProperties.isEmpty()) {                                                                         if (newProperties.isEmpty()) {                                                                      
+continue;                                                                                              continue;                                                                                           
+}                                                                                                      }                                                                                                   
+discoveryProperties.put(elements[0], newProperties);                                                   discoveryProperties.put(elements[0], newProperties);                                                
+}                                                                                                      }                                                                                                   
+reader.close();                                                                                        reader.close();                                                                                     
+return;                                                                                                return;                                                                                             
+}                                                                                                      }                                                                                                   

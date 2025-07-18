@@ -1,0 +1,87 @@
+@Override
+public void attributeUpdated(ZclAttribute attribute, Object val) {
+    logger.debug("{}: ZigBee attribute reports {}", endpoint.getIeeeAddress(), attribute);
+    synchronized (colorUpdateSync) {
+        try {
+            if (attribute.getClusterType().getId() == ZclOnOffCluster.CLUSTER_ID) {
+                if (attribute.getId() == ZclOnOffCluster.ATTR_ONOFF) {
+                    Boolean value = (Boolean) val;
+                    OnOffType onoff = value ? OnOffType.ON : OnOffType.OFF;
+                    updateOnOff(onoff);
+                }
+            } else if (attribute.getClusterType().getId() == ZclLevelControlCluster.CLUSTER_ID) {
+                if (attribute.getId() == ZclLevelControlCluster.ATTR_CURRENTLEVEL) {
+                    PercentType brightness = levelToPercent((Integer) val);
+                    updateBrightness(brightness);
+                }
+            } else if (attribute.getClusterType().getId() == ZclColorControlCluster.CLUSTER_ID) {
+                if (attribute.getId() == ZclColorControlCluster.ATTR_CURRENTHUE) {
+                    int hue = (Integer) val;
+                    if (hue != lastHue) {
+                        lastHue = hue;
+                        hueChanged = true;
+                    }
+                } else if (attribute.getId() == ZclColorControlCluster.ATTR_CURRENTSATURATION) {
+                    int saturation = (Integer) val;
+                    if (saturation != lastSaturation) {
+                        lastSaturation = saturation;
+                        saturationChanged = true;
+                    }
+                } else if (attribute.getId() == ZclColorControlCluster.ATTR_CURRENTX) {
+                    int x = (Integer) val;
+                    if (x != lastX) {
+                        lastX = x;
+                        xChanged = true;
+                    }
+                } else if (attribute.getId() == ZclColorControlCluster.ATTR_CURRENTY) {
+                    int y = (Integer) val;
+                    if (y != lastY) {
+                        lastY = y;
+                        yChanged = true;
+                    }
+                } else if (attribute.getId() == ZclColorControlCluster.ATTR_COLORMODE) {
+                    Integer colorMode = (Integer) val;
+                    lastColorMode = ColorModeEnum.getByValue(colorMode);
+                    if (lastColorMode == ColorModeEnum.COLOR_TEMPERATURE) {
+                        updateChannelState(UnDefType.UNDEF);
+                    } else if (currentOnOffState.get()) {
+                        updateChannelState(lastHSB);
+                    }
+                }
+            }
+            if (hueChanged || saturationChanged || xChanged || yChanged) {
+                if (colorUpdateTimer != null) {
+                    colorUpdateTimer.cancel(true);
+                    colorUpdateTimer = null;
+                }
+                if (hueChanged && saturationChanged) {
+                    updateColorHSB();
+                } else if (xChanged && yChanged) {
+                    updateColorXY();
+                } else {
+                    // Wait some time and update anyway if only one attribute in each pair is updated
+                    colorUpdateTimer = colorUpdateScheduler.schedule(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            synchronized (colorUpdateSync) {
+                                try {
+                                    if ((hueChanged || saturationChanged) && lastHue >= 0.0f && lastSaturation >= 0.0f) {
+                                        updateColorHSB();
+                                    } else if ((xChanged || yChanged) && lastX >= 0.0f && lastY >= 0.0f) {
+                                        updateColorXY();
+                                    }
+                                } catch (Exception e) {
+                                    logger.debug("{}: Exception in deferred attribute update", endpoint.getIeeeAddress(), e);
+                                }
+                                colorUpdateTimer = null;
+                            }
+                        }
+                    }, 500, TimeUnit.MILLISECONDS);
+                }
+            }
+        } catch (Exception e) {
+            logger.debug("{}: Exception in attribute update", endpoint.getIeeeAddress(), e);
+        }
+    }
+}

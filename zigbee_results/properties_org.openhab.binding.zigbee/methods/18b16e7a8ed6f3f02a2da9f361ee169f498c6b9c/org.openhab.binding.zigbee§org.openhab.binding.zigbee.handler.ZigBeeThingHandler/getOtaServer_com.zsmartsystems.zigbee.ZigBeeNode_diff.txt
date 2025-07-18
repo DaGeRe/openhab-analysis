@@ -1,0 +1,29 @@
+/**
+ * Gets the {@link ZclOtaUpgradeServer} for the node. If this is not configured in the library, it will be added on
+ * the first endpoint supporting OTA.
+ *
+ * @param node the {@link ZigBeeNode}
+ * @return the {@link ZclOtaUpgradeServer} for the node
+ */
+@SuppressWarnings("null")
+private ZclOtaUpgradeServer getOtaServer(ZigBeeNode node) {
+    ZigBeeEndpoint otaEndpoint = null;
+    for (ZigBeeEndpoint endpoint : node.getEndpoints()) {
+        ZclOtaUpgradeServer otaServer = (ZclOtaUpgradeServer) endpoint.getApplication(ZclOtaUpgradeCluster.CLUSTER_ID);
+        if (otaServer != null) {
+            return otaServer;
+        }
+        if (endpoint.getOutputCluster(ZclOtaUpgradeCluster.CLUSTER_ID) != null && otaEndpoint == null) {
+            otaEndpoint = endpoint;
+            break;
+        }
+    }
+    if (otaEndpoint == null) {
+        logger.debug("{}: Can't find OTA cluster", nodeIeeeAddress);
+        return null;
+    }
+    // Create the OTA server and register it with the endpoint
+    ZclOtaUpgradeServer otaServer = new ZclOtaUpgradeServer();
+    otaEndpoint.addApplication(otaServer);
+    return otaServer;
+}

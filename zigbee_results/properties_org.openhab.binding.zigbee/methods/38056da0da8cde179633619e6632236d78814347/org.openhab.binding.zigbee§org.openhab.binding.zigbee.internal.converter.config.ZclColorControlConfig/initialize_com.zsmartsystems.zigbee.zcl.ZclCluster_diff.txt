@@ -1,0 +1,12 @@
+@Override
+public boolean initialize(ZclCluster cluster) {
+    colorControlCluster = (ZclColorControlCluster) cluster;
+    // Build a list of configuration supported by this channel
+    List<ParameterOption> options = new ArrayList<>();
+    options = new ArrayList<>();
+    options.add(new ParameterOption(ControlMethod.AUTO.toString(), "Auto"));
+    options.add(new ParameterOption(ControlMethod.HUE.toString(), "Hue Commands"));
+    options.add(new ParameterOption(ControlMethod.XY.toString(), "XY Commands"));
+    parameters.add(ConfigDescriptionParameterBuilder.create(CONFIG_CONTROLMETHOD, Type.TEXT).withLabel("Color Control Method").withDescription("The commands used to control color. AUTO will use HUE if the device supports, otherwise XY").withDefault(ControlMethod.AUTO.toString()).withOptions(options).withLimitToOptions(true).build());
+    return !parameters.isEmpty();
+}

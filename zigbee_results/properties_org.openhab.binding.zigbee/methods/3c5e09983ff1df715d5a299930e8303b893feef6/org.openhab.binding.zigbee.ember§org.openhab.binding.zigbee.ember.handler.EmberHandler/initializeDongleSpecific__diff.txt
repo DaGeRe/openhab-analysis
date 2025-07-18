@@ -1,0 +1,39 @@
+@Override
+protected void initializeDongleSpecific() {
+    EmberConfiguration config = getConfigAs(EmberConfiguration.class);
+    setGroupRegistration(config.zigbee_groupregistration);
+    if (pollingJob == null) {
+        Runnable pollingRunnable = new Runnable() {
+
+            @Override
+            public void run() {
+                if (zigbeeTransport == null) {
+                    return;
+                }
+                ZigBeeDongleEzsp dongle = (ZigBeeDongleEzsp) zigbeeTransport;
+                Map<String, Long> counters = dongle.getCounters();
+                if (!counters.isEmpty()) {
+                    if (isLinked(EmberBindingConstants.CHANNEL_RX_DAT)) {
+                        updateState(EmberBindingConstants.CHANNEL_RX_DAT, new DecimalType(counters.get(ASH_RX_DAT)));
+                    }
+                    if (isLinked(EmberBindingConstants.CHANNEL_TX_DAT)) {
+                        updateState(EmberBindingConstants.CHANNEL_TX_DAT, new DecimalType(counters.get(ASH_TX_DAT)));
+                    }
+                    if (isLinked(EmberBindingConstants.CHANNEL_RX_ACK)) {
+                        updateState(EmberBindingConstants.CHANNEL_RX_ACK, new DecimalType(counters.get(ASH_RX_ACK)));
+                    }
+                    if (isLinked(EmberBindingConstants.CHANNEL_TX_ACK)) {
+                        updateState(EmberBindingConstants.CHANNEL_TX_ACK, new DecimalType(counters.get(ASH_TX_ACK)));
+                    }
+                    if (isLinked(EmberBindingConstants.CHANNEL_RX_NAK)) {
+                        updateState(EmberBindingConstants.CHANNEL_RX_NAK, new DecimalType(counters.get(ASH_RX_NAK)));
+                    }
+                    if (isLinked(EmberBindingConstants.CHANNEL_TX_NAK)) {
+                        updateState(EmberBindingConstants.CHANNEL_TX_NAK, new DecimalType(counters.get(ASH_TX_NAK)));
+                    }
+                }
+            }
+        };
+        pollingJob = scheduler.scheduleWithFixedDelay(pollingRunnable, 30, 30, TimeUnit.SECONDS);
+    }
+}

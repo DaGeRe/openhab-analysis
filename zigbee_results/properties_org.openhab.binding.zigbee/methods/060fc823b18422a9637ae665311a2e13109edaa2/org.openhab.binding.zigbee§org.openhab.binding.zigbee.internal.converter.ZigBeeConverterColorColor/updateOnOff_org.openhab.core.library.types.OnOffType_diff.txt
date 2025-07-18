@@ -1,0 +1,12 @@
+private void updateOnOff(OnOffType onOff) {                                                            private void updateOnOff(OnOffType onOff) {                                                         
+boolean on = onOff == OnOffType.ON;                                                                    boolean on = onOff == OnOffType.ON;                                                                 
+currentOnOffState.set(on);                                                                           |                                                                                                     
+if (lastColorMode != ColorModeEnum.COLOR_TEMPERATURE) {                                              |                                                                                                     
+// Extra temp variable to avoid thread sync concurrency issues on lastHSB                              // Extra temp variable to avoid thread sync concurrency issues on lastHSB                           
+HSBType oldHSB = lastHSB;                                                                              HSBType oldHSB = lastHSB;                                                                           
+HSBType newHSB = on ? lastHSB : new HSBType(oldHSB.getHue(), oldHSB.getSaturation(), PercentType.ZER   HSBType newHSB = on ? lastHSB : new HSBType(oldHSB.getHue(), oldHSB.getSaturation(), PercentType.ZER
+updateChannelState(newHSB);                                                                            updateChannelState(newHSB);                                                                         
+} else if (!on) {                                                                                    |                                                                                                     
+updateChannelState(OnOffType.OFF);                                                                   |                                                                                                     
+}                                                                                                      }                                                                                                   
+}                                                                                                    |                                                                                                     

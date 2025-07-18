@@ -1,0 +1,4 @@
+public EmberHandler(Bridge coordinator, SerialPortManager serialPortManager, ZigBeeChannelConverterFactory channelFactory) {
+    super(coordinator, channelFactory);
+    this.serialPortManager = serialPortManager;
+}

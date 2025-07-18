@@ -1,0 +1,20 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.warningdevice.SquawkTypeTest",
+    "method" : "testSerializeSquawkType",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#<init>(boolean,int,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.SquawkTypeTest#testSerializeSquawkType" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#serializeToCommand" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SoundLevel#<init>(int)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SoundLevel#getValue" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkMode#<init>(int)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkMode#getValue" : 2
+  },
+  "selectedChanges" : [ ]
+}

@@ -1,0 +1,21 @@
+/**
+ * Process the adding of an install code
+ *
+ * @param installCode the string representation of the install code
+ * @param transportConfig the {@link TransportConfig} to populate with the configuration
+ */
+private void addInstallCode(String installCode) {
+    if (installCode == null || installCode.isEmpty()) {
+        return;
+    }
+    // Split the install code and the address
+    String[] codeParts = installCode.split(":");
+    if (codeParts.length != 2) {
+        logger.warn("{}: Incorrectly formatted install code configuration {}", nodeIeeeAddress, installCode);
+        return;
+    }
+    MmoHash mmoHash = new MmoHash(codeParts[1].replace("-", ""));
+    ZigBeeKey key = new ZigBeeKey(mmoHash.getHash());
+    key.setAddress(new IeeeAddress(codeParts[0]));
+    networkManager.setZigBeeInstallKey(key);
+}

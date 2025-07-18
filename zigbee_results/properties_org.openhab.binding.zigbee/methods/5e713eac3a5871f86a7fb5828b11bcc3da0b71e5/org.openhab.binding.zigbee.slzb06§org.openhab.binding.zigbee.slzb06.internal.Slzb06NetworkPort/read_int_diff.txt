@@ -1,0 +1,26 @@
+@Override
+public int read(int timeout) {
+    long endTime = System.currentTimeMillis() + timeout;
+    try {
+        while (System.currentTimeMillis() < endTime) {
+            synchronized (bufferSynchronisationObject) {
+                if (start != end) {
+                    int value = buffer[start++];
+                    if (start >= RX_BUFFER_LEN) {
+                        start = 0;
+                    }
+                    return value;
+                }
+            }
+            synchronized (this) {
+                if (socket == null) {
+                    return -1;
+                }
+                wait(endTime - System.currentTimeMillis());
+            }
+        }
+        return -1;
+    } catch (InterruptedException e) {
+    }
+    return -1;
+}

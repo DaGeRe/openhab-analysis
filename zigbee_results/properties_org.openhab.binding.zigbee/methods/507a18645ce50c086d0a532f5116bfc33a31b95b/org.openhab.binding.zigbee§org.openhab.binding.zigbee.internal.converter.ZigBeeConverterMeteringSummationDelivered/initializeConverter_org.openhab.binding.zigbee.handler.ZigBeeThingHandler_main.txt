@@ -1,0 +1,19 @@
+@Override
+public boolean initializeConverter(ZigBeeThingHandler thing) {
+    super.initializeConverter(thing);
+    clusterMetering = (ZclMeteringCluster) endpoint.getInputCluster(ZclMeteringCluster.CLUSTER_ID);
+    if (clusterMetering == null) {
+        logger.error("{}: Error opening metering cluster", endpoint.getIeeeAddress());
+        return false;
+    }
+    attribute = clusterMetering.getAttribute(ZclMeteringCluster.ATTR_CURRENTSUMMATIONDELIVERED);
+    determineDivisorAndMultiplier(clusterMetering);
+    // Add a listener
+    clusterMetering.addAttributeListener(this);
+    // Create a configuration handler and get the available options
+    configReporting = new ZclReportingConfig(channel);
+    configReporting.setAnalogue(CHANGE_DEFAULT, CHANGE_MIN, CHANGE_MAX);
+    configOptions = new ArrayList<>();
+    configOptions.addAll(configReporting.getConfiguration());
+    return true;
+}

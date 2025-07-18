@@ -1,0 +1,8 @@
+private int getExpectedUpdatePeriod(Map<ChannelUID, ZigBeeBaseChannelConverter> channels) {
+    Set<Integer> intervals = new HashSet<>();
+    for (ZigBeeBaseChannelConverter channelConverter : channels.values()) {
+        intervals.add(channelConverter.getPollingPeriod());
+        intervals.add(channelConverter.getMinimalReportingPeriod());
+    }
+    return Collections.min(intervals);
+}

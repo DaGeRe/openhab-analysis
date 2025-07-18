@@ -1,0 +1,24 @@
+@Override                                                                                              @Override                                                                                           
+public boolean initializeConverter(ZigBeeThingHandler thing) {                                         public boolean initializeConverter(ZigBeeThingHandler thing) {                                      
+super.initializeConverter(thing);                                                                      super.initializeConverter(thing);                                                                   
+cluster = (ZclTemperatureMeasurementCluster) endpoint.getInputCluster(ZclTemperatureMeasurementClust   cluster = (ZclTemperatureMeasurementCluster) endpoint.getInputCluster(ZclTemperatureMeasurementClust
+if (cluster != null) {                                                                                 if (cluster != null) {                                                                              
+attribute = cluster.getAttribute(ZclTemperatureMeasurementCluster.ATTR_MEASUREDVALUE);                 attribute = cluster.getAttribute(ZclTemperatureMeasurementCluster.ATTR_MEASUREDVALUE);              
+// Add a listener                                                                                      // Add a listener                                                                                   
+cluster.addAttributeListener(this);                                                                    cluster.addAttributeListener(this);                                                                 
+                                                                                                     | // Create a configuration handler and get the available options                                     
+                                                                                                     | configReporting = new ZclReportingConfig(channel);                                                  
+                                                                                                     | configReporting.setAnalogue(CHANGE_DEFAULT, CHANGE_MIN, CHANGE_MAX);                                
+                                                                                                     | configOptions = new ArrayList&lt;&gt;();                                                            
+                                                                                                     | configOptions.addAll(configReporting.getConfiguration());                                           
+} else {                                                                                               } else {                                                                                            
+clusterClient = (ZclTemperatureMeasurementCluster) endpoint.getOutputCluster(ZclTemperatureMeasureme   clusterClient = (ZclTemperatureMeasurementCluster) endpoint.getOutputCluster(ZclTemperatureMeasureme
+attributeClient = clusterClient.getLocalAttribute(ZclTemperatureMeasurementCluster.ATTR_MEASUREDVALU   attributeClient = clusterClient.getLocalAttribute(ZclTemperatureMeasurementCluster.ATTR_MEASUREDVALU
+attributeClient.setImplemented(true);                                                                  attributeClient.setImplemented(true);                                                               
+}                                                                                                      }                                                                                                   
+if (cluster == null && clusterClient == null) {                                                        if (cluster == null && clusterClient == null) {                                                     
+logger.error("{}: Error opening device temperature measurement cluster", endpoint.getIeeeAddress());   logger.error("{}: Error opening device temperature measurement cluster", endpoint.getIeeeAddress());
+return false;                                                                                          return false;                                                                                       
+}                                                                                                      }                                                                                                   
+return true;                                                                                           return true;                                                                                        
+}                                                                                                      }                                                                                                   

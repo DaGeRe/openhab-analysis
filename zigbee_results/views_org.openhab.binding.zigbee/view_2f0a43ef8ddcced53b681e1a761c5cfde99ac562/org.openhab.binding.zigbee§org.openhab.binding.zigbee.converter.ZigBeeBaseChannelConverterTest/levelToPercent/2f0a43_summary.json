@@ -1,0 +1,17 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverterTest",
+    "method" : "levelToPercent",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#levelToPercent(int)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverterTest#levelToPercent" : 1
+  },
+  "selectedChanges" : [ ]
+}

@@ -1,0 +1,1 @@
+(init)_org.openhab.core.thing.Bridge_org.openhab.core.io.transport.serial.SerialPortManager_org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory;(init)_0_diff.txt

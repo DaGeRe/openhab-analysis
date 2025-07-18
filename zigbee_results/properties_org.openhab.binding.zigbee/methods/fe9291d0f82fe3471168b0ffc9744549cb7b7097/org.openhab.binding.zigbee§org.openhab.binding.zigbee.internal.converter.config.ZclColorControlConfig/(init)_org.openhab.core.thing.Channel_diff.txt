@@ -1,0 +1,6 @@
+public ZclColorControlConfig(Channel channel) {
+    Configuration configuration = channel.getConfiguration();
+    if (configuration.containsKey(CONFIG_CONTROLMETHOD)) {
+        controlMethod = ControlMethod.valueOf((String) configuration.get(CONFIG_CONTROLMETHOD));
+    }
+}

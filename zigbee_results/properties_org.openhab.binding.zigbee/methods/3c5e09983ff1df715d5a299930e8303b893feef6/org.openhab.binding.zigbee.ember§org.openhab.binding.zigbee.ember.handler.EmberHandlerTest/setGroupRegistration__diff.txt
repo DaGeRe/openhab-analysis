@@ -1,0 +1,24 @@
+@Test
+public void setGroupRegistration() {
+    Bridge bridge = Mockito.mock(Bridge.class);
+    SerialPortManager serialPortManager = Mockito.mock(SerialPortManager.class);
+    ZigBeeChannelConverterFactory zigBeeChannelConverterFactory = Mockito.mock(ZigBeeChannelConverterFactory.class);
+    ZigBeeDongleEzsp dongle = Mockito.mock(ZigBeeDongleEzsp.class);
+    EmberNcp ncp = Mockito.mock(EmberNcp.class);
+    Mockito.when(dongle.getEmberNcp()).thenReturn(ncp);
+    EmberHandler handler = new EmberHandlerForTest(bridge, serialPortManager, zigBeeChannelConverterFactory, dongle);
+    ArgumentCaptor<Integer> indexCaptor = ArgumentCaptor.forClass(Integer.class);
+    ArgumentCaptor<EmberMulticastTableEntry> valueCaptor = ArgumentCaptor.forClass(EmberMulticastTableEntry.class);
+    Map<String, Object> cfg = new HashMap<>();
+    cfg.put(ZigBeeBindingConstants.CONFIGURATION_GROUPREGISTRATION, "1234,5678, 90AB ,CDEF");
+    handler.handleConfigurationUpdate(cfg);
+    Mockito.verify(dongle).updateDefaultConfiguration(EzspConfigId.EZSP_CONFIG_MULTICAST_TABLE_SIZE, 7);
+    Mockito.verify(ncp, Mockito.times(4)).setMulticastTableEntry(indexCaptor.capture(), valueCaptor.capture());
+    int[] mcastId = { 0x1234, 0x5678, 0x90AB, 0xCDEF };
+    for (int cnt = 0; cnt < 4; cnt++) {
+        assertEquals(cnt, indexCaptor.getAllValues().get(cnt));
+        assertEquals(1, valueCaptor.getAllValues().get(cnt).getEndpoint());
+        assertEquals(0, valueCaptor.getAllValues().get(cnt).getNetworkIndex());
+        assertEquals(mcastId[cnt], valueCaptor.getAllValues().get(cnt).getMulticastId());
+    }
+}

@@ -1,0 +1,12 @@
+@Override
+public boolean initializeConverter(ZigBeeThingHandler thing) {
+    super.initializeConverter(thing);
+    clusterColorControl = (ZclColorControlCluster) endpoint.getInputCluster(ZclColorControlCluster.CLUSTER_ID);
+    if (clusterColorControl == null) {
+        logger.error("{}: Error opening color control input cluster on endpoint {}", endpoint.getIeeeAddress(), endpoint.getEndpointId());
+        return false;
+    }
+    determineMinMaxTemperature(clusterColorControl);
+    clusterColorControl.addAttributeListener(this);
+    return true;
+}

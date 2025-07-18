@@ -1,0 +1,22 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest",
+    "method" : "testAttributeNotUpdatedWhenColorModeIsNotColorTemperature",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testAttributeNotUpdatedWhenColorModeIsNotColorTemperature" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#getConverter" : 1
+  },
+  "selectedChanges" : [ ]
+}

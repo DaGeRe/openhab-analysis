@@ -1,0 +1,26 @@
+@Override
+public void handleConfigurationUpdate(Map<String, Object> configurationParameters) {
+    logger.debug("{}: Ember configuration received.", nodeIeeeAddress);
+    Map<String, Object> unhandledConfiguration = new HashMap<>();
+    Configuration configuration = editConfiguration();
+    for (Entry<String, Object> configurationParameter : configurationParameters.entrySet()) {
+        // Ignore any configuration parameters that have not changed
+        if (Objects.equals(configurationParameter.getValue(), configuration.get(configurationParameter.getKey()))) {
+            logger.debug("{}: Ember configuration update: Ignored {} as no change", nodeIeeeAddress, configurationParameter.getKey());
+            continue;
+        }
+        logger.debug("{}: Ember configuration update: Processing {} -> {}", nodeIeeeAddress, configurationParameter.getKey(), configurationParameter.getValue());
+        switch(configurationParameter.getKey()) {
+            case ZigBeeBindingConstants.CONFIGURATION_GROUPREGISTRATION:
+                setGroupRegistration((String) configurationParameter.getValue());
+                break;
+            default:
+                unhandledConfiguration.put(configurationParameter.getKey(), configurationParameter.getValue());
+                break;
+        }
+        configuration.put(configurationParameter.getKey(), configurationParameter.getValue());
+    }
+    if (!unhandledConfiguration.isEmpty()) {
+        super.handleConfigurationUpdate(unhandledConfiguration);
+    }
+}

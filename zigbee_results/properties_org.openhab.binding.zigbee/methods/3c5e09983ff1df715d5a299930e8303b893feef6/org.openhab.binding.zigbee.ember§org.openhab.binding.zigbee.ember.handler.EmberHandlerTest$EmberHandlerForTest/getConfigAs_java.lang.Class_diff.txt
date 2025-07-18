@@ -1,0 +1,4 @@
+@Override
+protected <T> T getConfigAs(Class<T> clazz) {
+    return (T) new EmberConfiguration();
+}

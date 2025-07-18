@@ -1,0 +1,32 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButtonTest",
+    "method" : "attributeListenersAreRemovedOnDispose",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButtonTest#mockCluster(int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton#parseEventSpec(java.util.Map,org.openhab.binding.zigbee.internal.converter.ButtonPressType)" : 3,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButtonTest#setup" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton$AttributeReportSpec#bindCluster" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButtonTest#attributeListenersAreRemovedOnDispose" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton#getParameterName(java.lang.String,org.openhab.binding.zigbee.internal.converter.ButtonPressType)" : 7,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#bind(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton$EventSpec#getClusterId" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton$EventSpec#bindCluster(java.lang.String,java.util.Collection,int,java.util.function.Function,java.util.function.Consumer)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton#disposeConverter" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton$AttributeReportSpec#<init>(org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton,int,java.lang.Integer,java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton#parseId(java.lang.String)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton$EventSpec#<init>(org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterGenericButton#parseAttributeReportSpec(int,java.util.Map,org.openhab.binding.zigbee.internal.converter.ButtonPressType)" : 1
+  },
+  "selectedChanges" : [ ]
+}

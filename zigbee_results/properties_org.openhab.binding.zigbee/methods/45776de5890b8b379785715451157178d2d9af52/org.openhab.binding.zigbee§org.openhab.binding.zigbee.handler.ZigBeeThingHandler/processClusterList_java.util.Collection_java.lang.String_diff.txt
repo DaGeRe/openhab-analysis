@@ -1,0 +1,15 @@
+/**
+ * Process a static cluster list and add it to the existing list
+ *
+ * @param initialClusters a collection of existing clusters
+ * @param newClusters a string containing a comma separated list of clusters
+ * @return a list of clusters if the list is updated, or an empty list if it has not changed
+ */
+private List<Integer> processClusterList(Collection<Integer> initialClusters, String newClusters) {
+    if (newClusters == null || newClusters.length() == 0) {
+        return Collections.emptyList();
+    }
+    Set<Integer> clusters = new HashSet<Integer>();
+    clusters.addAll(initialClusters);
+    return clusters.addAll(Arrays.asList(newClusters.split(",")).stream().map(s -> Integer.valueOf(s)).collect(Collectors.toSet())) ? new ArrayList<Integer>(clusters) : Collections.emptyList();
+}

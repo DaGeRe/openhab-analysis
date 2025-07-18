@@ -1,0 +1,9 @@
+private void updateBrightness(PercentType brightness) {                                                private void updateBrightness(PercentType brightness) {                                             
+// Extra temp variable to avoid thread sync concurrency issues on lastHSB                              // Extra temp variable to avoid thread sync concurrency issues on lastHSB                           
+HSBType oldHSB = lastHSB;                                                                              HSBType oldHSB = lastHSB;                                                                           
+HSBType newHSB = new HSBType(oldHSB.getHue(), oldHSB.getSaturation(), brightness);                     HSBType newHSB = new HSBType(oldHSB.getHue(), oldHSB.getSaturation(), brightness);                  
+lastHSB = newHSB;                                                                                      lastHSB = newHSB;                                                                                   
+if (currentOnOffState.get() && lastColorMode != ColorModeEnum.COLOR_TEMPERATURE) {                   |                                                                                                     
+updateChannelState(newHSB);                                                                            updateChannelState(newHSB);                                                                         
+}                                                                                                      }                                                                                                   
+}                                                                                                    |                                                                                                     

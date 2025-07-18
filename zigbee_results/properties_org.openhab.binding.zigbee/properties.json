@@ -1,0 +1,1490 @@
+{
+  "versions" : {
+    "2f0a43ef8ddcced53b681e1a761c5cfde99ac562" : {
+      "properties" : { },
+      "commitText" : "Adopt reviewer suggestions (#821) Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch>",
+      "committer" : "software@whitebear.ch Andrew Fiddian-Green"
+    },
+    "182c25f5310fe717483307e654e1eae1f9c0c294" : {
+      "properties" : { },
+      "commitText" : "Update license headers to 2024 (#822) Signed-off-by: Wouter Born <github@maindrain.net>",
+      "committer" : "github@maindrain.net Wouter Born"
+    },
+    "31c07cea6507c947aaa051f7375fcbbf2d46310d" : {
+      "properties" : { },
+      "commitText" : "Update README.md (#823) Included 2 lamps from Neuhaus Lighting Group and added details to IKEA Tradfri-Driver.Signed-off-by: Daedalus <37384006+Boldfor@users.noreply.github.com>",
+      "committer" : "37384006+Boldfor@users.noreply.github.com Daedalus"
+    },
+    "7bce0f3a0c15ae36031d52fd69a825a5ba2cc1e3" : {
+      "properties" : { },
+      "commitText" : "Fix regex (#826) Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch>",
+      "committer" : "software@whitebear.ch Andrew Fiddian-Green"
+    },
+    "e871b36d8997d30dbb24bc3ba3abb5ea011bbd5b" : {
+      "properties" : { },
+      "commitText" : "Bumped zsmartsystems.version 1.4.12 -> 1.4.13 to allow support for modern ezsp v12. (#815) Signed-off-by: Roman Zavalov <japangod@yandex.ru>",
+      "committer" : "japangod@yandex.ru Roman Zavalov"
+    },
+    "f106ef97522db9e82c16f8ccb75cf13cc93a0c67" : {
+      "properties" : { },
+      "commitText" : "Bumped zsmartsystems.version to 1.4.14 (#833) Signed-off-by: Jörg Sautter <joerg.sautter@gmx.net>",
+      "committer" : "16140691+joerg1985@users.noreply.github.com joerg1985"
+    },
+    "69a63c3e200d348bd8c512c3e216a3d812884237" : {
+      "properties" : { },
+      "commitText" : "Add console commands on/off/level/color (#838) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "45776de5890b8b379785715451157178d2d9af52" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ {
+          "method" : "testInitializeDeviceWithNoThingProperty",
+          "addedMap" : {
+            "for" : 1
+          },
+          "removedMap" : {
+            "for" : 1,
+            "null" : 2,
+            "if" : 1,
+            "return" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 59,
+          "callsOld" : 30,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        }, {
+          "method" : "testInitializeDeviceWithThingPropertyFalse",
+          "addedMap" : {
+            "for" : 1
+          },
+          "removedMap" : {
+            "for" : 1,
+            "null" : 2,
+            "if" : 1,
+            "return" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 59,
+          "callsOld" : 30,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        }, {
+          "method" : "testInitializeDeviceWithThingPropertyTrue",
+          "addedMap" : {
+            "for" : 1
+          },
+          "removedMap" : {
+            "for" : 1,
+            "null" : 2,
+            "if" : 1,
+            "return" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 55,
+          "callsOld" : 28,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ]
+      },
+      "commitText" : "Handle potential NPE while creating channel converters (#837) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "b09856e8e30230b3b22cc87737f8fad2932b6052" : {
+      "properties" : { },
+      "commitText" : "Reduce logging in AliveTracker (#840) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "33798e9255f4a24358e6927bf056116421426b18" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressureTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "int" : 1
+          },
+          "removedMap" : {
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 48,
+          "callsOld" : 24,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "int" : 1
+          },
+          "removedMap" : {
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 18,
+          "callsOld" : 9,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "int" : 1
+          },
+          "removedMap" : {
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 18,
+          "callsOld" : 9,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceivedTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "int" : 1
+          },
+          "removedMap" : {
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 18,
+          "callsOld" : 9,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoffTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "int" : 1
+          },
+          "removedMap" : {
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 16,
+          "callsOld" : 8,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperatureTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "int" : 1
+          },
+          "removedMap" : {
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 18,
+          "callsOld" : 9,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ]
+      },
+      "commitText" : "Reduce logging in converter attribute update callback (#839) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "38056da0da8cde179633619e6632236d78814347" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ {
+          "method" : "testAttributeNotUpdatedWhenColorModeIsColorTemperature",
+          "addedMap" : {
+            "false" : 1,
+            "if" : 1,
+            "return" : 1
+          },
+          "removedMap" : { },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 44,
+          "callsOld" : 22,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        }, {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "false" : 1,
+            "if" : 1,
+            "return" : 1
+          },
+          "removedMap" : { },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 52,
+          "callsOld" : 26,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        }, {
+          "method" : "testInitialisation",
+          "addedMap" : {
+            "private" : 1,
+            "boolean" : 1,
+            "true" : 2,
+            "false" : 1,
+            "return" : 1,
+            "if" : 1
+          },
+          "removedMap" : {
+            "private" : 1,
+            "void" : 1,
+            "for" : 1,
+            "true" : 1,
+            "if" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 36,
+          "callsOld" : 18,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ]
+      },
+      "commitText" : "Default color commands to HSB if discovery fails (#841) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "8644fd1da7461005569cd9e2c613f12e46874faf" : {
+      "properties" : { },
+      "commitText" : "Add Slzb06m Network Coordinator Handler (#835) * Initial addition of SLZB06 packageSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Working versionSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Add SLZB06 internal channelsSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Improve connection loggingSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Improve loggingSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Minor correction and remove some debugSigned-off-by: Chris Jackson <chris@cd-jackson.com>---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "121cdc22a79dda4afe92defe32d7fca46d518899" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest" : [ {
+          "method" : "initializeDongleSpecific",
+          "addedMap" : {
+            "new" : 1,
+            "if" : 4
+          },
+          "removedMap" : {
+            "new" : 1,
+            "null" : 4,
+            "if" : 4
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 16,
+          "callsOld" : 16,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        } ]
+      },
+      "commitText" : "Change SLZB06 socket uptime to seconds (#842) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "c2f11d1f8ac496e6af3df32c332080917cc59cf7" : {
+      "properties" : { },
+      "commitText" : "Skip deploy plugin to fix build (#844) Signed-off-by: Kai Kreuzer <kai@openhab.org>",
+      "committer" : "kai@openhab.org Kai Kreuzer"
+    },
+    "58fdea64055e1dc9343aa6f60bea384e61aec818" : {
+      "properties" : { },
+      "commitText" : "Downgrade deploy plugin (#845) Signed-off-by: Kai Kreuzer <kai@openhab.org>",
+      "committer" : "kai@openhab.org Kai Kreuzer"
+    },
+    "433ce4560aed79bc8b916c11fbc326158deafebf" : {
+      "properties" : { },
+      "commitText" : "[unleash-maven-plugin] Preparation for next development cycle. ",
+      "committer" : "infrastructure@openhabfoundation.org openhab-bot"
+    },
+    "e6a1d3b7207e30ecb90780869a3e686fb70e13e9" : {
+      "properties" : { },
+      "commitText" : "Update to latest SAT version (#846) Signed-off-by: Kai Kreuzer <kai@openhab.org>",
+      "committer" : "kai@openhab.org Kai Kreuzer"
+    },
+    "e85d0348f231587616ca23bf39cd26ac546f8766" : {
+      "properties" : { },
+      "commitText" : "Add support for Ember NCP commands with SLZB06 (#849) * SLZB06 lockup debugSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Add support for Ember NCP commands with SLZB06Signed-off-by: Chris Jackson <chris@cd-jackson.com>* Restore released ZSS versionSigned-off-by: Chris Jackson <chris@cd-jackson.com>---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "d83a62051823e9fc4bc77443aacb19211dd828da" : {
+      "properties" : { },
+      "commitText" : "Add timeout to SLZB06 port close thread join to prevent lockup (#852) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "95097906d4d7f5c78c91a5b4daef64a721ccdc03" : {
+      "properties" : { },
+      "commitText" : "Update README.md supported devices (#854) Added 4 additional supported devices to the listSigned-off-by: fmeili1 <58776610+fmeili1@users.noreply.github.com>",
+      "committer" : "58776610+fmeili1@users.noreply.github.com fmeili1"
+    },
+    "c30b3e958ca80bbc9c32f52a99fdfe9b88dfa1f6" : {
+      "properties" : { },
+      "commitText" : "Fix readme link (#856) Signed-off-by: Leo Siepel <leosiepel@gmail.com>",
+      "committer" : "leosiepel@gmail.com lsiepel"
+    },
+    "060fc823b18422a9637ae665311a2e13109edaa2" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "new" : 1,
+            "void" : 1,
+            "else" : 7,
+            "if" : 1,
+            "true" : 4,
+            "int" : 4
+          },
+          "removedMap" : {
+            "new" : 1,
+            "void" : 1,
+            "if" : 8,
+            "break" : 8,
+            "true" : 4,
+            "case" : 9,
+            "int" : 4,
+            "switch" : 2,
+            "instanceof" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 54,
+          "callsOld" : 52,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest" : [ {
+          "method" : "testAttributeNotUpdatedWhenColorModeIsNotColorTemperature",
+          "addedMap" : {
+            "null" : 2,
+            "else" : 1,
+            "if" : 2
+          },
+          "removedMap" : {
+            "null" : 1,
+            "break" : 3,
+            "else" : 1,
+            "if" : 3,
+            "case" : 6,
+            "switch" : 1,
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 22,
+          "callsOld" : 13,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        }, {
+          "method" : "testAttributeUpdatedWhenColorModeIsColorTemperature",
+          "addedMap" : {
+            "new" : 1,
+            "private" : 1,
+            "double" : 1,
+            "do" : 1,
+            "int" : 2,
+            "return" : 1,
+            "null" : 2,
+            "else" : 1,
+            "if" : 5
+          },
+          "removedMap" : {
+            "private" : 1,
+            "double" : 1,
+            "do" : 1,
+            "return" : 1,
+            "int" : 1,
+            "null" : 1,
+            "break" : 3,
+            "else" : 1,
+            "if" : 3,
+            "case" : 6,
+            "switch" : 1,
+            "for" : 1,
+            "new" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 46,
+          "callsOld" : 17,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "BOTH"
+        }, {
+          "method" : "testAttributeUpdatedWhenColorModeIsNull",
+          "addedMap" : {
+            "new" : 1,
+            "private" : 1,
+            "double" : 1,
+            "do" : 1,
+            "int" : 2,
+            "return" : 1,
+            "null" : 2,
+            "else" : 1,
+            "if" : 5
+          },
+          "removedMap" : {
+            "private" : 1,
+            "double" : 1,
+            "do" : 1,
+            "return" : 1,
+            "int" : 1,
+            "null" : 1,
+            "break" : 3,
+            "else" : 1,
+            "if" : 3,
+            "case" : 6,
+            "switch" : 1,
+            "for" : 1,
+            "new" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 44,
+          "callsOld" : 16,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "BOTH"
+        }, {
+          "method" : "testConvertMiredToPercent",
+          "addedMap" : {
+            "new" : 1,
+            "private" : 1,
+            "double" : 1,
+            "do" : 1,
+            "int" : 2,
+            "return" : 1
+          },
+          "removedMap" : {
+            "private" : 1,
+            "double" : 1,
+            "do" : 1,
+            "return" : 1,
+            "for" : 1,
+            "new" : 1,
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 48,
+          "callsOld" : 18,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "BOTH"
+        }, {
+          "method" : "testConvertPercentToMired",
+          "addedMap" : {
+            "return" : 1,
+            "private" : 1,
+            "int" : 2,
+            "double" : 1,
+            "do" : 1
+          },
+          "removedMap" : {
+            "double" : 1,
+            "do" : 1,
+            "int" : 1,
+            "return" : 1,
+            "private" : 1,
+            "for" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 36,
+          "callsOld" : 12,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "BOTH"
+        } ]
+      },
+      "commitText" : "[zigbee] Map colour temperature states to color HSB states (#855) * [zigbee] map colour temperature states to color hsb statesSigned-off-by: AndrewFG <software@whitebear.ch>* Add support for on/off commands to color temperature channelSigned-off-by: AndrewFG <software@whitebear.ch>* [zigbee] work in progressSigned-off-by: AndrewFG <software@whitebear.ch>* [zigbee] fix formattingSigned-off-by: AndrewFG <software@whitebear.ch>* remove lastColorModeSigned-off-by: AndrewFG <software@whitebear.ch>* improve code style consistencySigned-off-by: AndrewFG <software@whitebear.ch>---------Signed-off-by: AndrewFG <software@whitebear.ch>",
+      "committer" : "software@whitebear.ch Andrew Fiddian-Green"
+    },
+    "4dcc782ab18c9599d7c70105bf38681b84d937da" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest" : [ {
+          "method" : "processReceivedData",
+          "addedMap" : {
+            "new" : 1,
+            "byte" : 1,
+            "assert" : 1,
+            "for" : 2,
+            "int" : 2
+          },
+          "removedMap" : {
+            "new" : 1,
+            "byte" : 1,
+            "for" : 2,
+            "int" : 2
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 1030,
+          "callsOld" : 1032,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "REMOVED_CALLS"
+        } ]
+      },
+      "commitText" : "Use buffered steams with the SLZB06 (#857) * Use buffered steams with the SLZB06Signed-off-by: Chris Jackson <chris@cd-jackson.com>* Update testSigned-off-by: Chris Jackson <chris@cd-jackson.com>---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "3c5e09983ff1df715d5a299930e8303b893feef6" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.ember.handler.EmberHandlerTest" : [ {
+          "method" : "initializeDongleSpecific",
+          "addedMap" : { },
+          "removedMap" : { },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 16,
+          "callsOld" : 8,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        }, {
+          "method" : "setGroupRegistration",
+          "addedMap" : { },
+          "removedMap" : { },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 14,
+          "callsOld" : 7,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandlerTest" : [ {
+          "method" : "testInstallCode",
+          "addedMap" : { },
+          "removedMap" : { },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 4,
+          "callsOld" : 2,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ {
+          "method" : "testProcessClusterList",
+          "addedMap" : { },
+          "removedMap" : { },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 44,
+          "callsOld" : 22,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ]
+      },
+      "commitText" : "Check if node is already initialised in discovery before reinitialising (#859) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "655c4809f0598ffd65b3f2a13e91c54e634d545b" : {
+      "properties" : { },
+      "commitText" : "Add note that coordinator must initialise network (#862) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "66fd1e96b5a125740280b727b63e5d91066018ed" : {
+      "properties" : { },
+      "commitText" : "Improve error reporting when coordinator not initialised (#863) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "18b16e7a8ed6f3f02a2da9f361ee169f498c6b9c" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ {
+          "method" : "testInitializeDeviceWithNoThingProperty",
+          "addedMap" : { },
+          "removedMap" : {
+            "assert" : 1,
+            "for" : 1,
+            "class" : 2,
+            "if" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 59,
+          "callsOld" : 59,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        }, {
+          "method" : "testInitializeDeviceWithThingPropertyFalse",
+          "addedMap" : { },
+          "removedMap" : {
+            "assert" : 1,
+            "for" : 1,
+            "class" : 2,
+            "if" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 59,
+          "callsOld" : 59,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        }, {
+          "method" : "testInitializeDeviceWithThingPropertyTrue",
+          "addedMap" : { },
+          "removedMap" : {
+            "assert" : 1,
+            "for" : 1,
+            "class" : 2,
+            "if" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 55,
+          "callsOld" : 55,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        } ]
+      },
+      "commitText" : "Ensure handler initialisation is complete before setting state to ONLINE (#861) * Only allow ONLINE changes after initialisation is completeSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Add testSigned-off-by: Chris Jackson <chris@cd-jackson.com>---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "55304034ddf767cfa8ac60b9491699a2a3c716ea" : {
+      "properties" : { },
+      "commitText" : "Fix duplicate NcpState command (#864) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "ab3ce7c7f7a5d0108159c290a6eb9e09364999ba" : {
+      "properties" : { },
+      "commitText" : "Add console zigbee things command (#866) * Add console command to summarise zigbee things and node addressesSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Fix formattingSigned-off-by: Chris Jackson <chris@cd-jackson.com>---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "507a18645ce50c086d0a532f5116bfc33a31b95b" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverterTest" : [ {
+          "method" : "temperatureToValue",
+          "addedMap" : { },
+          "removedMap" : {
+            "else" : 1,
+            "return" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 14,
+          "callsOld" : 7,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ],
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "null" : 1,
+            "if" : 1
+          },
+          "removedMap" : {
+            "null" : 1,
+            "if" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 18,
+          "callsOld" : 18,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        } ],
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "null" : 1,
+            "if" : 1
+          },
+          "removedMap" : {
+            "null" : 1,
+            "if" : 1,
+            "new" : 2
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 24,
+          "callsOld" : 18,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ]
+      },
+      "commitText" : "Add reporting configuration options to some power measurement channels (#858) * Add reporting configuration options to some power measurement channelsSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Fix potential divide by zeroSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Fix merge errorSigned-off-by: Chris Jackson <chris@cd-jackson.com>---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "a6438e7e46fcbc01c960eae32c6d0c4dcd9d6782" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest" : [ {
+          "method" : "processReceivedData",
+          "addedMap" : {
+            "new" : 1,
+            "byte" : 1,
+            "for" : 1,
+            "int" : 1
+          },
+          "removedMap" : {
+            "new" : 1,
+            "byte" : 1,
+            "for" : 1,
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 1030,
+          "callsOld" : 1030,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        }, {
+          "method" : "processReceivedDataOverflow",
+          "addedMap" : {
+            "new" : 1,
+            "byte" : 1,
+            "for" : 1,
+            "int" : 1
+          },
+          "removedMap" : {
+            "new" : 1,
+            "byte" : 1,
+            "for" : 1,
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 1030,
+          "callsOld" : 1030,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        } ]
+      },
+      "commitText" : "Change default to only add devices during a scan (#869) * Change default to only add devices during a scanSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Fix unstable test (hopefully!)Signed-off-by: Chris Jackson <chris@cd-jackson.com>---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "61fb4dae414d2159ab55c33cee7eb9e7db8cbad2" : {
+      "properties" : { },
+      "commitText" : "[zigbee] Add a color temperature absolute channel (#868) * [zigbee] Add color temperature absolute channelSigned-off-by: AndrewFG <software@whitebear.ch>* adopt reviewer suggestionsSigned-off-by: AndrewFG <software@whitebear.ch>* doc and quality improvementsSigned-off-by: AndrewFG <software@whitebear.ch>* tweaks and refactoringSigned-off-by: AndrewFG <software@whitebear.ch>* fix channel type id; add documentationSigned-off-by: AndrewFG <software@whitebear.ch>---------Signed-off-by: AndrewFG <software@whitebear.ch>",
+      "committer" : "software@whitebear.ch Andrew Fiddian-Green"
+    },
+    "aced1a70f360da8cb5fff34d92db48713a9342a8" : {
+      "properties" : { },
+      "commitText" : "Reduce and update logging during network initialisation (#872) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "483700604893221952b22f6da42361be000e1009" : {
+      "properties" : { },
+      "commitText" : "Use Long for reporting config (#874) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "1c2b1ae1ba6cfb004e23576136d1fe38d047698c" : {
+      "properties" : { },
+      "commitText" : "Minor logging fixes (#875) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "e02e2cb8629a0fd577008e51922de1856b018274" : {
+      "properties" : { },
+      "commitText" : "Use Long for reporting config (#876) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "5e713eac3a5871f86a7fb5828b11bcc3da0b71e5" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest" : [ {
+          "method" : "processReceivedData",
+          "addedMap" : {
+            "new" : 1,
+            "byte" : 1,
+            "assert" : 2,
+            "for" : 2,
+            "int" : 2
+          },
+          "removedMap" : {
+            "assert" : 3,
+            "for" : 2,
+            "int" : 2
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 2050,
+          "callsOld" : 1030,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "BOTH"
+        }, {
+          "method" : "processReceivedDataOverflow",
+          "addedMap" : {
+            "new" : 2,
+            "byte" : 2,
+            "assert" : 2,
+            "for" : 2,
+            "int" : 2
+          },
+          "removedMap" : {
+            "new" : 1,
+            "assert" : 3,
+            "byte" : 1,
+            "for" : 2,
+            "int" : 2
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 2054,
+          "callsOld" : 1030,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "BOTH"
+        } ]
+      },
+      "commitText" : "Remove timeout on SLZB test (#877) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "8193316af8ef8cb0c219c6f9f2abe24391350e06" : {
+      "properties" : { },
+      "commitText" : "Fix bug in processing trigger channels (#880) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "d5f1da9f7a61b6328cf180c767855332d3a6c4ba" : {
+      "properties" : { },
+      "commitText" : "Update README.md Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "d76053983c7ecef170503372763d6dbdcc252eb2" : {
+      "properties" : { },
+      "commitText" : "[unleash-maven-plugin] Preparation for next development cycle. ",
+      "committer" : "infrastructure@openhabfoundation.org openhab-bot"
+    },
+    "978db5259025db10025611b33dc4ba64a1c77d92" : {
+      "properties" : { },
+      "commitText" : "Update license headers to 2025 (#882) Signed-off-by: Wouter Born <github@maindrain.net>",
+      "committer" : "github@maindrain.net Wouter Born"
+    },
+    "adb414f76dd0e48079533bdef8b88548b3acb728" : {
+      "properties" : { },
+      "commitText" : "Update README.md (#883) Signed-off-by: curlyel <curlyel@users.noreply.github.com>",
+      "committer" : "curlyel@users.noreply.github.com curlyel"
+    },
+    "0ac0a73b3bdd05f779a3b75ce4ce5c355b8d0725" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcherTest" : [ {
+          "method" : "testMatcher",
+          "addedMap" : {
+            "new" : 1
+          },
+          "removedMap" : {
+            "new" : 2,
+            "assert" : 1,
+            "char" : 1,
+            "do" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 76,
+          "callsOld" : 32,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ]
+      },
+      "commitText" : "Trim blanks and invisible characters from property value for discover… (#886) * Trim blanks and invisible characters from property value for discovery. Add thing discovery match test with blank and invisible characters. (#836)Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu>* Add Legrand Céliane with Netatmo dimmer w/o neutral and SONOFF SNZB-02P.Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu>---------Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu>",
+      "committer" : "pierre.gaufillet@bergamote.eu pgaufillet"
+    },
+    "ee06711befc26c0f779d826581a0cb133c4b1a07" : {
+      "properties" : { },
+      "commitText" : "Add Legrand Céliane with Netatmo dimmer w/o neutral and SONOFF SNZB-02P. (#887) Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu>",
+      "committer" : "pierre.gaufillet@bergamote.eu pgaufillet"
+    },
+    "fe9291d0f82fe3471168b0ffc9744549cb7b7097" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "if" : 3,
+            "new" : 1
+          },
+          "removedMap" : {
+            "if" : 1,
+            "new" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 52,
+          "callsOld" : 54,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : true,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "REMOVED_CALLS"
+        }, {
+          "method" : "testInitialisation",
+          "addedMap" : { },
+          "removedMap" : { },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 36,
+          "callsOld" : 36,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        } ]
+      },
+      "commitText" : "Fix regression with managing on/off state in color handler (#889) * Fix regression with managing on/off state in color handlerSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Fix regression in testSigned-off-by: Chris Jackson <chris@cd-jackson.com>---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "f28ad8d3eefaf5fb1326d41a852d9ca1e2afebc7" : {
+      "properties" : { },
+      "commitText" : "Add dimmer/switch mode for Legrand with Netatmo dimmers. (#892) Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu>",
+      "committer" : "pierre.gaufillet@bergamote.eu pgaufillet"
+    },
+    "d9d3727e3333cbf34f4d2d516d31ae81c4155aaa" : {
+      "properties" : { },
+      "commitText" : "Update Color Channel Hue and Saturation when light is off (#894) * [zigbee] update HS part of HSB when light is offSigned-off-by: Andrew Fiddian-Green <software@whitebear.ch>* Optimise codeSigned-off-by: Andrew Fiddian-Green <software@whitebear.ch>---------Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch>",
+      "committer" : "software@whitebear.ch Andrew Fiddian-Green"
+    },
+    "acca292a69bc2bd9690220c117aafdfc02d4dba1" : {
+      "properties" : { },
+      "commitText" : "Upgrade SAT to 0.17.0 (#895) For release notes, see:https://github.com/openhab/static-code-analysis/releases/tag/0.17.0Signed-off-by: Wouter Born <github@maindrain.net>",
+      "committer" : "github@maindrain.net Wouter Born"
+    },
+    "5a8781f5276b5dae68c73a71b9e7ffd9995e25ef" : {
+      "properties" : { },
+      "commitText" : "Start license headers with `/*` instead of `/**` (#896) Prevents JavaDoc tooling issues because these tools check comments starting with `/**`.Signed-off-by: Wouter Born <github@maindrain.net>",
+      "committer" : "github@maindrain.net Wouter Born"
+    },
+    "9f81b7b6ffe563ecda65ba23c43d33936da40b84" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "else" : 2,
+            "if" : 4
+          },
+          "removedMap" : {
+            "else" : 2,
+            "if" : 4
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 52,
+          "callsOld" : 52,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        } ]
+      },
+      "commitText" : "Ignore XY color updates in hue mode (#897) Signed-off-by: Jörg Sautter <joerg.sautter@gmx.net>",
+      "committer" : "16140691+joerg1985@users.noreply.github.com joerg1985"
+    },
+    "535d806b6585fe5d2ec32abc94f18a59e85b6cdc" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : {
+            "new" : 1
+          },
+          "removedMap" : { },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 52,
+          "callsOld" : 52,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        } ]
+      },
+      "commitText" : "Don't update CT if device is off (#898) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "1ba5c5d505440470d8be795e80805cd07b93e0cc" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ {
+          "method" : "testInitializeDeviceWithNoThingProperty",
+          "addedMap" : {
+            "null" : 1,
+            "int" : 1
+          },
+          "removedMap" : {
+            "null" : 1,
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 59,
+          "callsOld" : 59,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        }, {
+          "method" : "testInitializeDeviceWithThingPropertyFalse",
+          "addedMap" : {
+            "null" : 1,
+            "int" : 1
+          },
+          "removedMap" : {
+            "null" : 1,
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 59,
+          "callsOld" : 59,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        }, {
+          "method" : "testInitializeDeviceWithThingPropertyTrue",
+          "addedMap" : {
+            "null" : 1,
+            "int" : 1
+          },
+          "removedMap" : {
+            "null" : 1,
+            "int" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 55,
+          "callsOld" : 55,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "NO_CALL_CHANGE"
+        } ]
+      },
+      "commitText" : "Fix Nullable issue in OH5 build (#900) Signed-off-by: Holger Friedrich <mail@holger-friedrich.de>",
+      "committer" : "mail@holger-friedrich.de Holger Friedrich"
+    },
+    "03c5c966e353c4cb3a3a7490cf3bf23a7c73d220" : {
+      "properties" : { },
+      "commitText" : "Fix log error (#901) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "9c2a874dfccb740b5e0350d379d9bb93b84c6b16" : {
+      "properties" : { },
+      "commitText" : "Use Spotless sortpom plug-in (#903) Signed-off-by: Wouter Born <github@maindrain.net>",
+      "committer" : "github@maindrain.net Wouter Born"
+    },
+    "5754fd54fc35d382582936452ee9929f5de717e0" : {
+      "properties" : { },
+      "commitText" : "Fix multipliers in current and voltage converters (#905) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "d45adec4d452a2af00d03d5d46d137e59c14bf7e" : {
+      "properties" : { },
+      "commitText" : "Add protection to things command if node not found (#907) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "91a6f8d9715717ba9d20a02874da6b4c5ba41a11" : {
+      "properties" : { },
+      "commitText" : "[zigbee] Add semantic tags (#908) Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch>",
+      "committer" : "software@whitebear.ch Andrew Fiddian-Green"
+    },
+    "7177c93fe5fd36d4b02c34eedf2cc99fedd1a718" : {
+      "properties" : { },
+      "commitText" : "Add support for PM2.5 channel (#850) * Add support for PM2.5 channelSigned-off-by: Chris Jackson <chris@cd-jackson.com>* Bump ZSS to 1.4.16---------Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "07ad7c3056fae16117d3899553c445ad4842fbcc" : {
+      "properties" : {
+        "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperatureTest" : [ {
+          "method" : "testAttributeUpdated",
+          "addedMap" : { },
+          "removedMap" : {
+            "new" : 2,
+            "else" : 1,
+            "if" : 1
+          },
+          "oldTime" : 0.0,
+          "changePercent" : 0.0,
+          "calls" : 24,
+          "callsOld" : 18,
+          "affectedClasses" : 0,
+          "affectedLines" : 0,
+          "newLines" : 0,
+          "oldLines" : 0,
+          "diff" : null,
+          "affectsSource" : false,
+          "affectsTestSource" : false,
+          "affectedMethods" : [ ],
+          "types" : [ ],
+          "guessedTypes" : [ ],
+          "traceChangeType" : "ADDED_CALLS"
+        } ]
+      },
+      "commitText" : "Add reporting configuration for temperature and humidity channels (#870) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "49fee8b30e744aa83f54557bd30b40d67f3ab0d1" : {
+      "properties" : { },
+      "commitText" : "add pm25 tags; fix a-or-b tags (#909) Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch>",
+      "committer" : "software@whitebear.ch Andrew Fiddian-Green"
+    },
+    "b477bc11d3ad015278973e1e5f5ba97adc6e8866" : {
+      "properties" : { },
+      "commitText" : "Update ZSS library to 1.4.16.1 (#911) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "53bab818eacf59637a539334856615bdce0ba715" : {
+      "properties" : { },
+      "commitText" : "Add auto generated tags (#912) Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch>",
+      "committer" : "software@whitebear.ch Andrew Fiddian-Green"
+    },
+    "bbf4c71187ec8c35e378925a751236be91ed194a" : {
+      "properties" : { },
+      "commitText" : "Add configuration for Occupancy Sensor (#910) Signed-off-by: Chris Jackson <chris@cd-jackson.com>",
+      "committer" : "chris@cd-jackson.com Chris Jackson"
+    },
+    "a8b7f0a22067a2f33503974050a2fe1eba49700c" : {
+      "properties" : { },
+      "commitText" : "Update pom.xml to parent 5.0.0-SNAPSHOT Signed-off-by: Kai Kreuzer <kai@openhab.org>",
+      "committer" : "kai@openhab.org Kai Kreuzer"
+    }
+  }
+}

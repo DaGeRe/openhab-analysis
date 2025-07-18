@@ -1,0 +1,16 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+    "method" : "testAliveWhenNotInitialized",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#alive" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testAliveWhenNotInitialized" : 1
+  },
+  "selectedChanges" : [ ]
+}

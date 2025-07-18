@@ -1,0 +1,4 @@
+public ZigBeeCoordinatorHandler(Bridge coordinator, ZigBeeChannelConverterFactory channelFactory) {
+    super(coordinator);
+    this.channelFactory = channelFactory;
+}

@@ -1,0 +1,40 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+    "method" : "testInitializeDeviceWithThingPropertyFalse",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#injectIntoPrivateField(java.lang.Object,java.lang.Object,java.lang.String)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getOtaServer(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockChannel(int,org.openhab.core.thing.ThingUID)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#getParameters" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockThing(org.openhab.core.thing.type.ThingType,java.util.Map,org.openhab.core.thing.Channel)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeBaseChannelConverterSuccessfull" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromOtaCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#stopPolling" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromBasicCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeNode(int,com.zsmartsystems.zigbee.IeeeAddress)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyFalse" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDevice(java.lang.String)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getExpectedUpdatePeriod(java.util.Map)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#createConfigDescriptionParameters" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclClusterConfigFactory#<init>" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#startPolling" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromNodeDescriptors(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#initializeDevice" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#getProperties(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeChannelConverterFactory(org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#setProperties(java.util.Map)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeCoordinatorHandler(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#createZigBeeChannelConverter(org.openhab.core.thing.Channel)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#<init>" : 2
+  },
+  "selectedChanges" : [ ]
+}

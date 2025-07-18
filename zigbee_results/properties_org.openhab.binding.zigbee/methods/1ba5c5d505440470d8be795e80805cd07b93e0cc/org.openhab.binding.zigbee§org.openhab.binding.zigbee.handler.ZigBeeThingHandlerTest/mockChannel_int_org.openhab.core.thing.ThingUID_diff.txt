@@ -1,0 +1,10 @@
+private Channel mockChannel(int endpointId, ThingUID thingUID) {
+    Map<String, String> channelProperties = new HashMap<String, String>();
+    channelProperties.put(ZigBeeBindingConstants.CHANNEL_PROPERTY_ENDPOINT, Integer.toString(endpointId));
+    ChannelUID channelUID = new ChannelUID(thingUID, "channelUID");
+    Channel channel = mock(Channel.class);
+    when(channel.getUID()).thenReturn(channelUID);
+    when(channel.getProperties()).thenReturn(channelProperties);
+    when(channel.getConfiguration()).thenReturn(new Configuration());
+    return channel;
+}

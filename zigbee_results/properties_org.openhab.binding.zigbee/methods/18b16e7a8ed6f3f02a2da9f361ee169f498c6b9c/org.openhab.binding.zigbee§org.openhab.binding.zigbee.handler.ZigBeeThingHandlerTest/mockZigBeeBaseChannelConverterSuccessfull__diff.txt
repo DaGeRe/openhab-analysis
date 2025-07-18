@@ -1,0 +1,6 @@
+private ZigBeeBaseChannelConverter mockZigBeeBaseChannelConverterSuccessfull() {
+    ZigBeeBaseChannelConverter zigBeeChannelConverter = mock(ZigBeeBaseChannelConverter.class);
+    when(zigBeeChannelConverter.initializeDevice()).thenReturn(true);
+    when(zigBeeChannelConverter.initializeConverter(any(ZigBeeThingHandler.class))).thenReturn(true);
+    return zigBeeChannelConverter;
+}

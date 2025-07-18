@@ -1,0 +1,19 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcherTest",
+    "method" : "testMatcher",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcher#readDiscoveryProperties" : 6,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcherTest#testMatcher" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcher#matchThingType(java.util.Map)" : 6,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcher$RequiredProperty#<init>(org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcher,java.lang.String,java.lang.String)" : 9,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcher#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcher#unescape(java.lang.String)" : 9
+  },
+  "selectedChanges" : [ ]
+}

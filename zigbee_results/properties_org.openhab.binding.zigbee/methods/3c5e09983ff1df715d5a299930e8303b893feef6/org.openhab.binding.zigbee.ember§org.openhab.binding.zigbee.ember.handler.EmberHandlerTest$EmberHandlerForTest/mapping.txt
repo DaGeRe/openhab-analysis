@@ -1,0 +1,1 @@
+(init)_org.openhab.binding.zigbee.ember.handler.EmberHandlerTest_org.openhab.core.thing.Bridge_org.openhab.core.io.transport.serial.SerialPortManager_org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory_com.zsmartsystems.zigbee.dongle.ember.ZigBeeDongleEzsp;(init)_0_diff.txt

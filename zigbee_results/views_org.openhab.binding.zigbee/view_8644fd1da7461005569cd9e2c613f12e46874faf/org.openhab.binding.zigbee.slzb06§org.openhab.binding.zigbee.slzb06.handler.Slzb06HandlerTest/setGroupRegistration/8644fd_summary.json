@@ -1,0 +1,20 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest",
+    "method" : "setGroupRegistration",
+    "module" : "org.openhab.binding.zigbee.slzb06",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06Handler#setGroupRegistration(java.lang.String)" : 2,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest#setGroupRegistration" : 2,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest$Slzb06HandlerForTest#<init>(org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest,org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,com.zsmartsystems.zigbee.dongle.ember.ZigBeeDongleEzsp)" : 2,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06Handler#<init>(org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest$Slzb06HandlerForTest#editConfiguration" : 2,
+    "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06Handler#handleConfigurationUpdate(java.util.Map)" : 2
+  },
+  "selectedChanges" : [ ]
+}

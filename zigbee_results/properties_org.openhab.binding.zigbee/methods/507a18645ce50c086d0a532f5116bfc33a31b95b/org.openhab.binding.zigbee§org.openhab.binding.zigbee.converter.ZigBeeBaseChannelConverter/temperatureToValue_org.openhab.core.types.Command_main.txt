@@ -1,0 +1,29 @@
+/**
+ * Converts a {@link Command} to a ZigBee temperature integer
+ *
+ * @param command the {@link Command} to convert
+ * @return the {@link Command} or null if the conversion was not possible
+ */
+protected Integer temperatureToValue(Command command) {
+    BigDecimal value = null;
+    if (command instanceof QuantityType) {
+        QuantityType<?> quantity = (QuantityType<?>) command;
+        if (quantity.getUnit() == SIUnits.CELSIUS) {
+            value = quantity.toBigDecimal();
+        } else if (quantity.getUnit() == ImperialUnits.FAHRENHEIT) {
+            QuantityType<?> celsius = quantity.toUnit(SIUnits.CELSIUS);
+            if (celsius == null) {
+                return null;
+            }
+            value = celsius.toBigDecimal();
+        } else {
+            return null;
+        }
+    } else if (command instanceof Number) {
+        // No scale, so assumed to be Celsius
+        value = BigDecimal.valueOf(((Number) command).doubleValue());
+    } else {
+        return 0;
+    }
+    return value.setScale(2, RoundingMode.CEILING).multiply(TEMPERATURE_MULTIPLIER).intValue();
+}

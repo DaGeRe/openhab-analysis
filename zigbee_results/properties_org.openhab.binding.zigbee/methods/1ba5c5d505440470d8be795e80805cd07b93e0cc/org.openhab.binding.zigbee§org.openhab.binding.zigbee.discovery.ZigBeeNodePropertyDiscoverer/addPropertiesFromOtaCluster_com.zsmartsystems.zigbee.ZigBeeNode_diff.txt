@@ -1,0 +1,16 @@
+private void addPropertiesFromOtaCluster(ZigBeeNode node) {                                            private void addPropertiesFromOtaCluster(ZigBeeNode node) {                                         
+ZclOtaUpgradeCluster otaCluster = (ZclOtaUpgradeCluster) node.getEndpoints().stream().map(ep -&gt; e | Optional&lt;ZclCluster&gt; cluster = node.getEndpoints().stream().map(ep -&gt; ep.getOutputCluster(Z
+                                                                                                     | ZclOtaUpgradeCluster otaCluster = (ZclOtaUpgradeCluster) cluster.orElse(null);                      
+if (otaCluster != null) {                                                                              if (otaCluster != null) {                                                                           
+logger.debug("{}: ZigBee node property discovery using OTA cluster on endpoint {}", node.getIeeeAddr   logger.debug("{}: ZigBee node property discovery using OTA cluster on endpoint {}", node.getIeeeAddr
+ZclAttribute attribute = otaCluster.getAttribute(ZclOtaUpgradeCluster.ATTR_CURRENTFILEVERSION);        ZclAttribute attribute = otaCluster.getAttribute(ZclOtaUpgradeCluster.ATTR_CURRENTFILEVERSION);     
+Object fileVersion = attribute.readValue(Long.MAX_VALUE);                                              Object fileVersion = attribute.readValue(Long.MAX_VALUE);                                           
+if (fileVersion != null) {                                                                             if (fileVersion != null) {                                                                          
+properties.put(PROPERTY_FIRMWARE_VERSION, String.format("0x%08X", fileVersion));                       properties.put(PROPERTY_FIRMWARE_VERSION, String.format("0x%08X", fileVersion));                    
+} else {                                                                                               } else {                                                                                            
+logger.debug("{}: Could not get OTA firmware version from device", node.getIeeeAddress());             logger.debug("{}: Could not get OTA firmware version from device", node.getIeeeAddress());          
+}                                                                                                      }                                                                                                   
+} else {                                                                                               } else {                                                                                            
+logger.debug("{}: Node doesn't support OTA cluster", node.getIeeeAddress());                           logger.debug("{}: Node doesn't support OTA cluster", node.getIeeeAddress());                        
+}                                                                                                      }                                                                                                   
+}                                                                                                      }                                                                                                   

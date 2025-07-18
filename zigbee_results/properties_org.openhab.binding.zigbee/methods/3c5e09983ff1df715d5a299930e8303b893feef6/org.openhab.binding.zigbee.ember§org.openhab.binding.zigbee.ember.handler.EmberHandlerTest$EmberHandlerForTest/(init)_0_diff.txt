@@ -1,0 +1,4 @@
+public EmberHandlerForTest(Bridge coordinator, SerialPortManager serialPortManager, ZigBeeChannelConverterFactory channelFactory, ZigBeeDongleEzsp dongle) {
+    super(coordinator, serialPortManager, channelFactory);
+    this.zigbeeTransport = dongle;
+}

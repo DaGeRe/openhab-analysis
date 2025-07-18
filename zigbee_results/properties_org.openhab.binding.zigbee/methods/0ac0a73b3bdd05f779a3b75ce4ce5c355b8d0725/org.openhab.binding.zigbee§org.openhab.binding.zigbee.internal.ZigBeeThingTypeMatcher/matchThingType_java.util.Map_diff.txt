@@ -1,0 +1,32 @@
+/**
+ * Matches a set of properties to a single thing type. If no match is found, null is returned.
+ * The matcher checks all registered thing types. If multiple matches are found, null is returned.
+ *
+ * @param properties a Map of strings containing the properties to match
+ * @return the {@link ThingTypeUID} of the matched thing type, or null if no single thing type matched the filter
+ *         properties
+ */
+public ThingTypeUID matchThingType(Map<String, Object> properties) {
+    // Only create the index once
+    try {
+        readDiscoveryProperties();
+    } catch (IOException exception) {
+        logger.debug("IOException reading ZigBee discovery properties", exception);
+        return null;
+    }
+    String matchedThingType = null;
+    for (Entry<String, List<RequiredProperty>> discoveryThing : discoveryProperties.entrySet()) {
+        if (discoveryThing.getValue().stream().allMatch(requiredProperty -> requiredProperty.value.equals(properties.get(requiredProperty.name)))) {
+            if (matchedThingType != null) {
+                // Don't allow duplicate matches
+                logger.debug("Duplicate match {} and {}", matchedThingType, discoveryThing.getKey());
+                return null;
+            }
+            matchedThingType = discoveryThing.getKey();
+        }
+    }
+    if (matchedThingType == null) {
+        return null;
+    }
+    return new ThingTypeUID(ZigBeeBindingConstants.BINDING_ID, matchedThingType);
+}

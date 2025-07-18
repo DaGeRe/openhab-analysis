@@ -1,0 +1,25 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.warningdevice.SquawkTypeTest",
+    "method" : "testParseCommand",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#<init>(boolean,int,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#isUseStrobe" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#getSquawkMode(java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#getSquawkMode" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SoundLevel#<init>(int)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SoundLevel#getValue" : 3,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkMode#<init>(int)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#getSquawkLevel" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#parse(java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.SquawkTypeTest#testParseCommand" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkMode#getValue" : 3,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SquawkType#getSquawkLevel(java.lang.String)" : 1
+  },
+  "selectedChanges" : [ ]
+}

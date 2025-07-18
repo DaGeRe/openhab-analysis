@@ -1,0 +1,31 @@
+private synchronized void readDiscoveryProperties() throws IOException {
+    if (!discoveryProperties.isEmpty()) {
+        return;
+    }
+    InputStream input = getClass().getResourceAsStream(DISCOVERY_PROPERTIES_FILE);
+    if (input == null) {
+        return;
+    }
+    BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+    while (reader.ready()) {
+        String line = reader.readLine();
+        String[] elements = line.split(",");
+        if (elements.length < 2) {
+            continue;
+        }
+        List<RequiredProperty> newProperties = new ArrayList<>();
+        for (String element : elements) {
+            String[] discoveryElement = element.split("=");
+            if (discoveryElement.length != 2) {
+                continue;
+            }
+            newProperties.add(new RequiredProperty(discoveryElement[0].trim(), unescape(discoveryElement[1]).trim()));
+        }
+        if (newProperties.isEmpty()) {
+            continue;
+        }
+        discoveryProperties.put(elements[0], newProperties);
+    }
+    reader.close();
+    return;
+}

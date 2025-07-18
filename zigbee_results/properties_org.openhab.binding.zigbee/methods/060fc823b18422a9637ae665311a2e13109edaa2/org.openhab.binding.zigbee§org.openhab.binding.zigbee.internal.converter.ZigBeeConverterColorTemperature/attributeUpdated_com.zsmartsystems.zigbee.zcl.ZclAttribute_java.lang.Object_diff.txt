@@ -1,0 +1,28 @@
+@Override                                                                                              @Override                                                                                           
+public void attributeUpdated(ZclAttribute attribute, Object val) {                                     public void attributeUpdated(ZclAttribute attribute, Object val) {                                  
+logger.debug("{}: ZigBee attribute reports {}  on endpoint {}", endpoint.getIeeeAddress(), attribute   logger.debug("{}: ZigBee attribute reports {}  on endpoint {}", endpoint.getIeeeAddress(), attribute
+if (attribute.getClusterType() == ZclClusterType.COLOR_CONTROL && attribute.getId() == ZclColorContr | if (attribute.getClusterType() == ZclClusterType.COLOR_CONTROL) {                                   
+if (lastColorMode == null || lastColorMode == ColorModeEnum.COLOR_TEMPERATURE) {                     | switch(attribute.getId()) {                                                                         
+                                                                                                     | case ZclColorControlCluster.ATTR_COLORTEMPERATURE:                                                  
+Integer temperatureInMired = (Integer) val;                                                            Integer temperatureInMired = (Integer) val;                                                         
+PercentType percent = miredToPercent(temperatureInMired);                                              PercentType percent = miredToPercent(temperatureInMired);                                           
+if (percent != null) {                                                                                 if (percent != null) {                                                                              
+updateChannelState(percent);                                                                           updateChannelState(percent);                                                                        
+}                                                                                                      }                                                                                                   
+}                                                                                                    | break;                                                                                              
+} else if (attribute.getClusterType() == ZclClusterType.COLOR_CONTROL && attribute.getId() == ZclCol | case ZclColorControlCluster.ATTR_COLORMODE:                                                         
+Integer colorMode = (Integer) val;                                                                     Integer colorMode = (Integer) val;                                                                  
+lastColorMode = ColorModeEnum.getByValue(colorMode);                                                 | ColorModeEnum colorModeEnum = ColorModeEnum.getByValue(colorMode);                                  
+if (lastColorMode != ColorModeEnum.COLOR_TEMPERATURE) {                                              | if (colorModeEnum == ColorModeEnum.COLOR_TEMPERATURE) {                                             
+                                                                                                     | break;                                                                                              
+                                                                                                     | }                                                                                                   
+                                                                                                     | // else fall through                                                                                
+                                                                                                     | case ZclColorControlCluster.ATTR_CURRENTHUE:                                                        
+                                                                                                     | case ZclColorControlCluster.ATTR_CURRENTSATURATION:                                                 
+                                                                                                     | case ZclColorControlCluster.ATTR_CURRENTX:                                                          
+                                                                                                     | case ZclColorControlCluster.ATTR_CURRENTY:                                                          
+updateChannelState(UnDefType.UNDEF);                                                                   updateChannelState(UnDefType.UNDEF);                                                                
+                                                                                                     | break;                                                                                              
+}                                                                                                      }                                                                                                   
+}                                                                                                      }                                                                                                   
+}                                                                                                      }                                                                                                   

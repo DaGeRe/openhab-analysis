@@ -1,0 +1,18 @@
+@Test
+public void testAttributeUpdated() {
+    ZigBeeEndpoint endpoint = Mockito.mock(ZigBeeEndpoint.class);
+    ZigBeeCoordinatorHandler coordinatorHandler = Mockito.mock(ZigBeeCoordinatorHandler.class);
+    Mockito.when(coordinatorHandler.getEndpoint(ArgumentMatchers.any(IeeeAddress.class), ArgumentMatchers.anyInt())).thenReturn(endpoint);
+    ZigBeeConverterSwitchOnoff converter = new ZigBeeConverterSwitchOnoff();
+    ArgumentCaptor<ChannelUID> channelCapture = ArgumentCaptor.forClass(ChannelUID.class);
+    ArgumentCaptor<State> stateCapture = ArgumentCaptor.forClass(State.class);
+    ZigBeeThingHandler thingHandler = Mockito.mock(ZigBeeThingHandler.class);
+    Channel channel = ChannelBuilder.create(new ChannelUID("a:b:c:d")).build();
+    converter.initialize(channel, coordinatorHandler, new IeeeAddress("1234567890ABCDEF"), 1);
+    converter.initializeConverter(thingHandler);
+    ZclAttribute attribute = new ZclAttribute(new ZclOnOffCluster(endpoint), 0, "OnOff", ZclDataType.BOOLEAN, false, false, false, false);
+    converter.attributeUpdated(attribute, attribute.getLastValue());
+    Mockito.verify(thingHandler, Mockito.times(1)).setChannelState(channelCapture.capture(), stateCapture.capture());
+    assertEquals(new ChannelUID("a:b:c:d"), channelCapture.getValue());
+    assertEquals(OnOffType.OFF, stateCapture.getValue());
+}

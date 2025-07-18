@@ -1,0 +1,38 @@
+@Test
+public void testInitialisation() throws InterruptedException, ExecutionException {
+    ZigBeeEndpoint endpoint = Mockito.mock(ZigBeeEndpoint.class);
+    ZigBeeCoordinatorHandler coordinatorHandler = Mockito.mock(ZigBeeCoordinatorHandler.class);
+    Mockito.when(coordinatorHandler.getEndpoint(ArgumentMatchers.any(IeeeAddress.class), ArgumentMatchers.anyInt())).thenReturn(endpoint);
+    ZigBeeConverterColorColor converter = new ZigBeeConverterColorColor();
+    ZigBeeThingHandler thingHandler = Mockito.mock(ZigBeeThingHandler.class);
+    Channel channel = ChannelBuilder.create(new ChannelUID("a:b:c:d"), "").build();
+    ZclOnOffCluster onoffCluster = Mockito.mock(ZclOnOffCluster.class);
+    ZclColorControlCluster colorCluster = Mockito.mock(ZclColorControlCluster.class);
+    ZclLevelControlCluster levelCluster = Mockito.mock(ZclLevelControlCluster.class);
+    Mockito.when(endpoint.getInputCluster(ZclOnOffCluster.CLUSTER_ID)).thenReturn(onoffCluster);
+    Mockito.when(endpoint.getInputCluster(ZclColorControlCluster.CLUSTER_ID)).thenReturn(colorCluster);
+    Mockito.when(endpoint.getInputCluster(ZclLevelControlCluster.CLUSTER_ID)).thenReturn(levelCluster);
+    Future<Boolean> attributeFuture = mock(Future.class);
+    when(attributeFuture.get()).thenReturn(false);
+    Mockito.when(onoffCluster.discoverAttributes(ArgumentMatchers.anyBoolean())).thenReturn(attributeFuture);
+    Mockito.when(colorCluster.discoverAttributes(ArgumentMatchers.anyBoolean())).thenReturn(attributeFuture);
+    Mockito.when(levelCluster.discoverAttributes(ArgumentMatchers.anyBoolean())).thenReturn(attributeFuture);
+    Mockito.when(onoffCluster.isAttributeSupported(ArgumentMatchers.anyInt())).thenReturn(false);
+    Mockito.when(colorCluster.isAttributeSupported(ArgumentMatchers.anyInt())).thenReturn(false);
+    Mockito.when(levelCluster.isAttributeSupported(ArgumentMatchers.anyInt())).thenReturn(false);
+    converter.initialize(channel, coordinatorHandler, new IeeeAddress("1234567890ABCDEF"), 1);
+    converter.initializeConverter(thingHandler);
+    List<ConfigDescriptionParameter> config = converter.getConfigDescription();
+    assertEquals(4, config.size());
+    Map<String, ConfigDescriptionParameter> parameterMap = new HashMap<>();
+    Iterator<ConfigDescriptionParameter> iterator = config.iterator();
+    while (iterator.hasNext()) {
+        ConfigDescriptionParameter configParameter = iterator.next();
+        parameterMap.put(configParameter.getName(), configParameter);
+    }
+    assertTrue(parameterMap.containsKey("zigbee_color_controlmethod"));
+    ConfigDescriptionParameter configParameter = parameterMap.get("zigbee_color_controlmethod");
+    assertEquals("AUTO", configParameter.getDefault());
+    assertEquals(3, configParameter.getOptions().size());
+    assertEquals(Type.TEXT, configParameter.getType());
+}

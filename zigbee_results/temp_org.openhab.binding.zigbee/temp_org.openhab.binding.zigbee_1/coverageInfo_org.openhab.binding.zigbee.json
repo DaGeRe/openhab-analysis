@@ -1,0 +1,878 @@
+{
+  "commits" : {
+    "69a63c3e200d348bd8c512c3e216a3d812884237" : {
+      "testcases" : { }
+    },
+    "45776de5890b8b379785715451157178d2d9af52" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithNoThingProperty" : {
+          "overallScore" : 8,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+            "method" : "testInitializeDeviceWithNoThingProperty",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#injectIntoPrivateField(java.lang.Object,java.lang.Object,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getOtaServer(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockChannel(int,org.openhab.core.thing.ThingUID)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#getParameters" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockThing(org.openhab.core.thing.type.ThingType,java.util.Map,org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeBaseChannelConverterSuccessfull" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromOtaCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithNoThingProperty" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#stopPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromBasicCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeNode(int,com.zsmartsystems.zigbee.IeeeAddress)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDevice(java.lang.String)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getExpectedUpdatePeriod(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#createConfigDescriptionParameters" : 1,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclClusterConfigFactory#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#startPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromNodeDescriptors(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#initializeDevice" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#getProperties(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeChannelConverterFactory(org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#setProperties(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeCoordinatorHandler(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#createZigBeeChannelConverter(org.openhab.core.thing.Channel)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#<init>" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#initializeDevice", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#createZigBeeChannelConverter(org.openhab.core.thing.Channel)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyFalse" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+            "method" : "testInitializeDeviceWithThingPropertyFalse",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#injectIntoPrivateField(java.lang.Object,java.lang.Object,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getOtaServer(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockChannel(int,org.openhab.core.thing.ThingUID)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#getParameters" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockThing(org.openhab.core.thing.type.ThingType,java.util.Map,org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeBaseChannelConverterSuccessfull" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromOtaCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#stopPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromBasicCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeNode(int,com.zsmartsystems.zigbee.IeeeAddress)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyFalse" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDevice(java.lang.String)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getExpectedUpdatePeriod(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#createConfigDescriptionParameters" : 1,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclClusterConfigFactory#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#startPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromNodeDescriptors(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#initializeDevice" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#getProperties(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeChannelConverterFactory(org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#setProperties(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeCoordinatorHandler(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#createZigBeeChannelConverter(org.openhab.core.thing.Channel)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#<init>" : 2
+          },
+          "selectedChanges" : [ ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyTrue" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+            "method" : "testInitializeDeviceWithThingPropertyTrue",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#injectIntoPrivateField(java.lang.Object,java.lang.Object,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getOtaServer(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockChannel(int,org.openhab.core.thing.ThingUID)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#getParameters" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockThing(org.openhab.core.thing.type.ThingType,java.util.Map,org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeBaseChannelConverterSuccessfull" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromOtaCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#stopPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromBasicCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeNode(int,com.zsmartsystems.zigbee.IeeeAddress)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDevice(java.lang.String)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getExpectedUpdatePeriod(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#createConfigDescriptionParameters" : 1,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclClusterConfigFactory#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#startPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromNodeDescriptors(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#getProperties(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeChannelConverterFactory(org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#setProperties(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeCoordinatorHandler(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#createZigBeeChannelConverter(org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyTrue" : 2
+          },
+          "selectedChanges" : [ ]
+        }
+      }
+    },
+    "b09856e8e30230b3b22cc87737f8fad2932b6052" : {
+      "testcases" : { }
+    },
+    "33798e9255f4a24358e6927bf056116421426b18" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressureTest#testAttributeUpdated" : {
+          "overallScore" : 26,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressureTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressureTest#testAttributeUpdated" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressure#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 26,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressure#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 10,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressure#<init>" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressure#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest#testAttributeUpdated" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#determineDivisorAndMultiplier(com.zsmartsystems.zigbee.zcl.clusters.ZclMeteringCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest#testAttributeUpdated" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest#testAttributeUpdated" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#determineDivisorAndMultiplier(com.zsmartsystems.zigbee.zcl.clusters.ZclMeteringCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest#testAttributeUpdated" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceivedTest#testAttributeUpdated" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceivedTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceived#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceived#determineDivisorAndMultiplier(com.zsmartsystems.zigbee.zcl.clusters.ZclMeteringCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceivedTest#testAttributeUpdated" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceived#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceived#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceived#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoffTest#testAttributeUpdated" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoffTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoffTest#testAttributeUpdated" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoff#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoff#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoff#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoff#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperatureTest#testAttributeUpdated" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperatureTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperatureTest#testAttributeUpdated" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#valueToTemperature(int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperature#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperature#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperature#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperature#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" ]
+        }
+      }
+    },
+    "38056da0da8cde179633619e6632236d78814347" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testAttributeNotUpdatedWhenColorModeIsColorTemperature" : {
+          "overallScore" : 32,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest",
+            "method" : "testAttributeNotUpdatedWhenColorModeIsColorTemperature",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateColorXY(org.openhab.core.library.types.PercentType,org.openhab.core.library.types.PercentType)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 14,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#levelToPercent(int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testAttributeNotUpdatedWhenColorModeIsColorTemperature" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateOnOff(org.openhab.core.library.types.OnOffType)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateColorHSB" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateBrightness(org.openhab.core.library.types.PercentType)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateColorXY" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateColorHSB(org.openhab.core.library.types.DecimalType,org.openhab.core.library.types.PercentType)" : 4
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#<init>", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateColorXY(org.openhab.core.library.types.PercentType,org.openhab.core.library.types.PercentType)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateOnOff(org.openhab.core.library.types.OnOffType)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateColorHSB", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateBrightness(org.openhab.core.library.types.PercentType)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateColorXY", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateColorHSB(org.openhab.core.library.types.DecimalType,org.openhab.core.library.types.PercentType)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testAttributeUpdated" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateOnOff(org.openhab.core.library.types.OnOffType)" : 6,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testAttributeUpdated" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 12,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateBrightness(org.openhab.core.library.types.PercentType)" : 6,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#levelToPercent(int)" : 6,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 10
+          },
+          "selectedChanges" : [ ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testInitialisation" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest",
+            "method" : "testInitialisation",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclColorControlConfig#<init>(org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclColorControlConfig#getConfiguration" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#discoverSupportedColorCommands(com.zsmartsystems.zigbee.zcl.clusters.ZclColorControlCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testInitialisation" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#getConfiguration" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclColorControlConfig#getControlMethod" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclColorControlConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#getConfiguration" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#getConfigDescription" : 2
+          },
+          "selectedChanges" : [ ]
+        }
+      }
+    },
+    "8644fd1da7461005569cd9e2c613f12e46874faf" : {
+      "testcases" : { }
+    },
+    "121cdc22a79dda4afe92defe32d7fca46d518899" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest#initializeDongleSpecific" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest",
+            "method" : "initializeDongleSpecific",
+            "module" : "org.openhab.binding.zigbee.slzb06",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest$Slzb06HandlerForTest#getConfigAs(java.lang.Class)" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06Handler#initializeDongleSpecific" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06Handler#setGroupRegistration(java.lang.String)" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest$Slzb06HandlerForTest#<init>(org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest,org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,com.zsmartsystems.zigbee.dongle.ember.ZigBeeDongleEzsp)" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest#initializeDongleSpecific" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06Handler#<init>(org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06Configuration#<init>" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06Handler#initializeDongleSpecific" ]
+        }
+      }
+    },
+    "e85d0348f231587616ca23bf39cd26ac546f8766" : {
+      "testcases" : { }
+    },
+    "d83a62051823e9fc4bc77443aacb19211dd828da" : {
+      "testcases" : { }
+    },
+    "060fc823b18422a9637ae665311a2e13109edaa2" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testAttributeUpdatedWhenColorModeIsColorTemperature" : {
+          "overallScore" : 32,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest",
+            "method" : "testAttributeUpdatedWhenColorModeIsColorTemperature",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#kelvinToMired(double)" : 12,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#getConverter" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testAttributeUpdatedWhenColorModeIsColorTemperature" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#convertMiredToPercent(org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature,java.lang.Integer)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredMin" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredToPercent(java.lang.Integer)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredRange" : 4
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#kelvinToMired(double)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredMin", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#<init>", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredToPercent(java.lang.Integer)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredRange" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testAttributeUpdated" : {
+          "overallScore" : 30,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateOnOff(org.openhab.core.library.types.OnOffType)" : 6,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testAttributeUpdated" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 12,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateBrightness(org.openhab.core.library.types.PercentType)" : 6,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#levelToPercent(int)" : 6,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 10
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#<init>", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateOnOff(org.openhab.core.library.types.OnOffType)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testAttributeUpdated", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#updateBrightness(org.openhab.core.library.types.PercentType)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testAttributeNotUpdatedWhenColorModeIsNotColorTemperature" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest",
+            "method" : "testAttributeNotUpdatedWhenColorModeIsNotColorTemperature",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testAttributeNotUpdatedWhenColorModeIsNotColorTemperature" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#getConverter" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testAttributeNotUpdatedWhenColorModeIsNotColorTemperature" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testAttributeUpdatedWhenColorModeIsNull" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest",
+            "method" : "testAttributeUpdatedWhenColorModeIsNull",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#kelvinToMired(double)" : 12,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#getConverter" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testAttributeUpdatedWhenColorModeIsNull" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#convertMiredToPercent(org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature,java.lang.Integer)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredMin" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredToPercent(java.lang.Integer)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredRange" : 4
+          },
+          "selectedChanges" : [ ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testConvertMiredToPercent" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest",
+            "method" : "testConvertMiredToPercent",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testConvertMiredToPercent" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#convertMiredToPercent(org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature,java.lang.Integer)" : 10,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#kelvinToMired(double)" : 12,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredMin" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredToPercent(java.lang.Integer)" : 10,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#getConverter" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredRange" : 4
+          },
+          "selectedChanges" : [ ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testConvertPercentToMired" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest",
+            "method" : "testConvertPercentToMired",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#convertPercentToMired(org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature,org.openhab.core.library.types.PercentType)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#percentToMired(org.openhab.core.library.types.PercentType)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#kelvinToMired(double)" : 12,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredMin" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testConvertPercentToMired" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#getConverter" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredRange" : 4
+          },
+          "selectedChanges" : [ ]
+        }
+      }
+    },
+    "4dcc782ab18c9599d7c70105bf38681b84d937da" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedData" : {
+          "overallScore" : 1032,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest",
+            "method" : "processReceivedData",
+            "module" : "org.openhab.binding.zigbee.slzb06",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#read(int)" : 1024,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#<init>(java.lang.String,int)" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#processReceivedData(byte[],int)" : 4,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedData" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#read(int)", "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#<init>(java.lang.String,int)", "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#processReceivedData(byte[],int)", "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedData" ]
+        }
+      }
+    },
+    "3c5e09983ff1df715d5a299930e8303b893feef6" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testProcessClusterList" : {
+          "overallScore" : 28,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+            "method" : "testProcessClusterList",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 14,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#processClusterList(java.util.Collection,java.lang.String)" : 14,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testProcessClusterList" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 14
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" ]
+        },
+        "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest#initializeDongleSpecific" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.ember.handler.EmberHandlerTest",
+            "method" : "initializeDongleSpecific",
+            "module" : "org.openhab.binding.zigbee.ember",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#initializeDongleSpecific" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest#initializeDongleSpecific" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.core.io.transport.serial.SerialPortManager,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest$EmberHandlerForTest#getConfigAs(java.lang.Class)" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.internal.EmberConfiguration#<init>" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest$EmberHandlerForTest#<init>(org.openhab.binding.zigbee.ember.handler.EmberHandlerTest,org.openhab.core.thing.Bridge,org.openhab.core.io.transport.serial.SerialPortManager,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,com.zsmartsystems.zigbee.dongle.ember.ZigBeeDongleEzsp)" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#setGroupRegistration(java.lang.String)" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" ]
+        },
+        "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest#setGroupRegistration" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.ember.handler.EmberHandlerTest",
+            "method" : "setGroupRegistration",
+            "module" : "org.openhab.binding.zigbee.ember",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#handleConfigurationUpdate(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.core.io.transport.serial.SerialPortManager,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest$EmberHandlerForTest#editConfiguration" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest#setGroupRegistration" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest$EmberHandlerForTest#<init>(org.openhab.binding.zigbee.ember.handler.EmberHandlerTest,org.openhab.core.thing.Bridge,org.openhab.core.io.transport.serial.SerialPortManager,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,com.zsmartsystems.zigbee.dongle.ember.ZigBeeDongleEzsp)" : 2,
+            "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#setGroupRegistration(java.lang.String)" : 2
+          },
+          "selectedChanges" : [ ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandlerTest#testInstallCode" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandlerTest",
+            "method" : "testInstallCode",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler#addInstallCode(java.lang.String)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandlerTest#testInstallCode" : 2
+          },
+          "selectedChanges" : [ ]
+        }
+      }
+    },
+    "66fd1e96b5a125740280b727b63e5d91066018ed" : {
+      "testcases" : { }
+    },
+    "18b16e7a8ed6f3f02a2da9f361ee169f498c6b9c" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithNoThingProperty" : {
+          "overallScore" : 24,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+            "method" : "testInitializeDeviceWithNoThingProperty",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#injectIntoPrivateField(java.lang.Object,java.lang.Object,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getOtaServer(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockChannel(int,org.openhab.core.thing.ThingUID)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#getParameters" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockThing(org.openhab.core.thing.type.ThingType,java.util.Map,org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeBaseChannelConverterSuccessfull" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromOtaCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithNoThingProperty" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#stopPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromBasicCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeNode(int,com.zsmartsystems.zigbee.IeeeAddress)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDevice(java.lang.String)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getExpectedUpdatePeriod(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#createConfigDescriptionParameters" : 1,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclClusterConfigFactory#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#startPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromNodeDescriptors(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#initializeDevice" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#getProperties(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeChannelConverterFactory(org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#setProperties(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeCoordinatorHandler(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#createZigBeeChannelConverter(org.openhab.core.thing.Channel)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#<init>" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#injectIntoPrivateField(java.lang.Object,java.lang.Object,java.lang.String)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithNoThingProperty", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockChannel(int,org.openhab.core.thing.ThingUID)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockThing(org.openhab.core.thing.type.ThingType,java.util.Map,org.openhab.core.thing.Channel)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeNode(int,com.zsmartsystems.zigbee.IeeeAddress)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeBaseChannelConverterSuccessfull", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDevice(java.lang.String)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeChannelConverterFactory(org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeCoordinatorHandler(com.zsmartsystems.zigbee.ZigBeeNode)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyFalse" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+            "method" : "testInitializeDeviceWithThingPropertyFalse",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#injectIntoPrivateField(java.lang.Object,java.lang.Object,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getOtaServer(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockChannel(int,org.openhab.core.thing.ThingUID)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#getParameters" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockThing(org.openhab.core.thing.type.ThingType,java.util.Map,org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeBaseChannelConverterSuccessfull" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromOtaCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#stopPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromBasicCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeNode(int,com.zsmartsystems.zigbee.IeeeAddress)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyFalse" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDevice(java.lang.String)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getExpectedUpdatePeriod(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#createConfigDescriptionParameters" : 1,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclClusterConfigFactory#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#startPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromNodeDescriptors(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#initializeDevice" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#getProperties(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeChannelConverterFactory(org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#setProperties(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeCoordinatorHandler(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#createZigBeeChannelConverter(org.openhab.core.thing.Channel)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#<init>" : 2
+          },
+          "selectedChanges" : [ ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyTrue" : {
+          "overallScore" : 0,
+          "selected" : false,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+            "method" : "testInitializeDeviceWithThingPropertyTrue",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#injectIntoPrivateField(java.lang.Object,java.lang.Object,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getOtaServer(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockChannel(int,org.openhab.core.thing.ThingUID)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#getParameters" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockThing(org.openhab.core.thing.type.ThingType,java.util.Map,org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeBaseChannelConverterSuccessfull" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 4,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromOtaCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#stopPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromBasicCluster(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeNode(int,com.zsmartsystems.zigbee.IeeeAddress)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDevice(java.lang.String)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#getExpectedUpdatePeriod(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#doNodeInitialisation" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeConfigDescriptionParameters#createConfigDescriptionParameters" : 1,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclClusterConfigFactory#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#startPolling" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#addPropertiesFromNodeDescriptors(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#getProperties(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeChannelConverterFactory(org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#setProperties(java.util.Map)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#mockZigBeeCoordinatorHandler(com.zsmartsystems.zigbee.ZigBeeNode)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#createZigBeeChannelConverter(org.openhab.core.thing.Channel)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.ZigBeeNodePropertyDiscoverer#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testInitializeDeviceWithThingPropertyTrue" : 2
+          },
+          "selectedChanges" : [ ]
+        }
+      }
+    },
+    "55304034ddf767cfa8ac60b9491699a2a3c716ea" : {
+      "testcases" : { }
+    },
+    "ab3ce7c7f7a5d0108159c290a6eb9e09364999ba" : {
+      "testcases" : { }
+    },
+    "507a18645ce50c086d0a532f5116bfc33a31b95b" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverterTest#temperatureToValue" : {
+          "overallScore" : 8,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverterTest",
+            "method" : "temperatureToValue",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#temperatureToValue(org.openhab.core.types.Command)" : 8,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverterTest#temperatureToValue" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#temperatureToValue(org.openhab.core.types.Command)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest#testAttributeUpdated" : {
+          "overallScore" : 8,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#determineDivisorAndMultiplier(com.zsmartsystems.zigbee.zcl.clusters.ZclMeteringCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest#testAttributeUpdated" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#determineDivisorAndMultiplier(com.zsmartsystems.zigbee.zcl.clusters.ZclMeteringCluster)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#<init>", "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDelivered#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" ]
+        },
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest#testAttributeUpdated" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest",
+            "method" : "testAttributeUpdated",
+            "module" : "org.openhab.binding.zigbee",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#determineDivisorAndMultiplier(com.zsmartsystems.zigbee.zcl.clusters.ZclMeteringCluster)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest#testAttributeUpdated" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#<init>" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 2,
+            "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemand#determineDivisorAndMultiplier(com.zsmartsystems.zigbee.zcl.clusters.ZclMeteringCluster)" ]
+        }
+      }
+    },
+    "a6438e7e46fcbc01c960eae32c6d0c4dcd9d6782" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedData" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest",
+            "method" : "processReceivedData",
+            "module" : "org.openhab.binding.zigbee.slzb06",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#read(int)" : 1022,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#<init>(java.lang.String,int)" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#processReceivedData(byte[],int)" : 4,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedData" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedData" ]
+        },
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedDataOverflow" : {
+          "overallScore" : 2,
+          "selected" : true,
+          "testcase" : {
+            "clazz" : "org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest",
+            "method" : "processReceivedDataOverflow",
+            "module" : "org.openhab.binding.zigbee.slzb06",
+            "params" : null
+          },
+          "callCounts" : {
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#read(int)" : 1022,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#<init>(java.lang.String,int)" : 2,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPort#processReceivedData(byte[],int)" : 4,
+            "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedDataOverflow" : 2
+          },
+          "selectedChanges" : [ "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest#processReceivedDataOverflow" ]
+        }
+      }
+    },
+    "61fb4dae414d2159ab55c33cee7eb9e7db8cbad2" : {
+      "testcases" : { }
+    },
+    "aced1a70f360da8cb5fff34d92db48713a9342a8" : {
+      "testcases" : { }
+    },
+    "483700604893221952b22f6da42361be000e1009" : {
+      "testcases" : { }
+    }
+  }
+}

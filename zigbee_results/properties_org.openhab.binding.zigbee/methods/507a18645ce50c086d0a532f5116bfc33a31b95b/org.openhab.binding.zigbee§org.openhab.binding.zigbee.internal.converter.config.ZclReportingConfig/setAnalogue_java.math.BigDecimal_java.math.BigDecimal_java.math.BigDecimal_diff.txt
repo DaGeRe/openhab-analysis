@@ -1,0 +1,13 @@
+/**
+ * Sets the analogue reporting values
+ *
+ * @param defaultChange the default value
+ * @param minimumChange the minimum reporting value
+ * @param maximumChange the maximum reporting value
+ */
+public void setAnalogue(BigDecimal defaultChange, BigDecimal minimumChange, BigDecimal maximumChange) {
+    this.isAnalogue = true;
+    this.defaultChange = defaultChange;
+    this.minimumChange = minimumChange;
+    this.maximumChange = maximumChange;
+}

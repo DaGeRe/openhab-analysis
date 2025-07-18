@@ -1,0 +1,3 @@
+public ControlMethod getControlMethod() {
+    return controlMethod;
+}

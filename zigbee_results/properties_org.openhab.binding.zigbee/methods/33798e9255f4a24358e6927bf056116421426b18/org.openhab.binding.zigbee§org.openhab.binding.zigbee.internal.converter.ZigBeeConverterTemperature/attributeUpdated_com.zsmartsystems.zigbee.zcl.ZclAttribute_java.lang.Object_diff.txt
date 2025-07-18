@@ -1,0 +1,8 @@
+@Override                                                                                              @Override                                                                                           
+public void attributeUpdated(ZclAttribute attribute, Object val) {                                     public void attributeUpdated(ZclAttribute attribute, Object val) {                                  
+logger.debug("{}: ZigBee attribute reports {}", endpoint.getIeeeAddress(), attribute);               |                                                                                                     
+if (attribute.getClusterType() == ZclClusterType.TEMPERATURE_MEASUREMENT && attribute.getId() == Zcl   if (attribute.getClusterType() == ZclClusterType.TEMPERATURE_MEASUREMENT && attribute.getId() == Zcl
+                                                                                                     | logger.debug("{}: ZigBee attribute reports {}", endpoint.getIeeeAddress(), attribute);              
+updateChannelState(valueToTemperature((Integer) val));                                                 updateChannelState(valueToTemperature((Integer) val));                                              
+}                                                                                                      }                                                                                                   
+}                                                                                                      }                                                                                                   

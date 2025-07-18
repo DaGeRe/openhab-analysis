@@ -1,0 +1,9 @@
+/**
+ * Converts a ZigBee 8 bit level as used in Level Control cluster and others to a percentage
+ *
+ * @param level an integer between 0 and 254
+ * @return the scaled {@link PercentType}
+ */
+protected PercentType levelToPercent(int level) {
+    return new PercentType((int) (level * 100.0 / 254.0 + 0.5));
+}

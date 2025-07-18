@@ -1,0 +1,26 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.warningdevice.WarningTypeTest",
+    "method" : "testParseCommandDefaults",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#<init>(boolean,int,int,java.time.Duration)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningMode#<init>(int)" : 7,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SoundLevel#getValue" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#getWarningMode" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#isUseStrobe" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.WarningTypeTest#testParseCommandDefaults" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#getSirenLevel" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#parse(java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#getSirenLevel(java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SoundLevel#<init>(int)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningMode#getValue" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#getWarningMode(java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#getDuration" : 1
+  },
+  "selectedChanges" : [ ]
+}

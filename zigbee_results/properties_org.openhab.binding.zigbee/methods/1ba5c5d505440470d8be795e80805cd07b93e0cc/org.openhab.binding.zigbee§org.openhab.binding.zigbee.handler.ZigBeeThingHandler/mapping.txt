@@ -1,0 +1,1 @@
+(init)_org.openhab.core.thing.Thing_org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory_org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker;(init)_0_diff.txt

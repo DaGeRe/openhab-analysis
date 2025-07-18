@@ -1,0 +1,22 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest",
+    "method" : "testConvertMiredToPercent",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#testConvertMiredToPercent" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#convertMiredToPercent(org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature,java.lang.Integer)" : 5,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#kelvinToMired(double)" : 6,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredMin" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredToPercent(java.lang.Integer)" : 5,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest#getConverter" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature#miredRange" : 2
+  },
+  "selectedChanges" : [ ]
+}

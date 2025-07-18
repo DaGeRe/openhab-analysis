@@ -1,0 +1,15 @@
+/**
+ * Initialise the converter. This is called by the {@link ZigBeeThingHandler} when the channel is created. The
+ * converter should initialise any internal states, open any clusters, add reporting and binding that it needs to
+ * operate.
+ * <p>
+ * A list of configuration parameters for the thing should be built and added to {@link #configOptions} based on the
+ * features the device supports.
+ *
+ * @param thing the {@link ZigBeeThingHandler} the channel is part of
+ * @return true if the converter was initialised successfully
+ */
+public boolean initializeConverter(ZigBeeThingHandler thing) {
+    this.thing = thing;
+    return false;
+}

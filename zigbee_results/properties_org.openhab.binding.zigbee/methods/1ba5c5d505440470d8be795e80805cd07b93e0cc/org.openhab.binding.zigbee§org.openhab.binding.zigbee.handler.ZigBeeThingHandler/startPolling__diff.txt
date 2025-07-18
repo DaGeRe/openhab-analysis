@@ -1,0 +1,46 @@
+/**
+ * Start polling channel updates
+ */
+private void startPolling() {
+    Runnable pollingRunnable = new Runnable() {
+
+        @Override
+        public void run() {
+            try {
+                logger.debug("{}: Polling {} channels", nodeIeeeAddress, channels.keySet().size());
+                for (ChannelUID channelUid : channels.keySet()) {
+                    if (!isLinked(channelUid)) {
+                        // Don't poll if this channel isn't linked
+                        logger.debug("{}: Not polling {} - channel is not linked", nodeIeeeAddress, channelUid);
+                        continue;
+                    }
+                    ZigBeeBaseChannelConverter converter = channels.get(channelUid);
+                    if (converter == null) {
+                        logger.debug("{}: Not polling {} - no converter found", nodeIeeeAddress, channelUid);
+                    } else {
+                        logger.debug("{}: Polling {}", nodeIeeeAddress, channelUid);
+                        converter.handleRefresh();
+                    }
+                }
+            } catch (Exception e) {
+                logger.warn("{}: Polling aborted due to exception ", nodeIeeeAddress, e);
+            }
+        }
+    };
+    synchronized (pollingSync) {
+        stopPolling();
+        if (pollingPeriod < POLLING_PERIOD_MIN) {
+            logger.debug("{}: Polling period was set below minimum value. Using minimum.", nodeIeeeAddress);
+            pollingPeriod = POLLING_PERIOD_MIN;
+        }
+        if (pollingPeriod > POLLING_PERIOD_MAX) {
+            logger.debug("{}: Polling period was set above maximum value. Using maximum.", nodeIeeeAddress);
+            pollingPeriod = POLLING_PERIOD_MAX;
+        }
+        // Polling starts almost immediately to get an immediate refresh
+        // Add some random element to the period so that all things aren't synchronised
+        int pollingPeriodMs = pollingPeriod * 1000 + new Random().nextInt(pollingPeriod * 100);
+        pollingJob = scheduler.scheduleWithFixedDelay(pollingRunnable, new Random().nextInt(pollingPeriodMs), pollingPeriodMs, TimeUnit.MILLISECONDS);
+        logger.debug("{}: Polling initialised at {}ms", nodeIeeeAddress, pollingPeriodMs);
+    }
+}

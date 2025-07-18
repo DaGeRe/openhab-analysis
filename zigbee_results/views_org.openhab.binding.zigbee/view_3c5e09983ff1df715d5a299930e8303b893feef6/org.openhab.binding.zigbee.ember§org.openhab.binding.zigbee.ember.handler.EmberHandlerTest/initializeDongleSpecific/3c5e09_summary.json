@@ -1,0 +1,21 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.ember.handler.EmberHandlerTest",
+    "method" : "initializeDongleSpecific",
+    "module" : "org.openhab.binding.zigbee.ember",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#initializeDongleSpecific" : 2,
+    "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest#initializeDongleSpecific" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+    "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#<init>(org.openhab.core.thing.Bridge,org.openhab.core.io.transport.serial.SerialPortManager,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory)" : 2,
+    "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest$EmberHandlerForTest#getConfigAs(java.lang.Class)" : 2,
+    "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.internal.EmberConfiguration#<init>" : 2,
+    "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest$EmberHandlerForTest#<init>(org.openhab.binding.zigbee.ember.handler.EmberHandlerTest,org.openhab.core.thing.Bridge,org.openhab.core.io.transport.serial.SerialPortManager,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,com.zsmartsystems.zigbee.dongle.ember.ZigBeeDongleEzsp)" : 2,
+    "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandler#setGroupRegistration(java.lang.String)" : 2
+  },
+  "selectedChanges" : [ ]
+}

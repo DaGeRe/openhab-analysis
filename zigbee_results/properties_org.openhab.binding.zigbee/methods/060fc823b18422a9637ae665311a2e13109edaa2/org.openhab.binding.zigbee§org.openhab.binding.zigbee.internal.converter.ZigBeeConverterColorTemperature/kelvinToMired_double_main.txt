@@ -1,0 +1,6 @@
+/**
+ * Convert color temperature in Kelvin to Mired.
+ */
+private double kelvinToMired(double temperatureInKelvin) {
+    return 1e6 / temperatureInKelvin;
+}

@@ -1,0 +1,8 @@
+/**
+ * Sets the initial properties to be updated
+ *
+ * @param properties The properties to be updated
+ */
+public void setProperties(@NonNull Map<@NonNull String, @NonNull String> properties) {
+    this.properties.putAll(properties);
+}

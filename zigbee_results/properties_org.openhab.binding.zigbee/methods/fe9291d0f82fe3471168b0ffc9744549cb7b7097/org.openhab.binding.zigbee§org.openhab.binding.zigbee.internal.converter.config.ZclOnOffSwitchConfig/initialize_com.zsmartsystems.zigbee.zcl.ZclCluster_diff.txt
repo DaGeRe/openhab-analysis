@@ -1,0 +1,27 @@
+@Override
+public boolean initialize(ZclCluster cluster) {
+    onoffCluster = (ZclOnOffCluster) cluster;
+    try {
+        Boolean result = onoffCluster.discoverAttributes(false).get();
+        if (!result) {
+            logger.debug("{}: Unable to get supported attributes for {}.", onoffCluster.getZigBeeAddress(), onoffCluster.getClusterName());
+        }
+    } catch (InterruptedException | ExecutionException e) {
+        logger.error("{}: Error getting supported attributes for {}. ", onoffCluster.getZigBeeAddress(), onoffCluster.getClusterName(), e);
+    }
+    // Build a list of configuration supported by this channel based on the attributes the cluster supports
+    List<ParameterOption> options = new ArrayList<>();
+    if (onoffCluster.isAttributeSupported(ZclOnOffCluster.ATTR_OFFWAITTIME)) {
+        parameters.add(ConfigDescriptionParameterBuilder.create(CONFIG_OFFWAITTIME, Type.INTEGER).withLabel("Off Wait Time").withDescription("Time in 100ms steps to ignore ON commands after an OFF command").withDefault("0").withMinimum(new BigDecimal(0)).withMaximum(new BigDecimal(60000)).build());
+    }
+    if (onoffCluster.isAttributeSupported(ZclOnOffCluster.ATTR_ONTIME)) {
+        parameters.add(ConfigDescriptionParameterBuilder.create(CONFIG_ONTIME, Type.INTEGER).withLabel("Auto OFF Time").withDescription("Time in 100ms steps to automatically turn off when sent with timed command").withDefault("65535").withMinimum(new BigDecimal(0)).withMaximum(new BigDecimal(60000)).build());
+    }
+    if (onoffCluster.isAttributeSupported(ZclOnOffCluster.ATTR_STARTUPONOFF)) {
+        options = new ArrayList<>();
+        options.add(new ParameterOption("0", "OFF"));
+        options.add(new ParameterOption("1", "ON"));
+        parameters.add(ConfigDescriptionParameterBuilder.create(CONFIG_STARTUPONOFF, Type.INTEGER).withLabel("Power on state").withDescription("The state to set after powering on").withDefault("0").withMinimum(new BigDecimal(0)).withMaximum(new BigDecimal(1)).withOptions(options).withLimitToOptions(true).build());
+    }
+    return !parameters.isEmpty();
+}

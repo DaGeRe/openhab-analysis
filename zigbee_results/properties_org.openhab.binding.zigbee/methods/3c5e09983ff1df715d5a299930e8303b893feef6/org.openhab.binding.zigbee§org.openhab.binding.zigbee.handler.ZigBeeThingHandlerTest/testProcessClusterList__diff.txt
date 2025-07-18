@@ -1,0 +1,26 @@
+@Test
+public void testProcessClusterList() throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+    List<Integer> clusters = new ArrayList<>();
+    clusters = processClusterList(clusters, null);
+    assertEquals(0, clusters.size());
+    clusters = processClusterList(clusters, "");
+    assertEquals(0, clusters.size());
+    clusters = processClusterList(clusters, ",");
+    assertEquals(0, clusters.size());
+    clusters = processClusterList(clusters, "123,456");
+    assertEquals(2, clusters.size());
+    assertTrue(clusters.contains(123));
+    assertTrue(clusters.contains(456));
+    clusters = processClusterList(clusters, "123,456");
+    assertEquals(0, clusters.size());
+    clusters = processClusterList(clusters, "123,456");
+    assertEquals(2, clusters.size());
+    assertTrue(clusters.contains(123));
+    assertTrue(clusters.contains(456));
+    clusters = processClusterList(clusters, "321,654");
+    assertEquals(4, clusters.size());
+    assertTrue(clusters.contains(123));
+    assertTrue(clusters.contains(456));
+    assertTrue(clusters.contains(321));
+    assertTrue(clusters.contains(654));
+}

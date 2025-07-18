@@ -1,0 +1,4 @@
+@Override
+protected Configuration editConfiguration() {
+    return new Configuration();
+}

@@ -1,0 +1,33 @@
+@Test                                                                                                  @Test                                                                                               
+public void testMatcher() throws NoSuchFieldException, SecurityException, IllegalArgumentException,    public void testMatcher() throws NoSuchFieldException, SecurityException, IllegalArgumentException, 
+ZigBeeThingTypeMatcher matcher = new ZigBeeThingTypeMatcher();                                         ZigBeeThingTypeMatcher matcher = new ZigBeeThingTypeMatcher();                                      
+Map&lt;String, Object&gt; properties;                                                                  Map&lt;String, Object&gt; properties;                                                               
+properties = new HashMap&lt;&gt;();                                                                    properties = new HashMap&lt;&gt;();                                                                 
+properties.put(Thing.PROPERTY_VENDOR, "Vendor1");                                                      properties.put(Thing.PROPERTY_VENDOR, "Vendor1");                                                   
+properties.put(Thing.PROPERTY_MODEL_ID, "Model1");                                                     properties.put(Thing.PROPERTY_MODEL_ID, "Model1");                                                  
+matcher.matchThingType(properties);                                                                    matcher.matchThingType(properties);                                                                 
+assertEquals(new ThingTypeUID("zigbee:type1"), matcher.matchThingType(properties));                    assertEquals(new ThingTypeUID("zigbee:type1"), matcher.matchThingType(properties));                 
+properties = new HashMap&lt;&gt;();                                                                    properties = new HashMap&lt;&gt;();                                                                 
+properties.put(Thing.PROPERTY_VENDOR, "Vendor1");                                                      properties.put(Thing.PROPERTY_VENDOR, "Vendor1");                                                   
+properties.put(Thing.PROPERTY_MODEL_ID, "Model2");                                                     properties.put(Thing.PROPERTY_MODEL_ID, "Model2");                                                  
+assertEquals(new ThingTypeUID("zigbee:type3"), matcher.matchThingType(properties));                    assertEquals(new ThingTypeUID("zigbee:type3"), matcher.matchThingType(properties));                 
+// No match as overlapping properties                                                                  // No match as overlapping properties                                                               
+properties = new HashMap&lt;&gt;();                                                                    properties = new HashMap&lt;&gt;();                                                                 
+properties.put(Thing.PROPERTY_VENDOR, "Vendor1");                                                      properties.put(Thing.PROPERTY_VENDOR, "Vendor1");                                                   
+properties.put(Thing.PROPERTY_MODEL_ID, "Model2");                                                     properties.put(Thing.PROPERTY_MODEL_ID, "Model2");                                                  
+properties.put(Thing.PROPERTY_FIRMWARE_VERSION, "Version4");                                           properties.put(Thing.PROPERTY_FIRMWARE_VERSION, "Version4");                                        
+assertEquals(null, matcher.matchThingType(properties));                                                assertEquals(null, matcher.matchThingType(properties));                                             
+// No match as overlapping properties                                                                  // No match as overlapping properties                                                               
+properties = new HashMap&lt;&gt;();                                                                    properties = new HashMap&lt;&gt;();                                                                 
+properties.put(Thing.PROPERTY_VENDOR, "Vendor1");                                                      properties.put(Thing.PROPERTY_VENDOR, "Vendor1");                                                   
+assertEquals(null, matcher.matchThingType(properties));                                                assertEquals(null, matcher.matchThingType(properties));                                             
+// No match at all                                                                                     // No match at all                                                                                  
+properties = new HashMap&lt;&gt;();                                                                    properties = new HashMap&lt;&gt;();                                                                 
+properties.put(Thing.PROPERTY_VENDOR, "Vendor3");                                                      properties.put(Thing.PROPERTY_VENDOR, "Vendor3");                                                   
+assertEquals(null, matcher.matchThingType(properties));                                                assertEquals(null, matcher.matchThingType(properties));                                             
+                                                                                                     | // Match with invisible characters                                                                  
+                                                                                                     | properties = new HashMap&lt;&gt;();                                                                 
+                                                                                                     | properties.put(Thing.PROPERTY_VENDOR, "Vendor4");                                                   
+                                                                                                     | properties.put(Thing.PROPERTY_MODEL_ID, "Model3");                                                  
+                                                                                                     | assertEquals(new ThingTypeUID("zigbee:type5"), matcher.matchThingType(properties));                 
+}                                                                                                      }                                                                                                   

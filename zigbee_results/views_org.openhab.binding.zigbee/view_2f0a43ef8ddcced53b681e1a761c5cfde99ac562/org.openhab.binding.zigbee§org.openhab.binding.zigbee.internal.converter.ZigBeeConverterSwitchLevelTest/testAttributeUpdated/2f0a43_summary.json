@@ -1,0 +1,24 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevelTest",
+    "method" : "testAttributeUpdated",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#initializeConverterClient" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 6,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#levelToPercent(int)" : 3,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 5,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevelTest#testAttributeUpdated" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#initializeConverterServer" : 1
+  },
+  "selectedChanges" : [ ]
+}

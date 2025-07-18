@@ -1,0 +1,11 @@
+private PercentType convertMiredToPercent(ZigBeeConverterColorTemperature converter, Integer mired) {
+    try {
+        Method method = ZigBeeConverterColorTemperature.class.getDeclaredMethod("miredToPercent", Integer.class);
+        method.setAccessible(true);
+        return (PercentType) method.invoke(converter, mired);
+    } catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException | SecurityException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+        return null;
+    }
+}

@@ -1,0 +1,21 @@
+/**
+ * Transforms \x&lt;nnnn&gt; occurrences into corresponding utf16 char.
+ *
+ * @param s String that shall be unescaped.
+ * @return UTF16 string
+ */
+private String unescape(String s) {
+    StringBuilder sb = new StringBuilder();
+    String[] segments = s.split("\\\\u");
+    sb.append(segments[0]);
+    for (int i = 1; i < segments.length; i++) {
+        try {
+            sb.appendCodePoint(Integer.valueOf(segments[i].substring(0, 4), 16)).append(segments[i].substring(4));
+        } catch (NumberFormatException nfe) {
+            throw new IllegalArgumentException("Unicode " + segments[i].substring(0, 4) + " cannot be parsed.", nfe);
+        } catch (IndexOutOfBoundsException ioobe) {
+            throw new IllegalArgumentException("Unicode " + segments[i].substring(0, segments[i].length()) + " is too short.");
+        }
+    }
+    return sb.toString();
+}

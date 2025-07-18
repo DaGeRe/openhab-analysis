@@ -1,0 +1,40 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevelTest",
+    "method" : "testCommand",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevelTest#testCommand" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#percentToLevel(org.openhab.core.library.types.PercentType)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#handlePercentCommand(org.openhab.core.library.types.PercentType)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclReportingConfig#<init>(org.openhab.core.thing.Channel)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#monitorCommandResponse(org.openhab.core.types.Command,java.util.concurrent.Future,java.util.function.Consumer)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclReportingConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#getDefaultTransitionTime" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#updateChannelState(org.openhab.core.types.State)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#moveToLevel(org.openhab.core.library.types.PercentType)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#levelToPercent(int)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#initializeConverterServer" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#handleInvertReport(org.openhab.core.library.types.PercentType)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#monitorCommandResponse(org.openhab.core.types.Command,java.util.List,java.util.function.Consumer)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#attributeUpdated(com.zsmartsystems.zigbee.zcl.ZclAttribute,java.lang.Object)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#handleInvertControl(org.openhab.core.types.Command)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#handleCommand(org.openhab.core.types.Command)" : 1
+  },
+  "selectedChanges" : [ ]
+}

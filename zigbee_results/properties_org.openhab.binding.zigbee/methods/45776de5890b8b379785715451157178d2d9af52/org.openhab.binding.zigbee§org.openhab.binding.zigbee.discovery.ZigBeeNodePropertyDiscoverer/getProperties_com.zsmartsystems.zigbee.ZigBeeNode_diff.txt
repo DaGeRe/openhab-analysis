@@ -1,0 +1,14 @@
+/**
+ * Gets the properties from the device
+ *
+ * @param node the {@link ZigBeeNode}
+ * @return a {@link Map} of properties or an empty map if there was an error
+ */
+public Map<String, String> getProperties(final ZigBeeNode node) {
+    logger.debug("{}: ZigBee node property discovery start", node.getIeeeAddress());
+    addPropertiesFromNodeDescriptors(node);
+    addPropertiesFromBasicCluster(node);
+    addPropertiesFromOtaCluster(node);
+    logger.debug("{}: ZigBee node property discovery complete: {}", node.getIeeeAddress(), properties);
+    return properties;
+}

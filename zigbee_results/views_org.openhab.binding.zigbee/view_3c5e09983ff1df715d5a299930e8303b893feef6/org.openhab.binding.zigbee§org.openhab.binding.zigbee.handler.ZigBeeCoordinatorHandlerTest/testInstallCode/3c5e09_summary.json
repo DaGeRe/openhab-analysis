@@ -1,0 +1,15 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandlerTest",
+    "method" : "testInstallCode",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler#addInstallCode(java.lang.String)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandlerTest#testInstallCode" : 2
+  },
+  "selectedChanges" : [ ]
+}

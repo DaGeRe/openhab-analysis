@@ -1,0 +1,9 @@
+private void updateColorHSB() {
+    float hueValue = lastHue * 360.0f / 254.0f;
+    float saturationValue = lastSaturation * 100.0f / 254.0f;
+    DecimalType hue = new DecimalType(Float.valueOf(hueValue).toString());
+    PercentType saturation = new PercentType(Float.valueOf(saturationValue).toString());
+    updateColorHSB(hue, saturation);
+    hueChanged = false;
+    saturationChanged = false;
+}

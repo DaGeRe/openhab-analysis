@@ -1,0 +1,16 @@
+@Test                                                                                                  @Test                                                                                               
+public void processReceivedDataOverflow() {                                                            public void processReceivedDataOverflow() {                                                         
+Slzb06NetworkPort port = new Slzb06NetworkPort(null, 0);                                               Slzb06NetworkPort port = new Slzb06NetworkPort(null, 0);                                            
+byte[] chunk = new byte[Slzb06NetworkPort.RX_BUFFER_LEN];                                            | byte[] chunk = new byte[Slzb06NetworkPort.RX_BUFFER_LEN - 1];                                       
+byte[] extra = new byte[1];                                                                            byte[] extra = new byte[1];                                                                         
+for (int i = 0; i &lt; Slzb06NetworkPort.RX_BUFFER_LEN; i++) {                                       | for (int i = 0; i &lt; chunk.length; i++) {                                                         
+chunk[i] = 0;                                                                                          chunk[i] = 0;                                                                                       
+}                                                                                                      }                                                                                                   
+port.processReceivedData(chunk, chunk.length);                                                         port.processReceivedData(chunk, chunk.length);                                                      
+extra[0] = 1;                                                                                          extra[0] = 1;                                                                                       
+port.processReceivedData(extra, 1);                                                                    port.processReceivedData(extra, 1);                                                                 
+for (int i = 0; i &lt; Slzb06NetworkPort.RX_BUFFER_LEN - 2; i++) {                                     for (int i = 0; i &lt; Slzb06NetworkPort.RX_BUFFER_LEN - 2; i++) {                                  
+assertEquals(0, port.read(1));                                                                         assertEquals(0, port.read(1));                                                                      
+}                                                                                                      }                                                                                                   
+assertEquals(1, port.read(1));                                                                         assertEquals(1, port.read(1));                                                                      
+}                                                                                                      }                                                                                                   

@@ -1,0 +1,3 @@
+public Slzb06Handler(Bridge coordinator, ZigBeeChannelConverterFactory channelFactory) {
+    super(coordinator, channelFactory);
+}

@@ -1,0 +1,13 @@
+@Override                                                                                              @Override                                                                                           
+public boolean initializeConverter(ZigBeeThingHandler thing) {                                         public boolean initializeConverter(ZigBeeThingHandler thing) {                                      
+super.initializeConverter(thing);                                                                      super.initializeConverter(thing);                                                                   
+clusterColorControl = (ZclColorControlCluster) endpoint.getInputCluster(ZclColorControlCluster.CLUST   clusterColorControl = (ZclColorControlCluster) endpoint.getInputCluster(ZclColorControlCluster.CLUST
+if (clusterColorControl == null) {                                                                     if (clusterColorControl == null) {                                                                  
+logger.error("{}: Error opening color control input cluster on endpoint {}", endpoint.getIeeeAddress   logger.error("{}: Error opening color control input cluster on endpoint {}", endpoint.getIeeeAddress
+return false;                                                                                          return false;                                                                                       
+}                                                                                                      }                                                                                                   
+                                                                                                     | clusterOnOff = (ZclOnOffCluster) endpoint.getInputCluster(ZclOnOffCluster.CLUSTER_ID);              
+determineMinMaxTemperature(clusterColorControl);                                                       determineMinMaxTemperature(clusterColorControl);                                                    
+clusterColorControl.addAttributeListener(this);                                                        clusterColorControl.addAttributeListener(this);                                                     
+return true;                                                                                           return true;                                                                                        
+}                                                                                                      }                                                                                                   

@@ -1,0 +1,6 @@
+/**
+ * Convert color temperature in Kelvin to Mired.
+ */
+private int kelvinToMired(int temperatureInKelvin) {
+    return (int) (1e6 / temperatureInKelvin);
+}

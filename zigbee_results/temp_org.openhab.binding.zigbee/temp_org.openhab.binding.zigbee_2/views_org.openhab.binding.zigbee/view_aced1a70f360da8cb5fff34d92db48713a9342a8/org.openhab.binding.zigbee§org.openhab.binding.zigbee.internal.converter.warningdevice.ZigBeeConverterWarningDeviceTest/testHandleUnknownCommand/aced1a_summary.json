@@ -1,0 +1,21 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.warningdevice.ZigBeeConverterWarningDeviceTest",
+    "method" : "testHandleUnknownCommand",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.ZigBeeConverterWarningDeviceTest#testHandleUnknownCommand" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.ZigBeeConverterWarningDevice#handleCommand(org.openhab.core.types.Command)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.ZigBeeConverterWarningDeviceTest#setup" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.ZigBeeConverterWarningDevice#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.ZigBeeConverterWarningDevice#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1
+  },
+  "selectedChanges" : [ ]
+}

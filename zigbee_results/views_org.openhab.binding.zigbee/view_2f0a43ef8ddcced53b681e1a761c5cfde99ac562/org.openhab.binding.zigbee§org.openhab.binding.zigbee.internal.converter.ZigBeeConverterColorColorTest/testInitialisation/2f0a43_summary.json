@@ -1,0 +1,31 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest",
+    "method" : "testInitialisation",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclColorControlConfig#<init>(org.openhab.core.thing.Channel)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclColorControlConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#discoverSupportedColorCommands(com.zsmartsystems.zigbee.zcl.clusters.ZclColorControlCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest#testInitialisation" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclColorControlConfig#getControlMethod" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclColorControlConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColor#initializeConverter(org.openhab.binding.zigbee.handler.ZigBeeThingHandler)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclOnOffSwitchConfig#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#initialize(org.openhab.core.thing.Channel,org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler,com.zsmartsystems.zigbee.IeeeAddress,int)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#getConfigDescription" : 1
+  },
+  "selectedChanges" : [ ]
+}

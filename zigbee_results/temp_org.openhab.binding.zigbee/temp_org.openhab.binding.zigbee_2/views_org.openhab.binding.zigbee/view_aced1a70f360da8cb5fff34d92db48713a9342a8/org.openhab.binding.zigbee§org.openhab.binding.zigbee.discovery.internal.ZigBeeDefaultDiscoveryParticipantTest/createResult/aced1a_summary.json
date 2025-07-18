@@ -1,0 +1,18 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.discovery.internal.ZigBeeDefaultDiscoveryParticipantTest",
+    "method" : "createResult",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.internal.ZigBeeDefaultDiscoveryParticipantTest#createResult" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.internal.ZigBeeDefaultDiscoveryParticipantTest#getDiscoveryParticipant" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.internal.ZigBeeDefaultDiscoveryParticipant#createResult(org.openhab.core.thing.ThingUID,com.zsmartsystems.zigbee.ZigBeeNode,java.util.Map)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.discovery.internal.ZigBeeDefaultDiscoveryParticipant#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcher#<init>" : 1
+  },
+  "selectedChanges" : [ ]
+}

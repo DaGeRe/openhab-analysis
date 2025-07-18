@@ -1,0 +1,7 @@
+/**                                                                                                  |                                                                                                     
+* Convert color temperature given in Kelvin to percentage.                                           |                                                                                                     
+*/                                                                                                   |                                                                                                     
+private PercentType kelvinToPercent(int temperatureInKelvin) {                                       |                                                                                                     
+double value = 100.0 - (temperatureInKelvin - kelvinMin) * 100.0 / kelvinRange;                      |                                                                                                     
+return new PercentType((int) (value + 0.5));                                                         |                                                                                                     
+}                                                                                                    |                                                                                                     

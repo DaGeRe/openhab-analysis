@@ -1,0 +1,12 @@
+private void determineDivisorAndMultiplier(ZclMeteringCluster clusterMetering) {
+    ZclAttribute divisorAttribute = clusterMetering.getAttribute(ZclMeteringCluster.ATTR_DIVISOR);
+    ZclAttribute multiplierAttribute = clusterMetering.getAttribute(ZclMeteringCluster.ATTR_MULTIPLIER);
+    Integer iDiv = (Integer) divisorAttribute.readValue(Long.MAX_VALUE);
+    Integer iMult = (Integer) multiplierAttribute.readValue(Long.MAX_VALUE);
+    if (iDiv == null || iMult == null) {
+        iDiv = 1;
+        iMult = 1;
+    }
+    divisor = iDiv;
+    multiplier = iMult;
+}

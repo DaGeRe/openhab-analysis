@@ -1,0 +1,17 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProviderTest",
+    "method" : "testGetCommandDescriptionsWithOtherChannelType",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProviderTest#testGetCommandDescriptionsWithOtherChannelType" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProvider#getCommandDescription(org.openhab.core.thing.Channel,org.openhab.core.types.CommandDescription,java.util.Locale)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProvider#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProviderTest#setup" : 1
+  },
+  "selectedChanges" : [ ]
+}

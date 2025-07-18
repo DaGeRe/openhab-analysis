@@ -1,0 +1,11 @@
+private ZigBeeNode mockZigBeeNode(int endpointId, IeeeAddress ieeeAddress) throws InterruptedException, ExecutionException {
+    ZigBeeEndpoint zigbeeEndpoint = mock(ZigBeeEndpoint.class);
+    Future<ZigBeeStatus> updateBindingTableFuture = mock(Future.class);
+    when(updateBindingTableFuture.get()).thenReturn(ZigBeeStatus.SUCCESS);
+    ZigBeeNode zigBeeNode = mock(ZigBeeNode.class);
+    when(zigBeeNode.isDiscovered()).thenReturn(true);
+    when(zigBeeNode.getEndpoint(endpointId)).thenReturn(zigbeeEndpoint);
+    when(zigBeeNode.getIeeeAddress()).thenReturn(ieeeAddress);
+    when(zigBeeNode.updateBindingTable()).thenReturn(updateBindingTableFuture);
+    return zigBeeNode;
+}

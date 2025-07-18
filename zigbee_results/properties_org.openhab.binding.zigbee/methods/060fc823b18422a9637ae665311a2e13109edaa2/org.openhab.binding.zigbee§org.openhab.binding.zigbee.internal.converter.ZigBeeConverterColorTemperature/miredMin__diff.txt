@@ -1,0 +1,6 @@
+                                                                                                     | /**                                                                                                 
+                                                                                                     | * Getter for miredMin value                                                                         
+                                                                                                     | */                                                                                                  
+                                                                                                     | private double miredMin() {                                                                         
+                                                                                                     | return kelvinToMired(kelvinMax);                                                                    
+                                                                                                     | }                                                                                                   

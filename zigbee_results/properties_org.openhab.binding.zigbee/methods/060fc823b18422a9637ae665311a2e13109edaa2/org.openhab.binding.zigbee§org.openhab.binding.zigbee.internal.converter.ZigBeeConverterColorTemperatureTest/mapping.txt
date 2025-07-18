@@ -1,0 +1,1 @@
+convertPercentToMired_org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperature_org.openhab.core.library.types.PercentType;convertPercentToMired_0_diff.txt

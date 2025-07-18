@@ -1,0 +1,5 @@
+private void injectIntoPrivateField(Object object, Object value, String fieldname) throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+    Field coordinatorHandlerField = ZigBeeThingHandler.class.getDeclaredField(fieldname);
+    coordinatorHandlerField.setAccessible(true);
+    coordinatorHandlerField.set(object, value);
+}

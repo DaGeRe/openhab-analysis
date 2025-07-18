@@ -1,0 +1,7 @@
+/**
+ * Convert color temperature given as percentage to Kelvin.
+ */
+private int percentToKelvin(PercentType temperatureInPercent) {
+    double value = ((100.0 - temperatureInPercent.doubleValue()) * kelvinRange / 100.0) + kelvinMin;
+    return (int) (value + 0.5);
+}

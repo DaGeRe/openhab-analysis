@@ -1,0 +1,19 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.config.ZclDoorLockConfigTest",
+    "method" : "getConfiguration",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclDoorLockConfig#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclDoorLockConfigTest$MockedBooleanFuture#<init>(org.openhab.binding.zigbee.internal.converter.config.ZclDoorLockConfigTest)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclDoorLockConfigTest#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclDoorLockConfigTest$MockedBooleanFuture#get" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclDoorLockConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclDoorLockConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1
+  },
+  "selectedChanges" : [ ]
+}

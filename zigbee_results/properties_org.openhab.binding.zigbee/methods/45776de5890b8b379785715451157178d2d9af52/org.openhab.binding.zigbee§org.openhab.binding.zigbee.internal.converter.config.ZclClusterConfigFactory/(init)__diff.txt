@@ -1,0 +1,4 @@
+public ZclClusterConfigFactory() {
+    configMap = new HashMap<>();
+    configMap.put(ZclDoorLockCluster.CLUSTER_ID, ZclDoorLockConfig.class);
+}

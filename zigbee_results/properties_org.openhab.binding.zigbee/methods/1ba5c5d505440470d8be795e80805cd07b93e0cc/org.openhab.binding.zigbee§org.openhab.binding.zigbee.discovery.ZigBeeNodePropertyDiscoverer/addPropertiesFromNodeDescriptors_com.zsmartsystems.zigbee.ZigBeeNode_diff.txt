@@ -1,0 +1,16 @@
+private void addPropertiesFromNodeDescriptors(ZigBeeNode node) {
+    if (node.getLogicalType() != null) {
+        properties.put(THING_PROPERTY_LOGICALTYPE, node.getLogicalType().toString());
+    }
+    properties.put(THING_PROPERTY_NETWORKADDRESS, node.getNetworkAddress().toString());
+    PowerDescriptor powerDescriptor = node.getPowerDescriptor();
+    if (powerDescriptor != null) {
+        properties.put(THING_PROPERTY_AVAILABLEPOWERSOURCES, powerDescriptor.getAvailablePowerSources().toString());
+        properties.put(THING_PROPERTY_POWERSOURCE, powerDescriptor.getCurrentPowerSource().toString());
+        properties.put(THING_PROPERTY_POWERMODE, powerDescriptor.getCurrentPowerMode().toString());
+        properties.put(THING_PROPERTY_POWERLEVEL, powerDescriptor.getPowerLevel().toString());
+    }
+    if (node.getNodeDescriptor() != null) {
+        properties.put(THING_PROPERTY_MANUFACTURERCODE, String.format("0x%04x", node.getNodeDescriptor().getManufacturerCode()));
+    }
+}

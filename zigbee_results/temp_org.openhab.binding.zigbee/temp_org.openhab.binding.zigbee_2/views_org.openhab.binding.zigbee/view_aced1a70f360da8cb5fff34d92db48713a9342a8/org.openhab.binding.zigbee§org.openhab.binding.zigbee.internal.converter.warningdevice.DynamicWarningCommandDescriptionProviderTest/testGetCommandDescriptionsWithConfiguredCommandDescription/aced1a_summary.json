@@ -1,0 +1,29 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProviderTest",
+    "method" : "testGetCommandDescriptionsWithConfiguredCommandDescription",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#<init>(boolean,int,int,java.time.Duration)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningMode#<init>(int)" : 7,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SoundLevel#getValue" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProvider#getCommandDescription(org.openhab.core.thing.Channel,org.openhab.core.types.CommandDescription,java.util.Locale)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProvider#getProvidedWarningTypes" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProvider#getCommandOptions(org.openhab.core.thing.Channel)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProvider#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#parse(java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#getSirenLevel(java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.SoundLevel#<init>(int)" : 4,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProvider#getConfiguredWarningTypes(org.openhab.core.thing.Channel)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningMode#getValue" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#serializeToCommand" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.warningdevice.WarningType#getWarningMode(java.lang.String)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProviderTest#setup" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.warningdevice.DynamicWarningCommandDescriptionProviderTest#testGetCommandDescriptionsWithConfiguredCommandDescription" : 1
+  },
+  "selectedChanges" : [ ]
+}

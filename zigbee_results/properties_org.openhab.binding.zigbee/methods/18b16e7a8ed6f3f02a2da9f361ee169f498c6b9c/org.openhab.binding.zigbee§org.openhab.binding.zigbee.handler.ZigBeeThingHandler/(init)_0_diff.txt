@@ -1,0 +1,14 @@
+/**
+ * Creates a ZigBee thing.
+ *
+ * @param zigbeeDevice the {@link Thing}
+ * @param channelFactory the {@link ZigBeeChannelConverterFactory} to be used to create the channels
+ * @param zigbeeIsAliveTracker the tracker which sets the {@link Thing} to OFFLINE after a period without
+ *            communication
+ * @param firmwareUpdateService
+ */
+public ZigBeeThingHandler(Thing zigbeeDevice, ZigBeeChannelConverterFactory channelFactory, ZigBeeIsAliveTracker zigbeeIsAliveTracker) {
+    super(zigbeeDevice);
+    this.channelFactory = channelFactory;
+    this.isAliveTracker = zigbeeIsAliveTracker;
+}

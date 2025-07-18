@@ -1,0 +1,10 @@
+/**
+ * Constructor setting port name and baud rate.
+ *
+ * @param serverName the server name
+ * @param serverPort the server port
+ */
+public Slzb06NetworkPort(String serverName, int serverPort) {
+    this.serverName = serverName;
+    this.serverPort = serverPort;
+}

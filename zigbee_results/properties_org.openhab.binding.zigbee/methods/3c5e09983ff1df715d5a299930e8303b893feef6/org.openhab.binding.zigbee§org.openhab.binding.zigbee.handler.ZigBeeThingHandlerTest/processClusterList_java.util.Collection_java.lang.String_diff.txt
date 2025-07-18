@@ -1,0 +1,7 @@
+private List<Integer> processClusterList(Collection<Integer> initialClusters, String newClusters) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+    Method privateMethod;
+    ZigBeeThingHandler handler = new ZigBeeThingHandler(null, null, null);
+    privateMethod = ZigBeeThingHandler.class.getDeclaredMethod("processClusterList", Collection.class, String.class);
+    privateMethod.setAccessible(true);
+    return (List<Integer>) privateMethod.invoke(handler, initialClusters, newClusters);
+}

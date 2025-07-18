@@ -1,0 +1,28 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest",
+    "method" : "testAddProvider",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#createProperties(com.zsmartsystems.zigbee.ZigBeeEndpoint)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest$TestZigBeeChannelConverterProvider#getChannelConverters" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#createChannelUID(org.openhab.core.thing.ThingUID,com.zsmartsystems.zigbee.ZigBeeEndpoint,java.lang.String)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest$TestZigBeeChannelConverterProvider#<init>(org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest,java.util.Map)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#<init>" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImpl#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImpl#getChannels(org.openhab.core.thing.ThingUID,com.zsmartsystems.zigbee.ZigBeeEndpoint)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest#testAddProvider" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoff#getChannel(org.openhab.core.thing.ThingUID,com.zsmartsystems.zigbee.ZigBeeEndpoint)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoff#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImplTest#setup" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeChannelConverterFactoryImpl#addZigBeeChannelConverterProvider(org.openhab.binding.zigbee.converter.ZigBeeChannelConverterProvider)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverter#getDeviceTypeLabel(com.zsmartsystems.zigbee.ZigBeeEndpoint)" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchLevel#getChannel(org.openhab.core.thing.ThingUID,com.zsmartsystems.zigbee.ZigBeeEndpoint)" : 1
+  },
+  "selectedChanges" : [ ]
+}

@@ -1,0 +1,163 @@
+{
+  "commits" : [ {
+    "tag" : "aced1a70f360da8cb5fff34d92db48713a9342a8",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2024-11-09 10:30:10 +1300",
+    "message" : "     Reduce and update logging during network initialisation (#872)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "483700604893221952b22f6da42361be000e1009",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2024-11-14 17:17:10 +1300",
+    "message" : "     Use Long for reporting config (#874)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "1c2b1ae1ba6cfb004e23576136d1fe38d047698c",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2024-11-15 22:34:06 +1300",
+    "message" : "     Minor logging fixes (#875)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "e02e2cb8629a0fd577008e51922de1856b018274",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2024-11-15 22:53:25 +1300",
+    "message" : "     Use Long for reporting config (#876)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "5e713eac3a5871f86a7fb5828b11bcc3da0b71e5",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2024-11-18 09:05:38 +1300",
+    "message" : "     Remove timeout on SLZB test (#877)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "8193316af8ef8cb0c219c6f9f2abe24391350e06",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2024-11-20 07:53:35 +1300",
+    "message" : "     Fix bug in processing trigger channels (#880)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "d5f1da9f7a61b6328cf180c767855332d3a6c4ba",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2024-12-15 09:46:44 +1300",
+    "message" : "     Update README.md          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "d76053983c7ecef170503372763d6dbdcc252eb2",
+    "comitter" : "openhab-bot <infrastructure@openhabfoundation.org>",
+    "date" : "2024-12-15 16:53:57 +0000",
+    "message" : "     [unleash-maven-plugin] Preparation for next development cycle. "
+  }, {
+    "tag" : "978db5259025db10025611b33dc4ba64a1c77d92",
+    "comitter" : "Wouter Born <github@maindrain.net>",
+    "date" : "2025-01-01 17:09:04 +0100",
+    "message" : "     Update license headers to 2025 (#882)          Signed-off-by: Wouter Born <github@maindrain.net> "
+  }, {
+    "tag" : "adb414f76dd0e48079533bdef8b88548b3acb728",
+    "comitter" : "curlyel <curlyel@users.noreply.github.com>",
+    "date" : "2025-01-01 20:25:46 +0100",
+    "message" : "     Update README.md (#883)          Signed-off-by: curlyel <curlyel@users.noreply.github.com> "
+  }, {
+    "tag" : "0ac0a73b3bdd05f779a3b75ce4ce5c355b8d0725",
+    "comitter" : "pgaufillet <pierre.gaufillet@bergamote.eu>",
+    "date" : "2025-01-02 20:14:39 +0100",
+    "message" : "     Trim blanks and invisible characters from property value for discover… (#886)          * Trim blanks and invisible characters from property value for discovery. Add thing discovery match test with blank and invisible characters. (#836)          Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu>          * Add Legrand Céliane with Netatmo dimmer w/o neutral and SONOFF SNZB-02P.          Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu>          ---------          Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu> "
+  }, {
+    "tag" : "ee06711befc26c0f779d826581a0cb133c4b1a07",
+    "comitter" : "pgaufillet <pierre.gaufillet@bergamote.eu>",
+    "date" : "2025-01-02 20:20:56 +0100",
+    "message" : "     Add Legrand Céliane with Netatmo dimmer w/o neutral and SONOFF SNZB-02P. (#887)          Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu> "
+  }, {
+    "tag" : "fe9291d0f82fe3471168b0ffc9744549cb7b7097",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-01-04 07:53:29 +1300",
+    "message" : "     Fix regression with managing on/off state in color handler (#889)          * Fix regression with managing on/off state in color handler          Signed-off-by: Chris Jackson <chris@cd-jackson.com>          * Fix regression in test          Signed-off-by: Chris Jackson <chris@cd-jackson.com>          ---------          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "f28ad8d3eefaf5fb1326d41a852d9ca1e2afebc7",
+    "comitter" : "pgaufillet <pierre.gaufillet@bergamote.eu>",
+    "date" : "2025-01-03 20:07:06 +0100",
+    "message" : "     Add dimmer/switch mode for Legrand with Netatmo dimmers. (#892)          Signed-off-by: Pierre GAUFILLET <pierre.gaufillet@bergamote.eu> "
+  }, {
+    "tag" : "d9d3727e3333cbf34f4d2d516d31ae81c4155aaa",
+    "comitter" : "Andrew Fiddian-Green <software@whitebear.ch>",
+    "date" : "2025-01-06 19:50:58 +0000",
+    "message" : "     Update Color Channel Hue and Saturation when light is off (#894)          * [zigbee] update HS part of HSB when light is off          Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch>          * Optimise code          Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch>          ---------          Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch> "
+  }, {
+    "tag" : "acca292a69bc2bd9690220c117aafdfc02d4dba1",
+    "comitter" : "Wouter Born <github@maindrain.net>",
+    "date" : "2025-01-07 21:36:13 +0100",
+    "message" : "     Upgrade SAT to 0.17.0 (#895)          For release notes, see:          https://github.com/openhab/static-code-analysis/releases/tag/0.17.0          Signed-off-by: Wouter Born <github@maindrain.net> "
+  }, {
+    "tag" : "5a8781f5276b5dae68c73a71b9e7ffd9995e25ef",
+    "comitter" : "Wouter Born <github@maindrain.net>",
+    "date" : "2025-01-07 21:36:32 +0100",
+    "message" : "     Start license headers with `/*` instead of `/**` (#896)          Prevents JavaDoc tooling issues because these tools check comments starting with `/**`.          Signed-off-by: Wouter Born <github@maindrain.net> "
+  }, {
+    "tag" : "9f81b7b6ffe563ecda65ba23c43d33936da40b84",
+    "comitter" : "joerg1985 <16140691+joerg1985@users.noreply.github.com>",
+    "date" : "2025-01-12 18:46:03 +0100",
+    "message" : "     Ignore XY color updates in hue mode (#897)          Signed-off-by: Jörg Sautter <joerg.sautter@gmx.net> "
+  }, {
+    "tag" : "535d806b6585fe5d2ec32abc94f18a59e85b6cdc",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-01-17 07:23:35 +1300",
+    "message" : "     Don't update CT if device is off (#898)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "1ba5c5d505440470d8be795e80805cd07b93e0cc",
+    "comitter" : "Holger Friedrich <mail@holger-friedrich.de>",
+    "date" : "2025-01-31 22:06:34 +0100",
+    "message" : "     Fix Nullable issue in OH5 build (#900)          Signed-off-by: Holger Friedrich <mail@holger-friedrich.de> "
+  }, {
+    "tag" : "03c5c966e353c4cb3a3a7490cf3bf23a7c73d220",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-02-24 11:31:43 +1300",
+    "message" : "     Fix log error (#901)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "9c2a874dfccb740b5e0350d379d9bb93b84c6b16",
+    "comitter" : "Wouter Born <github@maindrain.net>",
+    "date" : "2025-02-26 18:48:25 +0100",
+    "message" : "     Use Spotless sortpom plug-in (#903)          Signed-off-by: Wouter Born <github@maindrain.net> "
+  }, {
+    "tag" : "5754fd54fc35d382582936452ee9929f5de717e0",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-03-10 10:54:38 +1300",
+    "message" : "     Fix multipliers in current and voltage converters (#905)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "d45adec4d452a2af00d03d5d46d137e59c14bf7e",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-03-23 15:43:43 +1300",
+    "message" : "     Add protection to things command if node not found (#907)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "91a6f8d9715717ba9d20a02874da6b4c5ba41a11",
+    "comitter" : "Andrew Fiddian-Green <software@whitebear.ch>",
+    "date" : "2025-04-10 21:56:28 +0100",
+    "message" : "     [zigbee] Add semantic tags (#908)          Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch> "
+  }, {
+    "tag" : "7177c93fe5fd36d4b02c34eedf2cc99fedd1a718",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-04-12 03:22:15 +1200",
+    "message" : "     Add support for PM2.5 channel (#850)          * Add support for PM2.5 channel          Signed-off-by: Chris Jackson <chris@cd-jackson.com>          * Bump ZSS to 1.4.16          ---------          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "07ad7c3056fae16117d3899553c445ad4842fbcc",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-04-12 03:25:57 +1200",
+    "message" : "     Add reporting configuration for temperature and humidity channels (#870)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "49fee8b30e744aa83f54557bd30b40d67f3ab0d1",
+    "comitter" : "Andrew Fiddian-Green <software@whitebear.ch>",
+    "date" : "2025-04-12 18:01:29 +0100",
+    "message" : "     add pm25 tags; fix a-or-b tags (#909)          Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch> "
+  }, {
+    "tag" : "b477bc11d3ad015278973e1e5f5ba97adc6e8866",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-04-20 23:19:23 +1200",
+    "message" : "     Update ZSS library to 1.4.16.1 (#911)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "53bab818eacf59637a539334856615bdce0ba715",
+    "comitter" : "Andrew Fiddian-Green <software@whitebear.ch>",
+    "date" : "2025-04-25 03:29:37 +0100",
+    "message" : "     Add auto generated tags (#912)          Signed-off-by: Andrew Fiddian-Green <software@whitebear.ch> "
+  }, {
+    "tag" : "bbf4c71187ec8c35e378925a751236be91ed194a",
+    "comitter" : "Chris Jackson <chris@cd-jackson.com>",
+    "date" : "2025-05-17 15:13:49 +1200",
+    "message" : "     Add configuration for Occupancy Sensor (#910)          Signed-off-by: Chris Jackson <chris@cd-jackson.com> "
+  }, {
+    "tag" : "a8b7f0a22067a2f33503974050a2fe1eba49700c",
+    "comitter" : "Kai Kreuzer <kai@openhab.org>",
+    "date" : "2025-07-13 21:30:11 +0200",
+    "message" : "     Update pom.xml to parent 5.0.0-SNAPSHOT          Signed-off-by: Kai Kreuzer <kai@openhab.org> "
+  } ]
+}

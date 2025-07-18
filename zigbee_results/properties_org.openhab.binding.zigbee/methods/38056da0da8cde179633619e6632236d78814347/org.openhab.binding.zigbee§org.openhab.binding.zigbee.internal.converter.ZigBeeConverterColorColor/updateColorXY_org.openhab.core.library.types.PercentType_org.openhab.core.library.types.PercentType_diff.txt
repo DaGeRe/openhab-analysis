@@ -1,0 +1,5 @@
+private void updateColorXY(PercentType x, PercentType y) {
+    HSBType color = HSBType.fromXY(x.floatValue() / 100.0f, y.floatValue() / 100.0f);
+    logger.debug("{}: Update Color XY ({}, {}) -> HSV ({}, {}, {})", endpoint.getIeeeAddress(), x.toString(), y.toString(), color.getHue(), color.getSaturation(), lastHSB.getBrightness());
+    updateColorHSB(color.getHue(), color.getSaturation());
+}

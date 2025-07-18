@@ -1,0 +1,4 @@
+@Test
+public void testInitializeDeviceWithThingPropertyTrue() throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException, InterruptedException, ExecutionException {
+    testInitializeDevice(Boolean.TRUE.toString());
+}

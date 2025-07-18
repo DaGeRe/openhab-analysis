@@ -1,0 +1,4 @@
+@Override
+public List<ConfigDescriptionParameter> getConfiguration() {
+    return parameters;
+}

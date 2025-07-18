@@ -1,0 +1,1 @@
+initialize_org.openhab.core.thing.Channel_org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandler_com.zsmartsystems.zigbee.IeeeAddress_int;initialize_0_diff.txt

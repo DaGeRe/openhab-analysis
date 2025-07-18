@@ -1,0 +1,24 @@
+@Override                                                                                              @Override                                                                                           
+public synchronized void attributeUpdated(ZclAttribute attribute, Object value) {                      public synchronized void attributeUpdated(ZclAttribute attribute, Object value) {                   
+logger.debug("{}: ZigBee attribute reports {}", endpoint.getIeeeAddress(), attribute);               |                                                                                                     
+if (attribute.getClusterType() != ZclClusterType.PRESSURE_MEASUREMENT) {                               if (attribute.getClusterType() != ZclClusterType.PRESSURE_MEASUREMENT) {                            
+return;                                                                                                return;                                                                                             
+}                                                                                                      }                                                                                                   
+// Handle automatic reporting of the enhanced attribute configuration                                  // Handle automatic reporting of the enhanced attribute configuration                               
+if (attribute.getId() == ZclPressureMeasurementCluster.ATTR_SCALE) {                                   if (attribute.getId() == ZclPressureMeasurementCluster.ATTR_SCALE) {                                
+enhancedScale = (Integer) value;                                                                       enhancedScale = (Integer) value;                                                                    
+if (enhancedScale != null) {                                                                           if (enhancedScale != null) {                                                                        
+enhancedScale *= -1;                                                                                   enhancedScale *= -1;                                                                                
+}                                                                                                      }                                                                                                   
+return;                                                                                                return;                                                                                             
+}                                                                                                      }                                                                                                   
+if (attribute.getId() == ZclPressureMeasurementCluster.ATTR_SCALEDVALUE && enhancedScale != null) {    if (attribute.getId() == ZclPressureMeasurementCluster.ATTR_SCALEDVALUE && enhancedScale != null) { 
+updateChannelState(new QuantityType&lt;Pressure&gt;(BigDecimal.valueOf((Integer) value, enhancedScal   updateChannelState(new QuantityType&lt;Pressure&gt;(BigDecimal.valueOf((Integer) value, enhancedScal
+return;                                                                                                return;                                                                                             
+}                                                                                                      }                                                                                                   
+if (attribute.getId() == ZclPressureMeasurementCluster.ATTR_MEASUREDVALUE && enhancedScale == null)    if (attribute.getId() == ZclPressureMeasurementCluster.ATTR_MEASUREDVALUE && enhancedScale == null) 
+                                                                                                     | logger.debug("{}: ZigBee attribute reports {}", endpoint.getIeeeAddress(), attribute);              
+updateChannelState(new QuantityType&lt;Pressure&gt;(BigDecimal.valueOf((Integer) value, 0), HECTO(SI   updateChannelState(new QuantityType&lt;Pressure&gt;(BigDecimal.valueOf((Integer) value, 0), HECTO(SI
+}                                                                                                      }                                                                                                   
+return;                                                                                                return;                                                                                             
+}                                                                                                      }                                                                                                   

@@ -1,0 +1,17 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest",
+    "method" : "testProcessClusterList",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#<init>(org.openhab.core.thing.Thing,org.openhab.binding.zigbee.converter.ZigBeeChannelConverterFactory,org.openhab.binding.zigbee.handler.ZigBeeIsAliveTracker)" : 14,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#processClusterList(java.util.Collection,java.lang.String)" : 14,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest#testProcessClusterList" : 2,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandler#processClusterList(java.util.Collection,java.lang.String)" : 14
+  },
+  "selectedChanges" : [ ]
+}

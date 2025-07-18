@@ -1,0 +1,6 @@
+/**
+ * Getter for miredRange value
+ */
+private double miredRange() {
+    return kelvinToMired(kelvinMin) - kelvinToMired(kelvinMax);
+}

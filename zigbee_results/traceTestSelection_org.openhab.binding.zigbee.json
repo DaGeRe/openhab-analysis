@@ -1,0 +1,203 @@
+{
+  "url" : "https://github.com/openhab/org.openhab.binding.zigbee.git",
+  "commits" : {
+    "2f0a43ef8ddcced53b681e1a761c5cfde99ac562" : { },
+    "182c25f5310fe717483307e654e1eae1f9c0c294" : { },
+    "31c07cea6507c947aaa051f7375fcbbf2d46310d" : { },
+    "7bce0f3a0c15ae36031d52fd69a825a5ba2cc1e3" : { },
+    "e871b36d8997d30dbb24bc3ba3abb5ea011bbd5b" : { },
+    "f106ef97522db9e82c16f8ccb75cf13cc93a0c67" : { },
+    "69a63c3e200d348bd8c512c3e216a3d812884237" : {
+      "predecessor" : "f106ef97522db9e82c16f8ccb75cf13cc93a0c67"
+    },
+    "45776de5890b8b379785715451157178d2d9af52" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ "testInitializeDeviceWithNoThingProperty", "testInitializeDeviceWithThingPropertyFalse", "testInitializeDeviceWithThingPropertyTrue" ]
+      },
+      "predecessor" : "69a63c3e200d348bd8c512c3e216a3d812884237"
+    },
+    "b09856e8e30230b3b22cc87737f8fad2932b6052" : {
+      "predecessor" : "45776de5890b8b379785715451157178d2d9af52"
+    },
+    "33798e9255f4a24358e6927bf056116421426b18" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterAtmosphericPressureTest" : [ "testAttributeUpdated" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest" : [ "testAttributeUpdated" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest" : [ "testAttributeUpdated" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationReceivedTest" : [ "testAttributeUpdated" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterSwitchOnoffTest" : [ "testAttributeUpdated" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperatureTest" : [ "testAttributeUpdated" ]
+      },
+      "predecessor" : "b09856e8e30230b3b22cc87737f8fad2932b6052"
+    },
+    "38056da0da8cde179633619e6632236d78814347" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ "testAttributeNotUpdatedWhenColorModeIsColorTemperature", "testAttributeUpdated", "testInitialisation" ]
+      },
+      "predecessor" : "33798e9255f4a24358e6927bf056116421426b18"
+    },
+    "8644fd1da7461005569cd9e2c613f12e46874faf" : {
+      "predecessor" : "38056da0da8cde179633619e6632236d78814347"
+    },
+    "121cdc22a79dda4afe92defe32d7fca46d518899" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.handler.Slzb06HandlerTest" : [ "initializeDongleSpecific" ]
+      },
+      "predecessor" : "8644fd1da7461005569cd9e2c613f12e46874faf"
+    },
+    "c2f11d1f8ac496e6af3df32c332080917cc59cf7" : { },
+    "58fdea64055e1dc9343aa6f60bea384e61aec818" : { },
+    "433ce4560aed79bc8b916c11fbc326158deafebf" : { },
+    "e6a1d3b7207e30ecb90780869a3e686fb70e13e9" : { },
+    "e85d0348f231587616ca23bf39cd26ac546f8766" : {
+      "predecessor" : "e6a1d3b7207e30ecb90780869a3e686fb70e13e9"
+    },
+    "d83a62051823e9fc4bc77443aacb19211dd828da" : {
+      "predecessor" : "e85d0348f231587616ca23bf39cd26ac546f8766"
+    },
+    "95097906d4d7f5c78c91a5b4daef64a721ccdc03" : { },
+    "c30b3e958ca80bbc9c32f52a99fdfe9b88dfa1f6" : { },
+    "060fc823b18422a9637ae665311a2e13109edaa2" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ "testAttributeUpdated" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorTemperatureTest" : [ "testAttributeNotUpdatedWhenColorModeIsNotColorTemperature", "testAttributeUpdatedWhenColorModeIsColorTemperature", "testAttributeUpdatedWhenColorModeIsNull", "testConvertMiredToPercent", "testConvertPercentToMired" ]
+      },
+      "predecessor" : "c30b3e958ca80bbc9c32f52a99fdfe9b88dfa1f6"
+    },
+    "4dcc782ab18c9599d7c70105bf38681b84d937da" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest" : [ "processReceivedData" ]
+      },
+      "predecessor" : "060fc823b18422a9637ae665311a2e13109edaa2"
+    },
+    "3c5e09983ff1df715d5a299930e8303b893feef6" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.ember§org.openhab.binding.zigbee.ember.handler.EmberHandlerTest" : [ "initializeDongleSpecific", "setGroupRegistration" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeCoordinatorHandlerTest" : [ "testInstallCode" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ "testProcessClusterList" ]
+      },
+      "predecessor" : "4dcc782ab18c9599d7c70105bf38681b84d937da"
+    },
+    "655c4809f0598ffd65b3f2a13e91c54e634d545b" : { },
+    "66fd1e96b5a125740280b727b63e5d91066018ed" : {
+      "predecessor" : "655c4809f0598ffd65b3f2a13e91c54e634d545b"
+    },
+    "18b16e7a8ed6f3f02a2da9f361ee169f498c6b9c" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ "testInitializeDeviceWithNoThingProperty", "testInitializeDeviceWithThingPropertyFalse", "testInitializeDeviceWithThingPropertyTrue" ]
+      },
+      "predecessor" : "66fd1e96b5a125740280b727b63e5d91066018ed"
+    },
+    "55304034ddf767cfa8ac60b9491699a2a3c716ea" : {
+      "predecessor" : "18b16e7a8ed6f3f02a2da9f361ee169f498c6b9c"
+    },
+    "ab3ce7c7f7a5d0108159c290a6eb9e09364999ba" : {
+      "predecessor" : "55304034ddf767cfa8ac60b9491699a2a3c716ea"
+    },
+    "507a18645ce50c086d0a532f5116bfc33a31b95b" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.converter.ZigBeeBaseChannelConverterTest" : [ "temperatureToValue" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringInstantaneousDemandTest" : [ "testAttributeUpdated" ],
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterMeteringSummationDeliveredTest" : [ "testAttributeUpdated" ]
+      },
+      "predecessor" : "ab3ce7c7f7a5d0108159c290a6eb9e09364999ba"
+    },
+    "a6438e7e46fcbc01c960eae32c6d0c4dcd9d6782" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest" : [ "processReceivedData", "processReceivedDataOverflow" ]
+      },
+      "predecessor" : "507a18645ce50c086d0a532f5116bfc33a31b95b"
+    },
+    "61fb4dae414d2159ab55c33cee7eb9e7db8cbad2" : {
+      "predecessor" : "a6438e7e46fcbc01c960eae32c6d0c4dcd9d6782"
+    },
+    "aced1a70f360da8cb5fff34d92db48713a9342a8" : { },
+    "483700604893221952b22f6da42361be000e1009" : {
+      "predecessor" : "aced1a70f360da8cb5fff34d92db48713a9342a8"
+    },
+    "1c2b1ae1ba6cfb004e23576136d1fe38d047698c" : {
+      "predecessor" : "483700604893221952b22f6da42361be000e1009"
+    },
+    "e02e2cb8629a0fd577008e51922de1856b018274" : {
+      "predecessor" : "1c2b1ae1ba6cfb004e23576136d1fe38d047698c"
+    },
+    "5e713eac3a5871f86a7fb5828b11bcc3da0b71e5" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest" : [ "processReceivedData", "processReceivedDataOverflow" ]
+      },
+      "predecessor" : "e02e2cb8629a0fd577008e51922de1856b018274"
+    },
+    "8193316af8ef8cb0c219c6f9f2abe24391350e06" : {
+      "predecessor" : "5e713eac3a5871f86a7fb5828b11bcc3da0b71e5"
+    },
+    "d5f1da9f7a61b6328cf180c767855332d3a6c4ba" : { },
+    "d76053983c7ecef170503372763d6dbdcc252eb2" : { },
+    "978db5259025db10025611b33dc4ba64a1c77d92" : { },
+    "adb414f76dd0e48079533bdef8b88548b3acb728" : { },
+    "0ac0a73b3bdd05f779a3b75ce4ce5c355b8d0725" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcherTest" : [ "testMatcher" ]
+      },
+      "predecessor" : "adb414f76dd0e48079533bdef8b88548b3acb728"
+    },
+    "ee06711befc26c0f779d826581a0cb133c4b1a07" : { },
+    "fe9291d0f82fe3471168b0ffc9744549cb7b7097" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ "testAttributeUpdated", "testInitialisation" ]
+      },
+      "predecessor" : "ee06711befc26c0f779d826581a0cb133c4b1a07"
+    },
+    "f28ad8d3eefaf5fb1326d41a852d9ca1e2afebc7" : { },
+    "d9d3727e3333cbf34f4d2d516d31ae81c4155aaa" : {
+      "predecessor" : "f28ad8d3eefaf5fb1326d41a852d9ca1e2afebc7"
+    },
+    "acca292a69bc2bd9690220c117aafdfc02d4dba1" : { },
+    "5a8781f5276b5dae68c73a71b9e7ffd9995e25ef" : { },
+    "9f81b7b6ffe563ecda65ba23c43d33936da40b84" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ "testAttributeUpdated" ]
+      },
+      "predecessor" : "5a8781f5276b5dae68c73a71b9e7ffd9995e25ef"
+    },
+    "535d806b6585fe5d2ec32abc94f18a59e85b6cdc" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ "testAttributeUpdated" ]
+      },
+      "predecessor" : "9f81b7b6ffe563ecda65ba23c43d33936da40b84"
+    },
+    "1ba5c5d505440470d8be795e80805cd07b93e0cc" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ "testInitializeDeviceWithNoThingProperty", "testInitializeDeviceWithThingPropertyFalse", "testInitializeDeviceWithThingPropertyTrue" ]
+      },
+      "predecessor" : "535d806b6585fe5d2ec32abc94f18a59e85b6cdc"
+    },
+    "03c5c966e353c4cb3a3a7490cf3bf23a7c73d220" : {
+      "predecessor" : "1ba5c5d505440470d8be795e80805cd07b93e0cc"
+    },
+    "9c2a874dfccb740b5e0350d379d9bb93b84c6b16" : { },
+    "5754fd54fc35d382582936452ee9929f5de717e0" : {
+      "predecessor" : "9c2a874dfccb740b5e0350d379d9bb93b84c6b16"
+    },
+    "d45adec4d452a2af00d03d5d46d137e59c14bf7e" : {
+      "predecessor" : "5754fd54fc35d382582936452ee9929f5de717e0"
+    },
+    "91a6f8d9715717ba9d20a02874da6b4c5ba41a11" : { },
+    "7177c93fe5fd36d4b02c34eedf2cc99fedd1a718" : {
+      "predecessor" : "91a6f8d9715717ba9d20a02874da6b4c5ba41a11"
+    },
+    "07ad7c3056fae16117d3899553c445ad4842fbcc" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperatureTest" : [ "testAttributeUpdated" ]
+      },
+      "predecessor" : "7177c93fe5fd36d4b02c34eedf2cc99fedd1a718"
+    },
+    "49fee8b30e744aa83f54557bd30b40d67f3ab0d1" : { },
+    "b477bc11d3ad015278973e1e5f5ba97adc6e8866" : { },
+    "53bab818eacf59637a539334856615bdce0ba715" : { },
+    "bbf4c71187ec8c35e378925a751236be91ed194a" : {
+      "predecessor" : "53bab818eacf59637a539334856615bdce0ba715"
+    },
+    "a8b7f0a22067a2f33503974050a2fe1eba49700c" : { }
+  },
+  "android" : false
+}

@@ -1,0 +1,12 @@
+@Override
+public List<ConfigDescriptionParameter> getConfiguration() {
+    List<ConfigDescriptionParameter> parameters = new ArrayList<>();
+    // Build a list of configuration
+    parameters.add(ConfigDescriptionParameterBuilder.create(CONFIG_REPORTINGMIN, Type.INTEGER).withLabel("Minimum Reporting Period").withDescription("The minimum time period in seconds between device state updates").withDefault(REPORTING_DEFAULT_MIN.toString()).withMinimum(new BigDecimal(REPORTING_RANGE_MIN)).withMaximum(new BigDecimal(REPORTING_RANGE_MAX)).build());
+    parameters.add(ConfigDescriptionParameterBuilder.create(CONFIG_REPORTINGMAX, Type.INTEGER).withLabel("Maximum Reporting Period").withDescription("The maximum time period in seconds between device state updates").withDefault(REPORTING_DEFAULT_MAX.toString()).withMinimum(new BigDecimal(REPORTING_RANGE_MIN)).withMaximum(new BigDecimal(REPORTING_RANGE_MAX)).build());
+    if (isAnalogue) {
+        parameters.add(ConfigDescriptionParameterBuilder.create(CONFIG_REPORTINGCHANGE, Type.INTEGER).withLabel("Report On Change").withDescription("The minimum change of the attribute value needed to trigger a device state update").withDefault(defaultChange.toString()).withMinimum(minimumChange).withMaximum(maximumChange).build());
+    }
+    parameters.add(ConfigDescriptionParameterBuilder.create(CONFIG_POLLING, Type.INTEGER).withLabel("Polling Period").withDescription("The time period in seconds between subsequent polls").withDefault(POLLING_DEFAULT.toString()).withMinimum(new BigDecimal(POLLING_RANGE_MIN)).withMaximum(new BigDecimal(POLLING_RANGE_MAX)).withAdvanced(true).build());
+    return parameters;
+}

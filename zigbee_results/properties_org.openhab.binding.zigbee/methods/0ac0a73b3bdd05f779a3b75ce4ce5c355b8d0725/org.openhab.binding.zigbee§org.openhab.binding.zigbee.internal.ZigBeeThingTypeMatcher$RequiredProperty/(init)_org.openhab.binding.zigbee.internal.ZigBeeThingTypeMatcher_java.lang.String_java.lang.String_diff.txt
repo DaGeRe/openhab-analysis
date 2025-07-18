@@ -1,0 +1,4 @@
+public RequiredProperty(String name, String value) {
+    this.name = name;
+    this.value = value;
+}

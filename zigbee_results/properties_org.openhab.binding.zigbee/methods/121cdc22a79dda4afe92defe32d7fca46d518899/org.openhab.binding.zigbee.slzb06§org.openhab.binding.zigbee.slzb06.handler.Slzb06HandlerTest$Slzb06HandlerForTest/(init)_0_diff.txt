@@ -1,0 +1,4 @@
+public Slzb06HandlerForTest(Bridge coordinator, ZigBeeChannelConverterFactory channelFactory, ZigBeeDongleEzsp dongle) {
+    super(coordinator, channelFactory);
+    this.zigbeeTransport = dongle;
+}

@@ -1,0 +1,14 @@
+@Override
+public boolean initializeConverter(ZigBeeThingHandler thing) {
+    super.initializeConverter(thing);
+    cluster = (ZclPressureMeasurementCluster) endpoint.getInputCluster(ZclPressureMeasurementCluster.CLUSTER_ID);
+    if (cluster == null) {
+        logger.error("{}: Error opening device pressure measurement cluster", endpoint.getIeeeAddress());
+        return false;
+    }
+    // Check if the enhanced attributes are supported
+    determineEnhancedScale(cluster);
+    // Add a listener
+    cluster.addAttributeListener(this);
+    return true;
+}

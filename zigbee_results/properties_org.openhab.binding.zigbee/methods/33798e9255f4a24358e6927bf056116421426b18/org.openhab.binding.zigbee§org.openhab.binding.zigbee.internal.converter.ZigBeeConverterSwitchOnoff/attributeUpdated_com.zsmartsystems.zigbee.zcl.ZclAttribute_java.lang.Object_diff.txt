@@ -1,0 +1,13 @@
+@Override                                                                                              @Override                                                                                           
+public void attributeUpdated(ZclAttribute attribute, Object val) {                                     public void attributeUpdated(ZclAttribute attribute, Object val) {                                  
+logger.debug("{}: ZigBee attribute reports {}", endpoint.getIeeeAddress(), attribute);               |                                                                                                     
+if (attribute.getClusterType() == ZclClusterType.ON_OFF && attribute.getId() == ZclOnOffCluster.ATTR   if (attribute.getClusterType() == ZclClusterType.ON_OFF && attribute.getId() == ZclOnOffCluster.ATTR
+                                                                                                     | logger.debug("{}: ZigBee attribute reports {}", endpoint.getIeeeAddress(), attribute);              
+Boolean value = (Boolean) val;                                                                         Boolean value = (Boolean) val;                                                                      
+if (value != null && value) {                                                                          if (value != null && value) {                                                                       
+updateChannelState(OnOffType.ON);                                                                      updateChannelState(OnOffType.ON);                                                                   
+} else {                                                                                               } else {                                                                                            
+updateChannelState(OnOffType.OFF);                                                                     updateChannelState(OnOffType.OFF);                                                                  
+}                                                                                                      }                                                                                                   
+}                                                                                                      }                                                                                                   
+}                                                                                                      }                                                                                                   

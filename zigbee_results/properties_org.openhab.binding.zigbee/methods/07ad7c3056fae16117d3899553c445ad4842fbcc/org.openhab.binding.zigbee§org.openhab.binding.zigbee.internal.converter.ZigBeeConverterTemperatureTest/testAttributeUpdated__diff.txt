@@ -1,0 +1,25 @@
+@Test
+public void testAttributeUpdated() {
+    ZigBeeEndpoint endpoint = Mockito.mock(ZigBeeEndpoint.class);
+    ZigBeeCoordinatorHandler coordinatorHandler = Mockito.mock(ZigBeeCoordinatorHandler.class);
+    Mockito.when(coordinatorHandler.getEndpoint(ArgumentMatchers.any(IeeeAddress.class), ArgumentMatchers.anyInt())).thenReturn(endpoint);
+    ZclTemperatureMeasurementCluster cluster = Mockito.mock(ZclTemperatureMeasurementCluster.class);
+    Mockito.when(endpoint.getInputCluster(ZclClusterType.TEMPERATURE_MEASUREMENT.getId())).thenReturn(cluster);
+    ZigBeeConverterTemperature converter = new ZigBeeConverterTemperature();
+    ArgumentCaptor<ChannelUID> channelCapture = ArgumentCaptor.forClass(ChannelUID.class);
+    ArgumentCaptor<State> stateCapture = ArgumentCaptor.forClass(State.class);
+    ZigBeeThingHandler thingHandler = Mockito.mock(ZigBeeThingHandler.class);
+    Channel channel = ChannelBuilder.create(new ChannelUID("a:b:c:d"), "").build();
+    converter.initialize(channel, coordinatorHandler, new IeeeAddress("1234567890ABCDEF"), 1);
+    converter.initializeConverter(thingHandler);
+    ZclAttribute attribute = Mockito.mock(ZclAttribute.class);
+    Mockito.when(attribute.getClusterType()).thenReturn(ZclClusterType.TEMPERATURE_MEASUREMENT);
+    Mockito.when(attribute.getId()).thenReturn(ZclTemperatureMeasurementCluster.ATTR_MEASUREDVALUE);
+    converter.attributeUpdated(attribute, Integer.valueOf(2345));
+    Mockito.verify(thingHandler, Mockito.times(1)).setChannelState(channelCapture.capture(), stateCapture.capture());
+    assertEquals(new ChannelUID("a:b:c:d"), channelCapture.getValue());
+    assertTrue(stateCapture.getValue() instanceof QuantityType);
+    QuantityType<Temperature> value = (QuantityType<Temperature>) stateCapture.getValue();
+    assertEquals(SIUnits.CELSIUS, value.getUnit());
+    assertEquals(23.45, value.doubleValue(), 0.01);
+}

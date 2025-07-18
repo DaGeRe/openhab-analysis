@@ -1,0 +1,5 @@
+private ZigBeeCoordinatorHandler mockZigBeeCoordinatorHandler(ZigBeeNode zigBeeNode) {
+    ZigBeeCoordinatorHandler zigBeeCoordinatorHandler = mock(ZigBeeCoordinatorHandler.class);
+    when(zigBeeCoordinatorHandler.getNode(any(IeeeAddress.class))).thenReturn(zigBeeNode);
+    return zigBeeCoordinatorHandler;
+}

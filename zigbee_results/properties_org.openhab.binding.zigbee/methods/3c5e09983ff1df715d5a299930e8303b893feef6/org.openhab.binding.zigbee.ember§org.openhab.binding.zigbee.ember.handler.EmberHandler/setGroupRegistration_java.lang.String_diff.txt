@@ -1,0 +1,31 @@
+private void setGroupRegistration(String groupsString) {
+    if (groupsString == null || groupsString.isBlank()) {
+        return;
+    }
+    logger.debug("ZigBee Ember Coordinator group registration is {}", groupsString);
+    ZigBeeDongleEzsp dongle = (ZigBeeDongleEzsp) zigbeeTransport;
+    EmberNcp ncp = dongle.getEmberNcp();
+    String[] groupsArray = groupsString.split(",");
+    Set<Integer> groups = new HashSet<>();
+    for (String groupString : groupsArray) {
+        groups.add(Integer.parseInt(groupString.trim(), 16));
+    }
+    int multicastTableSize = groups.size() + GROUPS_HEADROOM;
+    if (multicastTableSize < GROUPS_MINIMUM) {
+        multicastTableSize = GROUPS_MINIMUM;
+    } else if (multicastTableSize > GROUPS_MAXIMUM) {
+        multicastTableSize = GROUPS_MAXIMUM;
+    }
+    logger.debug("ZigBee Ember Coordinator multicast table size set to {}", multicastTableSize);
+    dongle.updateDefaultConfiguration(EzspConfigId.EZSP_CONFIG_MULTICAST_TABLE_SIZE, multicastTableSize);
+    int index = 0;
+    for (Integer group : groups) {
+        EmberMulticastTableEntry entry = new EmberMulticastTableEntry();
+        entry.setEndpoint(1);
+        entry.setNetworkIndex(0);
+        entry.setMulticastId(group);
+        EmberStatus result = ncp.setMulticastTableEntry(index, entry);
+        logger.debug("ZigBee Ember Coordinator multicast table index {} updated with {}, result {}", index, entry, result);
+        index++;
+    }
+}

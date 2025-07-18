@@ -1,0 +1,9 @@
+private void stopPolling() {
+    synchronized (pollingSync) {
+        if (pollingJob != null) {
+            pollingJob.cancel(true);
+            pollingJob = null;
+            logger.debug("{}: Polling stopped", nodeIeeeAddress);
+        }
+    }
+}

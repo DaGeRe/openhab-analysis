@@ -1,0 +1,93 @@
+{
+  "url" : "https://github.com/openhab/org.openhab.binding.zigbee.git",
+  "commits" : {
+    "aced1a70f360da8cb5fff34d92db48713a9342a8" : { },
+    "483700604893221952b22f6da42361be000e1009" : {
+      "predecessor" : "aced1a70f360da8cb5fff34d92db48713a9342a8"
+    },
+    "1c2b1ae1ba6cfb004e23576136d1fe38d047698c" : {
+      "predecessor" : "483700604893221952b22f6da42361be000e1009"
+    },
+    "e02e2cb8629a0fd577008e51922de1856b018274" : {
+      "predecessor" : "1c2b1ae1ba6cfb004e23576136d1fe38d047698c"
+    },
+    "5e713eac3a5871f86a7fb5828b11bcc3da0b71e5" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee.slzb06§org.openhab.binding.zigbee.slzb06.internal.Slzb06NetworkPortTest" : [ "processReceivedData", "processReceivedDataOverflow" ]
+      },
+      "predecessor" : "e02e2cb8629a0fd577008e51922de1856b018274"
+    },
+    "8193316af8ef8cb0c219c6f9f2abe24391350e06" : {
+      "predecessor" : "5e713eac3a5871f86a7fb5828b11bcc3da0b71e5"
+    },
+    "d5f1da9f7a61b6328cf180c767855332d3a6c4ba" : { },
+    "d76053983c7ecef170503372763d6dbdcc252eb2" : { },
+    "978db5259025db10025611b33dc4ba64a1c77d92" : { },
+    "adb414f76dd0e48079533bdef8b88548b3acb728" : { },
+    "0ac0a73b3bdd05f779a3b75ce4ce5c355b8d0725" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.ZigBeeThingTypeMatcherTest" : [ "testMatcher" ]
+      },
+      "predecessor" : "adb414f76dd0e48079533bdef8b88548b3acb728"
+    },
+    "ee06711befc26c0f779d826581a0cb133c4b1a07" : { },
+    "fe9291d0f82fe3471168b0ffc9744549cb7b7097" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ "testAttributeUpdated", "testInitialisation" ]
+      },
+      "predecessor" : "ee06711befc26c0f779d826581a0cb133c4b1a07"
+    },
+    "f28ad8d3eefaf5fb1326d41a852d9ca1e2afebc7" : { },
+    "d9d3727e3333cbf34f4d2d516d31ae81c4155aaa" : {
+      "predecessor" : "f28ad8d3eefaf5fb1326d41a852d9ca1e2afebc7"
+    },
+    "acca292a69bc2bd9690220c117aafdfc02d4dba1" : { },
+    "5a8781f5276b5dae68c73a71b9e7ffd9995e25ef" : { },
+    "9f81b7b6ffe563ecda65ba23c43d33936da40b84" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ "testAttributeUpdated" ]
+      },
+      "predecessor" : "5a8781f5276b5dae68c73a71b9e7ffd9995e25ef"
+    },
+    "535d806b6585fe5d2ec32abc94f18a59e85b6cdc" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterColorColorTest" : [ "testAttributeUpdated" ]
+      },
+      "predecessor" : "9f81b7b6ffe563ecda65ba23c43d33936da40b84"
+    },
+    "1ba5c5d505440470d8be795e80805cd07b93e0cc" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.handler.ZigBeeThingHandlerTest" : [ "testInitializeDeviceWithNoThingProperty", "testInitializeDeviceWithThingPropertyFalse", "testInitializeDeviceWithThingPropertyTrue" ]
+      },
+      "predecessor" : "535d806b6585fe5d2ec32abc94f18a59e85b6cdc"
+    },
+    "03c5c966e353c4cb3a3a7490cf3bf23a7c73d220" : {
+      "predecessor" : "1ba5c5d505440470d8be795e80805cd07b93e0cc"
+    },
+    "9c2a874dfccb740b5e0350d379d9bb93b84c6b16" : { },
+    "5754fd54fc35d382582936452ee9929f5de717e0" : {
+      "predecessor" : "9c2a874dfccb740b5e0350d379d9bb93b84c6b16"
+    },
+    "d45adec4d452a2af00d03d5d46d137e59c14bf7e" : {
+      "predecessor" : "5754fd54fc35d382582936452ee9929f5de717e0"
+    },
+    "91a6f8d9715717ba9d20a02874da6b4c5ba41a11" : { },
+    "7177c93fe5fd36d4b02c34eedf2cc99fedd1a718" : {
+      "predecessor" : "91a6f8d9715717ba9d20a02874da6b4c5ba41a11"
+    },
+    "07ad7c3056fae16117d3899553c445ad4842fbcc" : {
+      "testcases" : {
+        "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.ZigBeeConverterTemperatureTest" : [ "testAttributeUpdated" ]
+      },
+      "predecessor" : "7177c93fe5fd36d4b02c34eedf2cc99fedd1a718"
+    },
+    "49fee8b30e744aa83f54557bd30b40d67f3ab0d1" : { },
+    "b477bc11d3ad015278973e1e5f5ba97adc6e8866" : { },
+    "53bab818eacf59637a539334856615bdce0ba715" : { },
+    "bbf4c71187ec8c35e378925a751236be91ed194a" : {
+      "predecessor" : "53bab818eacf59637a539334856615bdce0ba715"
+    },
+    "a8b7f0a22067a2f33503974050a2fe1eba49700c" : { }
+  },
+  "android" : false
+}

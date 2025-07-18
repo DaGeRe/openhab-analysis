@@ -1,0 +1,14 @@
+/**
+ * Convert color temperature given in Mired to percentage.
+ */
+private PercentType miredToPercent(Integer temperatureInMired) {
+    if (temperatureInMired == null) {
+        return null;
+    }
+    if (temperatureInMired == 0x0000 || temperatureInMired == 0xffff) {
+        // 0x0000 indicates undefined value.
+        // 0xffff indicates invalid value (possible due to color mode not being CT).
+        return null;
+    }
+    return new PercentType((int) ((temperatureInMired - miredMin()) * 100.0 / miredRange()));
+}

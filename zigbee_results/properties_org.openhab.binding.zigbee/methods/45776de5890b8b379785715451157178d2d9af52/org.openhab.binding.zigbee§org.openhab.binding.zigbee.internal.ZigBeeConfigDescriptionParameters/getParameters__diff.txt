@@ -1,0 +1,8 @@
+/**
+ * Provides the list of {@link ConfigDescriptionParameter}
+ *
+ * @return list of {@link ConfigDescriptionParameter}
+ */
+public static List<ConfigDescriptionParameter> getParameters() {
+    return configDescriptionParameters;
+}

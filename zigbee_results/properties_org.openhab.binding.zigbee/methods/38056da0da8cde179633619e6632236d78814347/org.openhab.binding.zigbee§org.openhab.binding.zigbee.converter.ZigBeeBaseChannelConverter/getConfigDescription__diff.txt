@@ -1,0 +1,15 @@
+/**
+ * Gets the configuration descriptions required to configure this channel.
+ * <p>
+ * Ideally, implementations should use the {@link ZclCluster#discoverAttributes(boolean)} method and the
+ * {@link ZclCluster#isAttributeSupported(int)} method to understand exactly what the device supports and only
+ * provide configuration as necessary.
+ * <p>
+ * This method should not be overridden - the {@link #configOptions} list should be populated during converter
+ * initialisation.
+ *
+ * @return a {@link List} of {@link ConfigDescriptionParameter}s. null if no config is provided
+ */
+public List<ConfigDescriptionParameter> getConfigDescription() {
+    return configOptions;
+}

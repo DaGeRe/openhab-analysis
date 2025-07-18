@@ -1,0 +1,8 @@
+@Test
+public void temperatureToValue() {
+    ZigBeeBaseChannelConverter converter = new ZigBeeConverterSwitchLevel();
+    assertEquals(Integer.valueOf(1234), converter.temperatureToValue(new DecimalType(12.34)));
+    assertEquals(Integer.valueOf(1234), converter.temperatureToValue(new QuantityType(12.34, SIUnits.CELSIUS)));
+    assertEquals(Integer.valueOf(1235), converter.temperatureToValue(new QuantityType(12.345, SIUnits.CELSIUS)));
+    assertEquals(Integer.valueOf(889), converter.temperatureToValue(new QuantityType(48.0, ImperialUnits.FAHRENHEIT)));
+}

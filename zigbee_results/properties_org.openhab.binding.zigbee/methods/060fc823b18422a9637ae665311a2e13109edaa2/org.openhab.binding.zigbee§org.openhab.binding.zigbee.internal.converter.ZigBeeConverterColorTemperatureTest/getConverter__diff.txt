@@ -1,0 +1,24 @@
+private ZigBeeConverterColorTemperature getConverter() {
+    ZigBeeConverterColorTemperature converter = new ZigBeeConverterColorTemperature();
+    try {
+        Field fieldMin = ZigBeeConverterColorTemperature.class.getDeclaredField("kelvinMin");
+        fieldMin.setAccessible(true);
+        fieldMin.set(converter, Integer.valueOf(2000));
+        Field fieldMax = ZigBeeConverterColorTemperature.class.getDeclaredField("kelvinMax");
+        fieldMax.setAccessible(true);
+        fieldMax.set(converter, Integer.valueOf(6500));
+        Field fieldRange = ZigBeeConverterColorTemperature.class.getDeclaredField("kelvinRange");
+        fieldRange.setAccessible(true);
+        fieldRange.set(converter, 4500.0);
+    } catch (NoSuchFieldException | SecurityException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    } catch (IllegalArgumentException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    } catch (IllegalAccessException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+    return converter;
+}

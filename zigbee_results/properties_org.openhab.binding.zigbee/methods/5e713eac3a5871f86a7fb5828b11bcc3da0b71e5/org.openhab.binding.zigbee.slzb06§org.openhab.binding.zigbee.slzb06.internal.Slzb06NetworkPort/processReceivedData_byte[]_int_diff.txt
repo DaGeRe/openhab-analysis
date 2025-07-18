@@ -1,0 +1,20 @@
+protected void processReceivedData(byte[] dataChunk, int bytesRead) {
+    synchronized (bufferSynchronisationObject) {
+        for (int i = 0; i < bytesRead; i++) {
+            buffer[end++] = dataChunk[i] & 0xff;
+            if (end >= RX_BUFFER_LEN) {
+                end = 0;
+            }
+            if (end == start) {
+                logger.warn("SLZB06 '{}': Processing received data event: Serial buffer overrun [{}:{}] with {}/{} bytes", serverName, start, end, i, bytesRead);
+                if (++start == RX_BUFFER_LEN) {
+                    start = 0;
+                    end = 0;
+                }
+            }
+        }
+    }
+    synchronized (this) {
+        this.notify();
+    }
+}

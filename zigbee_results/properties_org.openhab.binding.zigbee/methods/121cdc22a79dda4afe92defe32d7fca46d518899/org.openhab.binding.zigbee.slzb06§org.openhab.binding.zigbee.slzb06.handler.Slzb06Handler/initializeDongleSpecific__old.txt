@@ -1,0 +1,65 @@
+@Override
+protected void initializeDongleSpecific() {
+    Slzb06Configuration config = getConfigAs(Slzb06Configuration.class);
+    setGroupRegistration(config.zigbee_groupregistration);
+    if (pollingJob == null) {
+        Runnable pollingRunnable = new Runnable() {
+
+            @Override
+            public void run() {
+                if (zigbeeTransport != null) {
+                    ZigBeeDongleEzsp dongle = (ZigBeeDongleEzsp) zigbeeTransport;
+                    Map<String, Long> counters = dongle.getCounters();
+                    if (!counters.isEmpty()) {
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_RX_DAT)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_RX_DAT, new DecimalType(counters.get(ASH_RX_DAT)));
+                        }
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_TX_DAT)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_TX_DAT, new DecimalType(counters.get(ASH_TX_DAT)));
+                        }
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_RX_ACK)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_RX_ACK, new DecimalType(counters.get(ASH_RX_ACK)));
+                        }
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_TX_ACK)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_TX_ACK, new DecimalType(counters.get(ASH_TX_ACK)));
+                        }
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_RX_NAK)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_RX_NAK, new DecimalType(counters.get(ASH_RX_NAK)));
+                        }
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_TX_NAK)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_TX_NAK, new DecimalType(counters.get(ASH_TX_NAK)));
+                        }
+                    }
+                }
+                if (communicator == null) {
+                    try {
+                        communicator = new Slzb06Communicator(config.slzb06_server);
+                    } catch (Slzb06Exception e) {
+                        communicator = null;
+                        logger.error("SLZB06 API failed to initialise - internal channels will be unavailable: {}", e.getMessage());
+                    }
+                }
+                if (communicator != null) {
+                    try {
+                        Slzb06Sensors sensors = communicator.getSensors();
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_ESP32TEMP)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_ESP32TEMP, new DecimalType(sensors.esp32_temp));
+                        }
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_ZBTEMP)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_ZBTEMP, new DecimalType(sensors.zb_temp));
+                        }
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_UPTIME)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_UPTIME, new DecimalType(sensors.uptime));
+                        }
+                        if (isLinked(Slzb06BindingConstants.CHANNEL_SOCKETUPTIME)) {
+                            updateState(Slzb06BindingConstants.CHANNEL_SOCKETUPTIME, new DecimalType(sensors.socket_uptime));
+                        }
+                    } catch (Exception e) {
+                        logger.error("SLZB06: retreiving API information: {}", e.getMessage());
+                    }
+                }
+            }
+        };
+        pollingJob = scheduler.scheduleWithFixedDelay(pollingRunnable, 30, 30, TimeUnit.SECONDS);
+    }
+}

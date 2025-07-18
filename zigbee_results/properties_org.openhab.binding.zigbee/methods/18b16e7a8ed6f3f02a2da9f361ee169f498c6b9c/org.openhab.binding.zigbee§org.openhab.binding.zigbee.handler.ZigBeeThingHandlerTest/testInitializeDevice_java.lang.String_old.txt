@@ -1,0 +1,34 @@
+private void testInitializeDevice(String deviceInitializedProperty) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException, InterruptedException, ExecutionException {
+    int endpointId = 1;
+    IeeeAddress ieeeAddress = new IeeeAddress("000D6F000C1534C3");
+    ThingType thingType = ThingTypeBuilder.instance(ZigBeeBindingConstants.BINDING_ID, ZigBeeBindingConstants.ITEM_TYPE_SWITCH, "thingTypeLabel").build();
+    ThingUID thingUID = new ThingUID(thingType.getUID(), "thingUID");
+    ZigBeeNode zigBeeNode = mockZigBeeNode(endpointId, ieeeAddress);
+    ZigBeeCoordinatorHandler zigBeeCoordinatorHandler = mockZigBeeCoordinatorHandler(zigBeeNode);
+    // create the thing properties which can contain the device initialized property
+    Map<String, String> thingProperties = new HashMap<String, String>();
+    if (deviceInitializedProperty != null && !deviceInitializedProperty.isBlank()) {
+        thingProperties.put(ZigBeeBindingConstants.THING_PROPERTY_DEVICE_INITIALIZED, deviceInitializedProperty);
+    }
+    Channel channel = mockChannel(endpointId, thingUID);
+    Thing thing = mockThing(thingType, thingProperties, channel);
+    ZigBeeBaseChannelConverter zigBeeChannelConverter = mockZigBeeBaseChannelConverterSuccessfull();
+    ZigBeeChannelConverterFactory zigBeeChannelConverterFactory = mockZigBeeChannelConverterFactory(zigBeeChannelConverter);
+    ZigBeeIsAliveTracker zigBeeIsAliveTracker = mock(ZigBeeIsAliveTracker.class);
+    ZigBeeThingHandler zigBeeThingHandler = new ZigBeeThingHandler(thing, zigBeeChannelConverterFactory, zigBeeIsAliveTracker);
+    injectIntoPrivateField(zigBeeThingHandler, zigBeeCoordinatorHandler, "coordinatorHandler");
+    injectIntoPrivateField(zigBeeThingHandler, ieeeAddress, "nodeIeeeAddress");
+    // call doNodeInitialisation by reflection as it is not accessible
+    Method doNodeInitialisationMethod = ZigBeeThingHandler.class.getDeclaredMethod("doNodeInitialisation", (Class<Object>[]) null);
+    doNodeInitialisationMethod.setAccessible(true);
+    doNodeInitialisationMethod.invoke(zigBeeThingHandler, (Object[]) null);
+    // When the device was already initialized the initialization will be skipped and the thing property will not
+    // be updated
+    if (Boolean.TRUE.toString().equals(deviceInitializedProperty)) {
+        Mockito.verify(zigBeeChannelConverter, never()).initializeDevice();
+        Mockito.verify(thing, never()).setProperty(ZigBeeBindingConstants.THING_PROPERTY_DEVICE_INITIALIZED, Boolean.TRUE.toString());
+    } else {
+        Mockito.verify(zigBeeChannelConverter, times(1)).initializeDevice();
+        Mockito.verify(thing, times(1)).setProperty(ZigBeeBindingConstants.THING_PROPERTY_DEVICE_INITIALIZED, Boolean.TRUE.toString());
+    }
+}

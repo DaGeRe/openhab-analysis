@@ -1,0 +1,9 @@
+private void updateColorXY() {
+    float xValue = lastX / 65536.0f;
+    float yValue = lastY / 65536.0f;
+    PercentType x = new PercentType(Float.valueOf(xValue * 100.0f).toString());
+    PercentType y = new PercentType(Float.valueOf(yValue * 100.0f).toString());
+    updateColorXY(x, y);
+    xChanged = false;
+    yChanged = false;
+}

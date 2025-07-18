@@ -1,0 +1,9 @@
+private ZigBeeBaseChannelConverter createZigBeeChannelConverter(Channel channel) {                     private ZigBeeBaseChannelConverter createZigBeeChannelConverter(Channel channel) {                  
+ZigBeeNode node = coordinatorHandler.getNode(nodeIeeeAddress);                                         ZigBeeNode node = coordinatorHandler.getNode(nodeIeeeAddress);                                      
+                                                                                                     | if (node == null) {                                                                                 
+                                                                                                     | logger.debug("{}: Initializing channel {} failed - node not found", nodeIeeeAddress, channel.getUID(
+                                                                                                     | return null;                                                                                        
+                                                                                                     | }                                                                                                   
+Map&lt;String, String&gt; properties = channel.getProperties();                                        Map&lt;String, String&gt; properties = channel.getProperties();                                     
+return channelFactory.createConverter(channel, coordinatorHandler, node.getIeeeAddress(), Integer.pa   return channelFactory.createConverter(channel, coordinatorHandler, node.getIeeeAddress(), Integer.pa
+}                                                                                                      }                                                                                                   

@@ -1,0 +1,6 @@
+/**                                                                                                    /**                                                                                                 
+* Convert color temperature given as percentage to Mired.                                              * Convert color temperature given as percentage to Mired.                                           
+*/                                                                                                     */                                                                                                  
+private int percentToMired(PercentType temperatureInPercent) {                                         private int percentToMired(PercentType temperatureInPercent) {                                      
+return kelvinToMired(percentToKelvin(temperatureInPercent));                                         | return (int) (miredMin() + (temperatureInPercent.doubleValue() * miredRange() / 100.0));            
+}                                                                                                      }                                                                                                   

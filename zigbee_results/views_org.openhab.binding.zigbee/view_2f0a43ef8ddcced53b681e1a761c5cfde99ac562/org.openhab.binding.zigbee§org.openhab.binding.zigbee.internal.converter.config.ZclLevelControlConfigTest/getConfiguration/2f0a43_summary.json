@@ -1,0 +1,19 @@
+{
+  "overallScore" : 0,
+  "selected" : false,
+  "testcase" : {
+    "clazz" : "org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfigTest",
+    "method" : "getConfiguration",
+    "module" : "org.openhab.binding.zigbee",
+    "params" : null
+  },
+  "callCounts" : {
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#initialize(com.zsmartsystems.zigbee.zcl.ZclCluster)" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#<init>" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfigTest#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfig#getConfiguration" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfigTest$MockedBooleanFuture#get" : 1,
+    "org.openhab.binding.zigbee§org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfigTest$MockedBooleanFuture#<init>(org.openhab.binding.zigbee.internal.converter.config.ZclLevelControlConfigTest)" : 1
+  },
+  "selectedChanges" : [ ]
+}

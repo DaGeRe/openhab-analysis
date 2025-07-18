@@ -1,0 +1,10 @@
+@Test
+public void initializeDongleSpecific() {
+    Bridge bridge = Mockito.mock(Bridge.class);
+    ZigBeeChannelConverterFactory zigBeeChannelConverterFactory = Mockito.mock(ZigBeeChannelConverterFactory.class);
+    ZigBeeDongleEzsp dongle = Mockito.mock(ZigBeeDongleEzsp.class);
+    EmberNcp ncp = Mockito.mock(EmberNcp.class);
+    Mockito.when(dongle.getEmberNcp()).thenReturn(ncp);
+    Slzb06Handler handler = new Slzb06HandlerForTest(bridge, zigBeeChannelConverterFactory, dongle);
+    handler.initializeDongleSpecific();
+}

@@ -1,0 +1,9 @@
+private Thing mockThing(ThingType thingType, Map<String, String> thingProperties, Channel channel) {
+    List<Channel> channels = new ArrayList<Channel>(Arrays.asList(channel));
+    Thing thing = mock(Thing.class);
+    when(thing.getThingTypeUID()).thenReturn(thingType.getUID());
+    when(thing.getProperties()).thenReturn(thingProperties);
+    when(thing.getChannels()).thenReturn(channels);
+    when(thing.getChannel(channel.getUID().getAsString())).thenReturn(channel);
+    return thing;
+}
