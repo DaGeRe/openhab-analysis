@@ -15,8 +15,8 @@ This has been done using two repos:
 ## Regression Test Selection
 
 Peass does a prior analysis step before visualizations are possible. This is done using
-- `./peass select ...`
-- `./peass select ...`
+- `./peass select -folder ../projects/org.openhab.binding.zigbee/ -startcommit 2f0a43ef8ddcced53b681e1a761c5cfde99ac562 -endcommit a8b7f0a22067a2f33503974050a2fe1eba49700c &> select-zigbee-full.txt`
+- `./peass select -folder ../projects/openhab-core/ -startcommit 6764b6d94ce054a5976731781a9bc1141cd53c7b -endcommit cd26f6feaf2a4fda3d2567b151d1e5effffa878f &> select-openhab-core-full.txt`
 
 Getting these results is time-consuming. Therefore, the results of these steps for the given commits are in this repo. If you want more / different commits, you'll need to re-execute this steps.
 
