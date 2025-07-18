@@ -9,7 +9,7 @@ This has been done using two repos:
 ## Prerequisites
 
 - Build Kieker: `git clone https://github.com/kieker-monitoring/kieker.git && cd kieker && ./gradlew assemble -x test -x check -x apidoc`
-- Build Peass: `https://github.com/DaGeRe/peass.git && cd peass && ./mvnw clean package -DskipTests -P buildStarter`
+- Build Peass: `git clone -b develop https://github.com/DaGeRe/peass.git && cd peass && ./mvnw clean package -DskipTests -P buildStarter`
 - Get ExplorViz: `git clone https://github.com/ExplorViz/deployment.git`
 
 ## Regression Test Selection
